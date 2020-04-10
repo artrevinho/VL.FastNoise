@@ -20,7 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="VlIid7vMVCDMS5877tkcyt" Name="Bounds" Kind="InputPin" DefaultValue="1315, 26, 353, 373">
+            <Pin Id="VlIid7vMVCDMS5877tkcyt" Name="Bounds" Kind="InputPin" DefaultValue="1096, 20, 345, 359">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
