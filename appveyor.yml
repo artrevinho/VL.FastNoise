@@ -44,14 +44,3 @@ artifacts:
 #         notifications           #
 #---------------------------------#
 
-test: off
-
-notifications:
-
-  # Email
-  - provider: Email
-    to:
-      - artrevinho@gmail.com
-    subject: 'VL.FastNoise Build {{status}}'  # optional
-    message: "{{message}}, {{commitId}}, ..."     # optional
-on_build_status_changed: true 
