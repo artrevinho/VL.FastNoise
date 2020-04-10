@@ -44,7 +44,8 @@ artifacts:
 #         notifications           #
 #---------------------------------#
 notifications:
-- provider: Email to: - artrevinho@gmail.com 
+- provider: Email 
+to: - artrevinho@gmail.com 
 subject: 'VL.FastNoise Build  
 message: ", , ..." 
 on_build_status_changed: true
