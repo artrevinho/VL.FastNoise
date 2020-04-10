@@ -136,7 +136,7 @@
                       <Node Bounds="532,478,119,26" Id="FxtojslrkSoL2vIU5MFPo8">
                         <p:NodeReference LastCategoryFullName="DotnetNoise.FastNoise" LastSymbolSource="DotnetNoise.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="GradientPerturb" />
+                          <Choice Kind="OperationCallFlag" Name="GradientPerturbFractal" />
                         </p:NodeReference>
                         <Pin Id="AvpHKirsP5rMYKvJktJa78" Name="Input" Kind="StateInputPin" />
                         <Pin Id="ON6FTb1Q4kAO5IB4lHGrRd" Name="X" Kind="InputPin" />

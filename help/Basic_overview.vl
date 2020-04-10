@@ -227,7 +227,7 @@
             <Pin Id="SbT5CRvRBxcNgss1I5rNKd" Name="NoiseSpread" Kind="OutputPin" />
             <Pin Id="NuobftNWSmTOvUbjj82pE2" Name="PointCount" Kind="OutputPin" />
           </Node>
-          <Pad Id="QuKGH7MUMXDNBlMNzfZUbU" Comment="Resolution" Bounds="537,20,64,43" ShowValueBox="true" isIOBox="true" Value="64">
+          <Pad Id="QuKGH7MUMXDNBlMNzfZUbU" Comment="Resolution" Bounds="537,20,64,43" ShowValueBox="true" isIOBox="true" Value="96">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -260,7 +260,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="PEeqYiqg3IgMnEOIpxZrzs" Comment="Frequency" Bounds="212,-4,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+          <Pad Id="PEeqYiqg3IgMnEOIpxZrzs" Comment="Frequency" Bounds="212,-4,35,15" ShowValueBox="true" isIOBox="true" Value="5.34">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -286,7 +286,7 @@
           <ControlPoint Id="AZbxScZQHXIMzi4iaKx7L1" Bounds="227,90" />
           <ControlPoint Id="Q1StoqgeIHsNOYaPXZjaRU" Bounds="355,99" />
           <ControlPoint Id="Dl0aOWgBrgcLKGHksmsdjd" Bounds="190,100" />
-          <Pad Id="INdLyIxSRGWNpkwNjRehP0" Comment="GradientPerturb" Bounds="375,14,35,15" ShowValueBox="true" isIOBox="true" Value="0.05">
+          <Pad Id="INdLyIxSRGWNpkwNjRehP0" Comment="GradientPerturb" Bounds="375,14,35,15" ShowValueBox="true" isIOBox="true" Value="-0.18">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
