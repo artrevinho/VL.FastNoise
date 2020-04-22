@@ -4,10 +4,10 @@
 
 environment:
   nuget_api_key:
-    secure: oy2brqsnha4kjvpmfauab3rl4n5fctkejfluw2tz3etlji
+    secure: oy2j3an723gldzodlt5qaup2s3x2dleevoyh6c7jful5nu
 
 # version format
-version: 1.0.{build}
+version: 1.0.1{build}
 
 # clone directory
 clone_folder: C:\Users\AKa\Documents\GitHub\VL.FastNoise
