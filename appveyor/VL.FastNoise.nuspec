@@ -17,17 +17,17 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="help\Examples\FastNoise2DExample.vl" target="help\Examples\FastNoise2DExample.vl" />
-    <file src="help\Examples\FastNoiseGridExample.vl" target="help\Examples\FastNoiseGridExample.vl" />
-    <file src="lib\netstandard2.0\DotnetNoise.dll" target="lib\netstandard2.0\DotnetNoise.dll" />
-    <file src="vvvv\vl\.vl\_._" target="vvvv\vl\.vl\_._" />
-    <file src="vvvv\vl\VVVV.FastNoise.vl" target="vvvv\vl\VVVV.FastNoise.vl" />
-    <file src="vvvv\FastNoise2d.v4p" target="vvvv\FastNoise2d.v4p" />
-    <file src="vvvv\FastNoise3D.v4p" target="vvvv\FastNoise3D.v4p" />
-    <file src="vvvv\FastNoise3D~.xml" target="vvvv\FastNoise3D~.xml" />
-    <file src="vvvv\FastNoiseGrid.v4p" target="vvvv\FastNoiseGrid.v4p" />
-    <file src="LICENSE.md" target="LICENSE.md" />
-    <file src="README.md" target="README.md" />
-    <file src="VL.FastNoise.vl" target="VL.FastNoise.vl" />
+    <file src="..\help\Examples\FastNoise2DExample.vl" target="help\Examples\FastNoise2DExample.vl" />
+    <file src="..\help\Examples\FastNoiseGridExample.vl" target="help\Examples\FastNoiseGridExample.vl" />
+    <file src="..\lib\netstandard2.0\DotnetNoise.dll" target="lib\netstandard2.0\DotnetNoise.dll" />
+    <file src="..\vvvv\vl\.vl\_._" target="vvvv\vl\.vl\_._" />
+    <file src="..\vvvv\vl\VVVV.FastNoise.vl" target="vvvv\vl\VVVV.FastNoise.vl" />
+    <file src="..\vvvv\FastNoise2d.v4p" target="vvvv\FastNoise2d.v4p" />
+    <file src="..\vvvv\FastNoise3D.v4p" target="vvvv\FastNoise3D.v4p" />
+    <file src=..\"vvvv\FastNoise3D~.xml" target="vvvv\FastNoise3D~.xml" />
+    <file src="..\vvvv\FastNoiseGrid.v4p" target="vvvv\FastNoiseGrid.v4p" />
+    <file src="..\LICENSE.md" target="LICENSE.md" />
+    <file src="..\README.md" target="README.md" />
+    <file src="..\VL.FastNoise.vl" target="VL.FastNoise.vl" />
   </files>
 </package>
