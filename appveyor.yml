@@ -4,7 +4,7 @@
 
 environment:
   nuget_api_key:
-    secure: oy2j3an723gldzodlt5qaup2s3x2dleevoyh6c7jful5nu
+    secure: 0lq602g3k5pl43ncji07in4m
 
 # version format
 version: 1.0.1{build}
