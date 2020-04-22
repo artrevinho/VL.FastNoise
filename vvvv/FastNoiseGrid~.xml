@@ -13,11 +13,11 @@
    </PIN>
    <PIN pinname="NoiseSpread" visible="1">
    </PIN>
-   <PIN pinname="Frequency" slicecount="1" visible="1" values="0.15">
+   <PIN pinname="Frequency" slicecount="1" values="0.15" visible="1">
    </PIN>
-   <PIN pinname="Seed" slicecount="1" visible="1" values="18">
+   <PIN pinname="Seed" slicecount="1" values="18" visible="1">
    </PIN>
-   <PIN pinname="NoiseType" slicecount="1" visible="1" values="SimplexFractal">
+   <PIN pinname="NoiseType" slicecount="1" values="SimplexFractal" visible="1">
    </PIN>
    <PIN pinname="Image" visible="1">
    </PIN>
@@ -253,7 +253,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.4,-0.45">
+   <PIN pinname="Y Input Value" slicecount="2" values="-0.4,-0.45" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -359,7 +359,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1980" top="4725" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="22125" top="9495" width="3075" height="3420">
+   <BOUNDS type="Window" left="22125" top="8865" width="3075" height="3420">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -587,7 +587,7 @@
    </PIN>
    </NODE>
    <NODE id="4" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Window" left="15750" top="345" width="9450" height="9210">
+   <BOUNDS type="Window" left="16185" top="345" width="9015" height="8640">
    </BOUNDS>
    <BOUNDS type="Node" left="3345" top="7905" width="4800" height="270">
    </BOUNDS>
