@@ -24,7 +24,6 @@
     <file src="..\vvvv\vl\VVVV.FastNoise.vl" target="vvvv\vl\VVVV.FastNoise.vl" />
     <file src="..\vvvv\FastNoise2d.v4p" target="vvvv\FastNoise2d.v4p" />
     <file src="..\vvvv\FastNoise3D.v4p" target="vvvv\FastNoise3D.v4p" />
-    <file src=..\"vvvv\FastNoise3D~.xml" target="vvvv\FastNoise3D~.xml" />
     <file src="..\vvvv\FastNoiseGrid.v4p" target="vvvv\FastNoiseGrid.v4p" />
     <file src="..\LICENSE.md" target="LICENSE.md" />
     <file src="..\README.md" target="README.md" />
