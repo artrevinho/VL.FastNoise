@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+  <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
+    <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.FastNoise" CanvasType="FullCategory">
+      <!--
+
+    ************************ FastNoise2d ************************
+
+-->
+      <Node Name="FastNoise2d" Bounds="317,181" Id="RSMCCpTmXbJN7SidRm9XIy">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Patch" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="UJkh8WZaLv7OWjSol88MUv">
+          <Patch Id="Tj4ieN8G6DuMfA9SGoZVRo" Name="Create" />
+          <Patch Id="E9tFS7vlpd5Mjx3kkgSKf6" Name="Update">
+            <Pin Id="PcWyOzs7fsjPPrYmJj4iJu" Name="NoiseType" Kind="InputPin" />
+            <Pin Id="IE57Y0BNGrhOOqbClXXLkr" Name="FractalMethod" Kind="InputPin" />
+            <Pin Id="TWtEsFN2qZWPVbhyrR46Kd" Name="Interpolation" Kind="InputPin" />
+            <Pin Id="NEi4z0LGTuaP29xUdeXPIi" Name="Frequency" Kind="InputPin" />
+            <Pin Id="LwYu7V56vsDOBX6Ut1ctsQ" Name="Octaves" Kind="InputPin" />
+            <Pin Id="R7LW0lcasmUNd6CpxUzAbU" Name="Lacunarity" Kind="InputPin" />
+            <Pin Id="SBILa5aTFNgPHsqt3CDLp3" Name="Seed" Kind="InputPin" />
+            <Pin Id="G2ksQMNLSUwQRitj48gr6I" Name="Perturb" Kind="InputPin" />
+            <Pin Id="MzvKgwgTmytNdCm6kB9G47" Name="Gain" Kind="InputPin" />
+            <Pin Id="CnSRPbZicrJNLvowXQ2rRQ" Name="Offset" Kind="InputPin" />
+            <Pin Id="K8yRp0NSo2UN2pBa1cND7m" Name="BlackLevel" Kind="InputPin" />
+            <Pin Id="HZh271zhbS8QYXHeDHMBL8" Name="WhiteLevel" Kind="InputPin" />
+            <Pin Id="MiP1kLkZkRCMpWnzX6VS1E" Name="Points" Kind="InputPin" />
+            <Pin Id="UHq15536uNxL2uuXySL4j6" Name="NoiseSpread" Kind="OutputPin" />
+            <Pin Id="EuCgG1tgEjJP2qr6XE3PU4" Name="PointCount" Kind="OutputPin" />
+          </Patch>
+          <Canvas Id="NZP0LM0BttwMnH8Im5ob9a" CanvasType="Group">
+            <Node Bounds="226,409,508,19" AutoConnect="true" Id="VD8ly2zRwjmNxYqqFaZRua">
+              <p:NodeReference LastCategoryFullName="VL.FastNoise" LastSymbolSource="VL.FastNoise.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="VL" />
+                <CategoryReference Kind="Category" Name="FastNoise" />
+                <Choice Kind="ProcessAppFlag" Name="FastNoise2D" />
+              </p:NodeReference>
+              <Pin Id="KRkO4kys4uIQV41Zyz9rer" Name="NoiseType" Kind="InputPin" />
+              <Pin Id="P3faQqocmaCLp4WhpFGvcv" Name="FractalMethod" Kind="InputPin" />
+              <Pin Id="K0epsyxpT5oNpm5TzUEB5b" Name="Interpolation" Kind="InputPin" />
+              <Pin Id="SkOd9gjbKMmOqUPnC61qMN" Name="Frequency" Kind="InputPin" />
+              <Pin Id="OTPxiU2vL8yPRr2JXtAPn6" Name="Octaves" Kind="InputPin" />
+              <Pin Id="O097XBYaFqzNUoUSr9EkDn" Name="Lacunarity" Kind="InputPin" />
+              <Pin Id="JsLNOnOn6KtLLl8cXiLqKE" Name="Seed" Kind="InputPin" />
+              <Pin Id="RA4n2FGrnFLLEx8jljfdAb" Name="Perturb" Kind="InputPin" />
+              <Pin Id="Aj0aosL1BHGLQDdIWSUynO" Name="Gain" Kind="InputPin" />
+              <Pin Id="FcjRbyIXchKL51kqq493Rg" Name="Offset" Kind="InputPin" />
+              <Pin Id="Cb9LrdVVVPINQnhEHUmRle" Name="BlackLevel" Kind="InputPin" />
+              <Pin Id="Mfa6gatmOLFL8MB486AP2p" Name="WhiteLevel" Kind="InputPin" />
+              <Pin Id="RvwQS2WTwUoPT8ThgPIyIM" Name="Points" Kind="InputPin" />
+              <Pin Id="BBuSxLXmXoWQcYtm9sX7bx" Name="NoiseSpread" Kind="OutputPin" />
+              <Pin Id="UVme1esIya1OKK9Jgs5UO0" Name="PointCount" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="KKoqNWGI1LoMT9vAnhO3Kc">
+            <Fragment Id="LMjv55kUkWcNtcU0qxmJrv" Patch="Tj4ieN8G6DuMfA9SGoZVRo" Enabled="true" />
+            <Fragment Id="RsZTitBJUcBMWvOqrmbK01" Patch="E9tFS7vlpd5Mjx3kkgSKf6" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ FastNoiseGrid ************************
+
+-->
+      <Node Name="FastNoiseGrid" Bounds="317,146" Id="NROwoJ2CpnJNQzuj1LjQTk">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="LT3hyuSeUWwP8SknAtwohW">
+          <Canvas Id="CFMtuL9HWwaMzm43dqNPuv" CanvasType="Group">
+            <Node Bounds="275,187,245,19" AutoConnect="true" Id="OsKj26Ivpw1OquAbXY8gOY">
+              <p:NodeReference LastCategoryFullName="VL.FastNoise" LastSymbolSource="VL.FastNoise.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="VL" />
+                <CategoryReference Kind="Category" Name="FastNoise" />
+                <Choice Kind="ProcessAppFlag" Name="FastNoiseGrid" />
+              </p:NodeReference>
+              <Pin Id="UigGzV8MQKXPqaQwIrm4uU" Name="NoiseType" Kind="InputPin" />
+              <Pin Id="T7G5LRY1wW0MptFo16gcuX" Name="FractalMethod" Kind="InputPin" />
+              <Pin Id="BlCV2R1kBAzMjSfUAZZI98" Name="Interpolation" Kind="InputPin" />
+              <Pin Id="NJE0VIlYglBQEazPUAE0Hc" Name="Frequency" Kind="InputPin" />
+              <Pin Id="Dh2vp7MzGsCOm07pJcTHQu" Name="Octaves" Kind="InputPin" />
+              <Pin Id="HKaavyNDGMUPV3wpw2rVCl" Name="Lacunarity" Kind="InputPin" />
+              <Pin Id="TdkyNyBW7QgPD6tm0jqDzm" Name="Seed" Kind="InputPin" />
+              <Pin Id="ScZBO6UOTB1MIk61rkHnDe" Name="GradientPerturb" Kind="InputPin" />
+              <Pin Id="AnHjp6Amr69NwKQ2wMkojZ" Name="Gain" Kind="InputPin" />
+              <Pin Id="GhE1mMjfKFxLiFI9RRPUnF" Name="Offset" Kind="InputPin" />
+              <Pin Id="OhRrm3uzeSIL90rxzVDCpf" Name="BlackLevel" Kind="InputPin" />
+              <Pin Id="Et7GKrUBsFIMcgWkKPsvDa" Name="WhiteLevel" Kind="InputPin" />
+              <Pin Id="HzpiGrqVoKdNiIdJdeUPmQ" Name="Resolution" Kind="InputPin" />
+              <Pin Id="Oxg6TsCTPFIPB53hJ6Fh64" Name="Image" Kind="OutputPin" />
+              <Pin Id="KQYI0BMby8xPfu0R84lLU0" Name="PointGenerator" Kind="OutputPin" />
+              <Pin Id="LuDY1he6C11QIy5C0cWaly" Name="NoiseSpread" Kind="OutputPin" />
+              <Pin Id="J1VUFpb3D2WQRbqwf28ddP" Name="PointCount" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="F6NIJEUkw4TNZSVcJwr2Gd" Name="Create" />
+          <Patch Id="NYVrtzQRHyxM86xfvZS4zq" Name="Update">
+            <Pin Id="RLQQsc9OtTeN2588N2cuHH" Name="NoiseType" Kind="InputPin" />
+            <Pin Id="CGRG2Lo5iQENW66rnbe1SM" Name="FractalMethod" Kind="InputPin" />
+            <Pin Id="FRj6uhbpDm7OsiU6A0SBkR" Name="Interpolation" Kind="InputPin" />
+            <Pin Id="B5D40BRKstYP0TggnWPDoZ" Name="Frequency" Kind="InputPin" />
+            <Pin Id="UeHFLn0gdZlMWt2fuawQQA" Name="Octaves" Kind="InputPin" />
+            <Pin Id="BPQNeqJpTxRLRma6xfZRh9" Name="Lacunarity" Kind="InputPin" />
+            <Pin Id="KYAUDCL7JcBOo8yTSySwRk" Name="Seed" Kind="InputPin" />
+            <Pin Id="Kx5CZmphC6qLDmnHznpKls" Name="GradientPerturb" Kind="InputPin" />
+            <Pin Id="UV7cbkRxGiuQdHNwJhztfb" Name="Gain" Kind="InputPin" />
+            <Pin Id="EnWlLoJzY4YL14PU8Z2fs1" Name="Offset" Kind="InputPin" />
+            <Pin Id="KoPPwsv5yiXMYzbiamE4O4" Name="BlackLevel" Kind="InputPin" />
+            <Pin Id="QNDgUbjSnzVL5KK8nNixVY" Name="WhiteLevel" Kind="InputPin" />
+            <Pin Id="HFE6HNFHcO1QAGyOIW7LWy" Name="Resolution" Kind="InputPin" />
+            <Pin Id="A0VYM2Ds2q2P7r2jjnOTAx" Name="Image" Kind="OutputPin" />
+            <Pin Id="VesPr0I70MvOHD6xOUtkIW" Name="PointGenerator" Kind="OutputPin" />
+            <Pin Id="NIA8YC99sQNLGTXwWvy4Gy" Name="NoiseSpread" Kind="OutputPin" />
+            <Pin Id="PegpGvYmjyoOnhyOuwzemR" Name="PointCount" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="IBrCSWm9LDoPobWnk4ZMoZ">
+            <Fragment Id="OyR4wiovpgjLZtp2nqhEu5" Patch="F6NIJEUkw4TNZSVcJwr2Gd" Enabled="true" />
+            <Fragment Id="QHBjwNXEiz5OhZBJlIP4Bc" Patch="NYVrtzQRHyxM86xfvZS4zq" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ FastNoise3D ************************
+
+-->
+      <Node Name="FastNoise3D" Bounds="317,219" Id="Hx0y3jrL5bpPL6VG6a56KI">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="SsQ829bjHHGOuSASmpX59K">
+          <Canvas Id="NZBJbTuymnUMPOAA6QtWJe" CanvasType="Group">
+            <Node Bounds="257,154" AutoConnect="true" Id="GZ9cs7xbMFGL5A4udQVCK0">
+              <p:NodeReference LastCategoryFullName="VL.FastNoise" LastSymbolSource="VL.FastNoise.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="VL" />
+                <CategoryReference Kind="Category" Name="FastNoise" />
+                <Choice Kind="ProcessAppFlag" Name="FastNoise3D" />
+              </p:NodeReference>
+              <Pin Id="P9WaUd3dNVcPepur9U7crf" Name="NoiseType" Kind="InputPin" />
+              <Pin Id="J80tGQ1rZMGNvvMG35h3le" Name="FractalMethod" Kind="InputPin" />
+              <Pin Id="IqlxVaGmhEWNy7YJr6isUx" Name="Interpolation" Kind="InputPin" />
+              <Pin Id="EmiY8S9vNEILnJgEQMYu5X" Name="Frequency" Kind="InputPin" />
+              <Pin Id="Kw7BWbUwfvILBvqFZUWR0W" Name="Octaves" Kind="InputPin" />
+              <Pin Id="PgMcXYs6hU2N9XrvToJP0s" Name="Lacunarity" Kind="InputPin" />
+              <Pin Id="EGZKbB8wac7Mv9IOYwVRj6" Name="Seed" Kind="InputPin" />
+              <Pin Id="ILtVgtd5Z5uNUXHrxgK5yK" Name="Perturb" Kind="InputPin" />
+              <Pin Id="TLAgflHoOLXNvZSx8ymTev" Name="Gain" Kind="InputPin" />
+              <Pin Id="RzywpXtp2veNzmMqboQDgM" Name="Offset" Kind="InputPin" />
+              <Pin Id="PxXWpNsNpsBLVx1bgRya7P" Name="BlackLevel" Kind="InputPin" />
+              <Pin Id="AyiPqiU56uGO5jH1WXEzkR" Name="WhiteLevel" Kind="InputPin" />
+              <Pin Id="Ei7VpowzfTQMrZQS65UVfj" Name="Points" Kind="InputPin" />
+              <Pin Id="CTb06HVc9ypOsKE0UvsXkI" Name="NoiseSpread" Kind="OutputPin" />
+              <Pin Id="Mb3VG2lff6rPeJNrbWCJ4e" Name="PointCount" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="BeOmKacZvaFN34C322CGDZ" Name="Create" />
+          <Patch Id="MIagADIFmoNPh7Jg3hUauX" Name="Update">
+            <Pin Id="JFTPpQb1XyPLgGk2FbiVTI" Name="NoiseType" Kind="InputPin" />
+            <Pin Id="OqkE3OXhMj0MR8BQ4LEeK7" Name="FractalMethod" Kind="InputPin" />
+            <Pin Id="PohBuUJByB9PvyagDq2uJU" Name="Interpolation" Kind="InputPin" />
+            <Pin Id="J8gBhHX72cxPn73apj11Xv" Name="Frequency" Kind="InputPin" />
+            <Pin Id="FLAcDd9IiAXNbqF8a6TNg5" Name="Octaves" Kind="InputPin" />
+            <Pin Id="CeZ1s5ForAlOJD4wjkpKk1" Name="Lacunarity" Kind="InputPin" />
+            <Pin Id="F2KHNGAedwfP49ugI9IbKW" Name="Seed" Kind="InputPin" />
+            <Pin Id="UqAqvj7NaAwN1cFrmFXCck" Name="Perturb" Kind="InputPin" />
+            <Pin Id="H5txw7vJYhfPYBcYpEjVxg" Name="Gain" Kind="InputPin" />
+            <Pin Id="KLIyKIONhwoMs1VIPc9c5X" Name="Offset" Kind="InputPin" />
+            <Pin Id="Im4KwbCkgltLW0unz5wjVL" Name="BlackLevel" Kind="InputPin" />
+            <Pin Id="DifKDxRBbVbPLxlQhVR0wx" Name="WhiteLevel" Kind="InputPin" />
+            <Pin Id="CuDREbcnwHuONIqLG598nW" Name="Points" Kind="InputPin" />
+            <Pin Id="RTfX8eYAiB7PdrDd0ekIpH" Name="NoiseSpread" Kind="OutputPin" />
+            <Pin Id="Vuluq9gLiA0LRfaxG9eNdI" Name="PointCount" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="N4FHl2sckLyP1n1mjjk8xU">
+            <Fragment Id="ODYMShD1rTTLQVYvk4t60p" Patch="BeOmKacZvaFN34C322CGDZ" Enabled="true" />
+            <Fragment Id="MLujVA3sSdxMaYcn4nznD8" Patch="MIagADIFmoNPh7Jg3hUauX" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Pu817ClDAhPOqvF24GR8Eh">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="QWETX3sX4xiOKVLwgnkLEg">
+        <Canvas Id="B92OWsimjwlMUoBUpcGzpn" CanvasType="Group" />
+        <Patch Id="CeSpNUykYr4MEjdBKV8mIq" Name="Create" />
+        <Patch Id="AFWHnnKwDoSMYgwtrogLS8" Name="Update" />
+        <ProcessDefinition Id="PwhdyMmE08qOgbTPzwKgs4">
+          <Fragment Id="TXuCSFnlhbNQS6u09EEnvH" Patch="CeSpNUykYr4MEjdBKV8mIq" Enabled="true" />
+          <Fragment Id="DDptVlu9ffqNQJnDz5Q28U" Patch="AFWHnnKwDoSMYgwtrogLS8" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="KTvR2zuTpTaO5AiBjcIXpQ" Location="../../VL.FastNoise.vl" />
+</Document>

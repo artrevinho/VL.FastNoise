@@ -1,0 +1,1079 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta39.dtd" >
+   <PATCH nodename="C:\Users\AKa\Documents\GitHub\VL.FastNoise\vvvv\FastNoiseGrid.v4p" systemname="FastNoiseGrid" filename="C:\Users\AKa\Documents\GitHub\VL.FastNoise\vvvv\FastNoiseGrid.v4p" scrollx="0" scrolly="0" bgcolor="5789784">
+   <BOUNDS type="Window" left="0" top="345" width="15015" height="9300">
+   </BOUNDS>
+   <NODE systemname="FastNoiseGrid (FastNoise)" filename="vl\VVVV.FastNoise.vl" nodename="FastNoiseGrid (FastNoise)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1530" top="3360" width="9345" height="270">
+   </BOUNDS>
+   <PIN pinname="PointGenerator Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="PointCount" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="NoiseSpread Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="NoiseSpread" visible="1">
+   </PIN>
+   <PIN pinname="Frequency" slicecount="1" values="0.15" visible="1">
+   </PIN>
+   <PIN pinname="Seed" slicecount="1" values="18" visible="1">
+   </PIN>
+   <PIN pinname="NoiseType" slicecount="1" values="SimplexFractal" visible="1">
+   </PIN>
+   <PIN pinname="Image" visible="1">
+   </PIN>
+   <PIN pinname="FractalMethod" slicecount="1" visible="1" values="Billow">
+   </PIN>
+   <PIN pinname="Interpolation" visible="1">
+   </PIN>
+   <PIN pinname="Octaves" visible="1">
+   </PIN>
+   <PIN pinname="Lacunarity" visible="1">
+   </PIN>
+   <PIN pinname="GradientPerturb" visible="1">
+   </PIN>
+   <PIN pinname="Gain" visible="1">
+   </PIN>
+   <PIN pinname="OffsetXY" visible="1">
+   </PIN>
+   <PIN pinname="BlackLevel" visible="1">
+   </PIN>
+   <PIN pinname="WhiteLevel" visible="1">
+   </PIN>
+   <PIN pinname="Resolution" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="addonpack" Version="39.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="870" top="900" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="870" top="900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="CubicFractal">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Value">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="NoiseType">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output Enum" dstnodeid="2" dstpinname="NoiseType" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="790" y="2218">
+   </LINKPOINT>
+   <LINKPOINT x="1670" y="2313">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="2520" top="900" width="1245" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2520" top="900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="RigidMulti">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Fbm">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FractalMethod">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="2" dstpinname="FractalMethod" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="2410" y="2218">
+   </LINKPOINT>
+   <LINKPOINT x="2465" y="2313">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="3960" top="900" width="900" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3960" top="900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Hermite">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Linear">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Interpolation">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output Enum" dstnodeid="2" dstpinname="Interpolation" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="3835" y="2203">
+   </LINKPOINT>
+   <LINKPOINT x="3245" y="2298">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="900" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="900" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.41">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Frequency">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Frequency" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="960" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="3855" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="1875" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1875" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Octaves">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Octaves" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="1935" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="4620" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
+   <BOUNDS type="Box" left="2880" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2880" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.49">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Lacunarity">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Lacunarity" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2940" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="5400" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <BOUNDS type="Box" left="3915" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3915" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="18">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Seed">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Seed" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="3975" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="6165" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
+   <BOUNDS type="Box" left="4920" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4920" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.43">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GradientPerturb">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="2" dstpinname="GradientPerturb" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4980" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="6945" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28">
+   <BOUNDS type="Box" left="6315" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6315" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.24">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Gain">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Gain" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6375" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="7710" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
+   <BOUNDS type="Node" left="7260" top="2400" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7260" top="2400" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="-0.4,-0.45" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="OffsetXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="2" dstpinname="OffsetXY" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7320" y="3155">
+   </LINKPOINT>
+   <LINKPOINT x="8475" y="3055">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
+   <BOUNDS type="Box" left="8250" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8250" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.34">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BlackLevel">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="2" dstpinname="BlackLevel" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8410" y="3035">
+   </LINKPOINT>
+   <LINKPOINT x="9170" y="2935">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Box" left="9210" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9210" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.79">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="WhiteLevel">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="2" dstpinname="WhiteLevel" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="9440" y="3043">
+   </LINKPOINT>
+   <LINKPOINT x="9850" y="2943">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Box" left="10350" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10350" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="64">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Resolution">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Resolution" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="10615" y="3050">
+   </LINKPOINT>
+   <LINKPOINT x="10595" y="2950">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35">
+   <BOUNDS type="Box" left="10005" top="4200" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10005" top="4200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PointCount">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="PointCount" dstnodeid="35" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="10815" y="3900">
+   </LINKPOINT>
+   <LINKPOINT x="10065" y="3900">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="17" systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Texture In" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <BOUNDS type="Node" left="1980" top="4725" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="4725" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="22125" top="8865" width="3075" height="3420">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Index" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Alpha" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Background Color" pintype="Input" visible="1" slicecount="1" values="|0.50000,0.50000,0.50000,1.00000|">
+   </PIN>
+   <PIN pinname="Sampler State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Control" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="18" systemname="UploadImage (DX11.Texture)" filename="%VVVV%\lib\nugets\VL.VVVV.DirectX11.2019.1.0-0959-g3a31ab0c51\vvvv\nodes\plugins\VL.VVVV.DirectX11.dll" nodename="UploadImage (DX11.Texture)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Do Upload" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <BOUNDS type="Node" left="1965" top="4230" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1965" top="4230" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Data" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Status" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Texture Out" dstnodeid="17" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Image" dstnodeid="18" dstpinname="Data">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="40">
+   <BOUNDS type="Node" left="1095" top="4215" width="795" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1095" top="4215" width="795" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|R8 image|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="42">
+   <BOUNDS type="Node" left="870" top="90" width="930" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="870" top="90" width="8745" height="525">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|NOISE TYPE|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="19">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="41">
+   <BOUNDS type="Node" left="870" top="1365" width="930" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="870" top="1365" width="10395" height="570">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|NOISE PARAMETERS|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="19">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="13515" top="1395" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Integrate (Differential)" nodename="Integrate (Differential)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="13455" top="570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="Position In" slicecount="1" values="-0.55">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Position Out" dstnodeid="45" dstpinname="Y">
+   </LINK>
+   <NODE id="9" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\nugets\VL.EditingFramework.2019.1.0-0959-g3a31ab0c51\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Initial Longitude" slicecount="1" pintype="Input" visible="1" values="-0.35">
+   </PIN>
+   <PIN pinname="Initial Distance" slicecount="1" pintype="Input" visible="1" values="2.41">
+   </PIN>
+   <PIN pinname="Initial Latitude" slicecount="1" pintype="Input" visible="1" values="0.09">
+   </PIN>
+   <PIN pinname="Initial InterestXYZ" slicecount="3" pintype="Input" visible="1" values="0,0,0">
+   </PIN>
+   <BOUNDS type="Node" left="7815" top="6885" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="555" width="4800" height="4800">
+   </BOUNDS>
+   <PIN pinname="View Projection" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="1920" top="6990" width="18120" height="9600">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Initial FOV" pintype="Input" visible="1" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Near Plane" pintype="Input" visible="1" slicecount="1" values="0.1">
+   </PIN>
+   <PIN pinname="Far Plane" pintype="Input" visible="1" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Filter Time" pintype="Input" visible="1" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Camera Controls" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Camera State" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="View" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Projection" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Inverse View" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="InterestXYZ" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="FOV" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Distance" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Renderer Hovered" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Idle" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="43" systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4290" top="5025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Destination Maximum" slicecount="1" pintype="Input" visible="1" values="7">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" pintype="Input" visible="1" values="0.001">
+   </PIN>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Source Minimum" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Source Maximum" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Mapping" pintype="Input" visible="1" slicecount="1" values="Float">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="11" nodename="Vector (2D Split)" systemname="Vector (2d Split)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3450" top="5025" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="X" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XY" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="4" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Window" left="16185" top="345" width="9015" height="8640">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3345" top="7905" width="4800" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3345" top="7905" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" pintype="Configuration" values="Standard">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" pintype="Input" visible="1" values="2">
+   </PIN>
+   <PIN pinname="View" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layers" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="VSync" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Buffer Count" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Do Not Wait" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Cursor" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Disable Shortcuts" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Refresh Rate" pintype="Input" visible="-1" slicecount="1" values="60">
+   </PIN>
+   <PIN pinname="Flip Sequential" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Clear" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Clear Depth" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Background Color" pintype="Input" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Fullscreen" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enable Depth Buffer" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Clear Depth Value" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Projection" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Aspect Ratio" pintype="Input" visible="0" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Crop" pintype="Input" visible="-1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="ViewPort" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Mouse State" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Keyboard State" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Touch Supported" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Touch Data" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Present Time" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Query" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Control" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Node Ref" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="Box (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Box (DX11.Geometry)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2895" top="6405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2895" top="6405" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="SizeXYZ" visible="1" slicecount="1" pintype="Input" values="0.0458715596330275">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Keep In Memory" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="37" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="6300" top="5955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" pintype="Input" visible="1" values="-1.01">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="8" systemname="PhongDirectional (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongDirectional.fx" nodename="PhongDirectional (DX11.Effect)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Light DirectionXYZ" visible="1" pintype="Input" slicecount="3" values="0.15852090716362,-0.968583166599274,-0.191618844866753">
+   </PIN>
+   <BOUNDS type="Node" left="3480" top="7245" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="810" top="390" width="2400" height="1800">
+   </BOUNDS>
+   <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Transform In" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Geometry" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Layer" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Path" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Do Save" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Layer In" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Render State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Apply Only" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Alpha" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Ambient Color" pintype="Input" visible="1" slicecount="1" values="|0.15000,0.15000,0.15000,1.00000|">
+   </PIN>
+   <PIN pinname="Diffuse Color" pintype="Input" visible="1" slicecount="1" values="|0.85000,0.85000,0.85000,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" pintype="Input" visible="1" slicecount="1" values="|0.35000,0.35000,0.35000,1.00000|">
+   </PIN>
+   <PIN pinname="Power" pintype="Input" visible="1" slicecount="1" values="25">
+   </PIN>
+   <PIN pinname="Texture" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Sampler State" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" pintype="Input" visible="1" slicecount="1" values="GouraudDirectional">
+   </PIN>
+   <PIN pinname="Iteration Count" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Defines" pintype="Input" visible="-1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Layout Valid" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Layout Message" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Technique Valid" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Custom Semantics" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Shader Signature" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Current Effect" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Compiled" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Shader Path" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Query" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="10" systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="ScaleY" visible="1" slicecount="4096" pintype="Input" values="4.74512179470062,4.92965670204163,5.22187300300598,5.40500600910187,4.90622134780884,4.37198682403564,3.86251731491089,3.40812821960449,3.05760641670227,2.79671688652039,2.61474545574188,2.50008495426178,2.42900552129746,2.36341567611694,2.27811320400238,2.22020913934708,2.33748193359375,2.73873861408234,3.45546134090424,4.47841401672363,5.40490336990356,4.41986890411377,3.86667223548889,3.85331340408325,4.29851325130463,4.99932761764526,5.30103393173218,4.7260083732605,4.47082801437378,4.56731136417389,4.9179930267334,5.367208319664,5.26046140766144,4.91700776195526,4.65497239208221,4.49510558223724,4.45025082206726,4.52121670818329,4.69333477592468,4.91436918354034,5.0898907957077,5.08913870429993,4.85298951244354,4.39114387607574,3.78083832836151,3.14675517654419,2.63064863061905,2.35922231054306,2.41747738695145,2.8324571428299,3.56964941596985,4.54100747680664,5.40835733985901,4.32841451740265,3.33644028282166,2.48660864210129,1.82061936235428,1.36524518108368,1.14856551861763,1.20684643363953,1.55151315307617,2.1570803103447,2.9581815776825,3.86029000854492,3.240459400177,3.45181961631775,3.78122706985474,4.23729916191101,4.79714270210266,5.40981932258606,5.02501566982269,4.44671459770203,3.93654664134979,3.47201521968842,3.0366236743927,2.6241805729866,2.23619796609879,1.88286252593994,1.6066788611412,1.52260591363907,1.77709122276306,2.413410800457,3.43191118812561,4.70091255283356,5.11256797885895,4.2728137550354,4.0195999917984,4.33516116714478,5.01577313518524,5.23631508922577,4.59006722545624,4.30081709003449,4.44323487854004,4.91545708751678,5.5056964931488,4.9320356426239,4.51391108608246,4.21207709884644,4.02686055278778,3.96439512348175,4.01948233222961,4.17425187206268,4.37646432495117,4.5471229133606,4.58124383068085,4.43356927013397,4.10997040843964,3.66679294681549,3.19732053852081,2.81075413799286,2.60913141345978,2.66709788417816,3.01821477985382,3.65001519298553,4.50790436840057,5.509453373909,4.47667487239838,3.45657606697083,2.51577927446365,1.6982008395195,1.04739930009842,0.601975890755653,0.409195336461067,0.519845399022102,0.955365377426147,1.69330670213699,2.66241349554062,3.7530942735672,2.00951017713547,2.2029285607338,2.523682492733,2.98252441263199,3.56141002750397,4.21498175239563,4.87496395683289,5.49125083065033,4.82818444347382,4.14586337184906,3.43555648899078,2.71491147851944,2.03087933635712,1.45632799243927,1.10500483489037,1.10989718413353,1.53234716033936,2.39201803779602,3.63263197517395,5.00515552139282,4.90118988132477,4.33514686203003,4.43123503303528,5.0295321521759,5.2032119808197,4.48373730754852,4.12847228622437,4.28346677398682,4.86238439655304,5.39248724555969,4.63663859939575,4.06183512783051,3.72721596336365,3.54460867023468,3.49384124851227,3.56166358566284,3.72459312057495,3.9249795255661,4.09279819107056,4.14882381534576,4.06268842792511,3.84288354492188,3.53461654758453,3.20950849628449,2.9506057677269,2.83621509647369,2.92559255933762,3.24894412136078,3.79892643070221,4.5549399433136,5.44824607944489,4.61946888542175,3.6391182718277,2.68704600906372,1.79665632820129,1.00827561593056,0.368403720617294,0.006,0.006,0.006,0.359421024978161,1.18786712265015,2.28417875146866,3.5300660905838,1.22237865900993,1.38211895799637,1.67641218280792,2.11509229516983,2.68600066280365,3.35170205211639,4.04778714752197,4.77409108257294,5.47197361564636,4.59951789951324,3.65526409721375,2.69430263614655,1.81899769878387,1.18681632256508,0.922345149278641,1.09730457043648,1.66253944015503,2.65768654918671,3.97967978096008,5.28906770324707,4.85465820407867,4.6398347196579,5.06828685379028,5.18804247951508,4.40299709415436,3.94169183349609,4.0496943769455,4.6936802444458,5.40858693695068,4.47195025062561,3.73249741172791,3.27679403400421,3.09367282962799,3.06980724906921,3.16674085235596,3.35381777858734,3.56252225017548,3.73310502147675,3.807882147789,3.76943679428101,3.63074405765533,3.4311161813736,3.22735663032532,3.08256383514404,3.05483873462677,3.18771966075897,3.49155886745453,4.00114496326447,4.66270466423035,5.44720037555695,4.72487397766113,3.8383917388916,2.93440111255646,2.05445774173737,1.21664910292625,0.459170925378799,0.006,0.006,0.006,0.006,0.006,0.692197489500046,1.86539866304398,3.22060068225861,0.928561168670654,1.04474659538269,1.31871484494209,1.74334760284424,2.3058651266098,2.97581924772263,3.69916077232361,4.46353276348114,5.34532363986969,4.68628092384338,3.60302324867249,2.53802712535858,1.68658133125305,1.20633198595047,1.19075684523582,1.52417625761032,2.13711966848373,3.13098199939728,4.36676653003693,5.45932968235016,5.02011974430084,5.17036171531677,5.18194850063324,4.35503919696808,3.75796623802185,3.73971076583862,4.37484713172913,5.4270559129715,4.49086125469208,3.58249683952332,3.00363661623001,2.74691041088104,2.73659463500977,2.86265756464005,3.06610544300079,3.29488714313507,3.47294362163544,3.56716855144501,3.56984897232056,3.49780376529694,3.38663979148865,3.28257222747803,3.23365266895294,3.28182085132599,3.43711681938171,3.76855810260773,4.22919495677948,4.81201716041565,5.49706621742249,4.78239555931091,3.99637563800812,3.19117792224884,2.38373859500885,1.58049674606323,0.802474546194077,0.0847720028311014,0.006,0.006,0.006,0.006,0.006,0.262461046636105,1.45693050599098,2.86604662513733,1.11104874587059,1.15709243988991,1.40453516221046,1.82815368747711,2.40006841993332,3.08640547370911,3.84114225482941,4.64305945014954,5.44550664997101,4.38168426132202,3.28309078788757,2.34019239521027,1.75155158615112,1.6511216340065,1.92402084445953,2.33732636547089,2.86016257381439,3.69154723262787,4.68595119094849,5.45262594795227,5.39799364185333,5.1709249792099,4.35257835960388,3.6206754026413,3.39420612430573,3.91135283088684,5.01240714168549,4.734959441185,3.63525517559052,2.91775389289856,2.58931686258316,2.5505299744606,2.68509872531891,2.90265949344635,3.13505180454254,3.321385222435,3.43510444736481,3.47439952468872,3.45811207866669,3.41862567043304,3.39401836967468,3.42087121582031,3.52865775203705,3.72804315662384,4.04828353500366,4.46954305744171,4.98617299175262,5.45177157497406,4.79671891307831,4.11374624347687,3.43757708644867,2.71162469959259,1.9951916513443,1.27382423257828,0.565289485216141,0.006,0.006,0.006,0.006,0.006,0.006,0.006,1.11244009709358,2.51548584079742,1.67889769649506,1.64269073581696,1.85033662891388,2.26327701187134,2.84707249975204,3.55990548706055,4.35140283679962,5.19636483764648,4.84557159519196,3.78468747711182,2.84328486299515,2.23451210832596,2.13835384225845,2.50736679410934,3.03573353862762,3.40133078670502,3.68382998085022,4.2081199464798,4.85221489048004,5.24890215969086,5.09308798885345,4.408503490448,3.58275755023956,3.09970672702789,3.36389287090302,4.38967509841919,5.23732932186127,3.92397316074371,3.02065058326721,2.59366651153564,2.53203900432587,2.66597135639191,2.88051320886612,3.10432084178925,3.29327352619171,3.4223693189621,3.49162002182007,3.51959832286835,3.53515191650391,3.56965299224854,3.65087028121948,3.78804131126404,4.01784868812561,4.32535966014862,4.71146615123749,5.17054589366913,5.34439631080627,4.7801425037384,4.19406946277618,3.61214168643951,3.00161136960983,2.39080085134506,1.76549817895889,1.1304949400425,0.500844943284988,0.006,0.006,0.006,0.006,0.006,0.006,0.006,0.882009285449982,2.22093190526962,2.47276343679428,2.37574900960922,2.54485692358017,2.94324685907364,3.52797432518005,4.25457366085053,5.06981571292877,5.08981569385529,4.07400162792206,3.10202236747742,2.44205893850327,2.33249302482605,2.82987471199036,3.67415328598022,4.36085672950745,4.53178496932983,4.44649715995789,4.56786783313751,4.82079728221893,4.8746900138855,4.4651281414032,3.68423088169098,2.97458257055283,2.86686916923523,3.63348456001282,5.03843887424469,4.4883431968689,3.34314008331299,2.75104816532135,2.63378824567795,2.78492875671387,3.02551718330383,3.22930498695374,3.40665443515778,3.54026349163055,3.62777181243897,3.68501980876923,3.73670168495178,3.7899982509613,3.90838630771637,4.07633014297485,4.30334659194946,4.59329267120361,4.94472857093811,5.35156102752686,5.23157687759399,4.74775143241882,4.24883623695374,3.75411172485352,3.24628086662292,2.7376575050354,2.21636624908447,1.68022664165497,1.13379718637466,0.589899691700935,0.0703961951136589,0.006,0.006,0.006,0.006,0.006,0.006,0.806034552812576,2.03208025074005,3.31652720546722,3.20688422298431,3.35782499885559,3.74686833000183,4.33054347610474,5.05959935760498,5.15620143985748,4.28017981624603,3.29811974143982,2.48475219583511,2.19775708293915,2.65419377660751,3.75175781822205,4.99348111724854,5.33793075656891,5.49707158184052,5.00798829174042,4.69872530078888,4.59453685855865,4.3962747631073,3.86406548595428,3.11087794876099,2.62199975824356,2.93195422267914,4.10494466400146,5.33845861530304,3.93339450931549,3.09291930770874,2.84552808380127,2.98517497158051,3.26701648807526,3.52001960849762,3.67710908031464,3.79653354263306,3.88437302684784,3.95124836540222,4.00224502658844,4.0859685716629,4.2027658996582,4.36453922367096,4.57766862487793,4.84331353282929,5.15823169326782,5.51576085662842,5.12856109714508,4.71535463905334,4.29261918640137,3.87462802505493,3.47720797634125,3.03306634998322,2.60525043582916,2.16572149372101,1.71392198181152,1.25482632493973,0.799713748455048,0.366610596835613,0.006,0.006,0.006,0.006,0.006,0.0805923276990652,0.910017806053162,1.9908341345787,4.0929380235672,4.01185091114044,4.17062230682373,4.5609910068512,5.14481206512451,5.16617425060272,4.36123796081543,3.52447851276398,2.64765830612183,2.06173260784149,2.1823197183609,3.18741281604767,4.79950519180298,4.74348815059662,4.1829061088562,4.75517507171631,5.27655072784424,4.58107288455963,4.22055037593842,3.92267640209198,3.41998215293884,2.78711153841019,2.57837792015076,3.24633057689667,4.65104241943359,4.81464536762238,3.6726955947876,3.19694967842102,3.25314124202728,3.55420275306702,3.87498100376129,4.09558196640015,4.19192441082001,4.24678953266144,4.2933330116272,4.34050555801392,4.40555377578735,4.50332887744904,4.64370246505737,4.8309739408493,5.0644591627121,5.33961411094666,5.3859741268158,5.05051489448547,4.6988254365921,4.34099121665955,3.98767562484741,3.65041359043121,3.28753610229492,2.93472583866119,2.57524867630005,2.20695938444138,1.8314526257515,1.45470615005493,1.08731343126297,0.744500967621803,0.446342500805855,0.211120258033276,0.0289167714715004,0.006,0.084146567568183,0.501196759700775,1.20109443640709,2.12606306648254,4.78519578552246,4.74633629894257,4.91978045082092,5.30989952659607,5.14907677745819,4.44009669399262,3.67534096813202,2.91952200508118,2.21068086004257,1.90999521589279,2.43177677965164,3.89829834079742,5.16877205944061,3.61734195327759,3.35410817241669,4.41149898147583,5.2230592546463,4.24745829677582,3.77709253406525,3.57396991825104,3.24062998867035,2.79105671024323,2.84482766962051,3.72844656085968,5.1516423997879,4.52443678951263,3.7398387966156,3.61444624042511,3.88419993495941,4.2482046661377,4.54646416282654,4.69233699417114,4.71133275604248,4.71086068725586,4.71618540859222,4.74208088493347,4.8019463596344,4.90446968650818,5.05278297042847,5.24511023139954,5.47607346153259,5.29713507270813,5.01251514530182,4.71396453952789,4.40989037132263,4.10851951217651,3.81832488155365,3.51659997081757,3.21828182315826,2.91720994091034,2.61129506206512,2.3012778339386,1.99126203632355,1.68882222747803,1.40475349402428,1.15259464359283,0.948273527383804,0.802838790178299,0.69160865521431,0.646085130929947,0.744049373030663,1.07889093732834,1.66763903474808,2.44924886798859,5.43516226387024,5.42979748821259,5.42989976978302,5.05834014987946,4.51271088695526,3.84321649646759,3.15894921398163,2.52446712827683,2.03029282665253,2.04719449853897,2.94022240018845,4.73858185386658,4.17238112068176,2.76676930761337,2.92521418905258,4.44951053237915,4.88069494342804,3.77090235328674,3.41608758544922,3.46908696269989,3.38700242614746,3.14316244697571,3.38317831134796,4.2938794670105,5.51332898712158,4.50883920764923,4.10986919975281,4.26794894313812,4.64843030548096,5.00008829212189,5.2118322429657,5.25614626979828,5.1935159740448,5.13198037719727,5.09564216709137,5.09637494659424,5.14233799552918,5.23638589954376,5.37643154239655,5.47849460220337,5.26567311859131,5.02886338806152,4.77632375335693,4.51560302352905,4.25354869937897,3.99672110652924,3.73786004161835,3.47378333187103,3.20897026634216,2.94186874008179,2.67337604141235,2.40733666992188,2.15063889598846,1.9129447517395,1.70598800754547,1.54257209873199,1.43554936623573,1.3903315243721,1.3719128844738,1.38871799683571,1.49462993717194,1.77923573827744,2.28378786420822,2.95241429185867,4.97594483470917,4.96395714855194,4.80300887203217,4.47030480480194,3.98022587871552,3.40041919326782,2.82412191009522,2.35013856267929,2.10465295886993,2.44500185823441,3.6585274515152,5.38765676593781,3.31281073665619,2.23908438062668,2.89481903886795,4.81717844581604,4.33099980926514,3.27031488990784,3.20495160198212,3.64581735706329,3.86786635494232,3.82411273097992,4.13588448143005,4.88016994571686,5.30627711391449,4.75052841281891,4.71531529998779,5.06895096874237,5.47872634506226,5.279930311203,5.2011938867569,5.28167231655121,5.42959828948975,5.4809014377594,5.39804156398773,5.36509795761108,5.38556929206848,5.45803542709351,5.4580765542984,5.29992778873444,5.11130626773834,4.90049036121368,4.67487724399567,4.44088597869873,4.20428295707703,3.97084100818634,3.72209795093536,3.47231562709808,3.22128339385986,2.97025777673721,2.72330321645737,2.48746229982376,2.27256246185303,2.0905872759819,1.95461143827438,1.87729300832748,1.86923654651642,1.93168248510361,2.02364184236526,2.13285316801071,2.28769173002243,2.56320663070679,3.01836069202423,3.6103621301651,4.37274249172211,4.3640539226532,4.2365703163147,3.96259589767456,3.55053635215759,3.09160717105865,2.66537465429306,2.38245649909973,2.40411587333679,3.05139370536804,4.51230068778992,4.47876449203491,2.63264955854416,2.03133835172653,3.20228262519836,5.42086394405365,3.67544432258606,2.83092810487747,3.19429214572906,4.08644493198395,4.63667722320557,4.76715775108337,5.03762527084351,5.45804293727875,5.23725278949738,5.17571361637116,5.45598586177826,5.11145718669891,4.7257151184082,4.5729686794281,4.65682240104675,4.87307711219788,5.10909505462647,5.30148704624176,5.43827827548981,5.51450343704224,5.50550122833252,5.48787160491943,5.39566262340546,5.2613790807724,5.09343023872375,4.89955516433716,4.68651409721375,4.4602647600174,4.22651382064819,3.98761625862122,3.73340972042084,3.47803946113586,3.22301967716217,2.97254909849167,2.7338026342392,2.51684965467453,2.33422501659393,2.20005627250671,2.12867053127289,2.13273246860504,2.22112055397034,2.39211835241318,2.60238941287994,2.82340003824234,3.06026430702209,3.36820371723175,3.81338210678101,4.36732299900055,3.76488848304749,3.78604395961761,3.72027226066589,3.53623052215576,3.23571653938294,2.94407190656662,2.70306898927689,2.63479711389542,2.92586578702927,3.8398383436203,5.45188387012482,3.6250459728241,2.15520687675476,2.12072207307816,3.78282495117188,4.84667702293396,2.99850036478043,2.51081200218201,3.38246269798279,4.73970230197906,5.44881578063965,5.20139380073547,5.06301899528503,5.05064721679688,5.25377519702911,5.37739713764191,4.85333927249908,4.33872063732147,4.02104981517792,4.0225046453476,4.27755876159668,4.62563582038879,4.94160540676117,5.19387610530853,5.37708743190765,5.48880894756317,5.50399346923828,5.51034851646423,5.43416197872162,5.31151850795746,5.15089102363586,4.95983298397064,4.74493260955811,4.51218481636047,4.26764174079895,4.01319881057739,3.74590201950073,3.47807021713257,3.21316845989227,2.95740820741653,2.71990467882156,2.51250501251221,2.34928776597977,2.24563683843613,2.21678950166702,2.27582438564301,2.43127145147324,2.68076588487625,3.00562055683136,3.31502802944183,3.62703974819183,3.97274573421478,4.43572183227539,4.99228091812134,3.18218215084076,3.26246424293518,3.28836186504364,3.22585030174255,3.10392566299439,2.98217769241333,2.94862093305588,3.10076852416992,3.6368079957962,4.74489899253845,4.65118690109253,2.92848433828354,1.95198859548569,2.50812854146957,4.57012947177887,3.99618323421478,2.36318125104904,2.33308275318146,3.74261327362061,5.50703187561035,4.42917402362823,4.130675989151,4.19239898300171,4.62135394191742,5.34176238155365,4.89700527763367,4.21015270328522,3.69790156459808,3.4847038564682,3.65451558208466,4.07332606887817,4.53774984455109,4.9181561050415,5.21480591869354,5.42870064353943,5.47508855438232,5.42093332386017,5.43581350421906,5.51001306152344,5.40148087120056,5.23706181621552,5.03969629383087,4.81603439426422,4.57215471839905,4.31426318264008,4.04575081443787,3.76653106784821,3.48787243938446,3.21418591117859,2.95248832082748,2.71254362440109,2.50673879957199,2.34968115663528,2.25737954950333,2.24592079496384,2.32947929477692,2.51777215576172,2.80808766460419,3.16202517127991,3.54773398017883,3.93438299274445,4.33846243000031,4.82728286361694,5.40976353263855,2.68241651630402,2.84811248159409,2.99025668478012,3.07291360473633,3.13422675704956,3.21374674415588,3.3876876411438,3.74137087440491,4.46774883842468,5.36721296882629,3.84096880531311,2.49249448156357,2.08056994056702,3.17500849342346,5.48780615901947,3.14211388206482,1.82714320993423,2.29990847682953,4.21942992782593,4.67846782779694,3.44562836265564,3.15029104328156,3.44958336925507,4.31045408821106,5.48409326648712,4.45946009731293,3.67861362075806,3.20207448577881,3.11586721515656,3.45353265380859,4.01878710365295,4.57852156734467,5.00564189529419,5.32924254512787,5.47867699241638,5.34384162998199,5.29292185878754,5.31480796909332,5.39778693294525,5.50438292598724,5.33072741603851,5.12443729019165,4.89212222671509,4.63963945484161,4.37279756641388,4.09659119224548,3.81083365058899,3.52617545700073,3.24701185798645,2.98013456439972,2.73493989086151,2.52345343208313,2.3601122674942,2.26118542528152,2.24368025636673,2.32352103567123,2.50455154752731,2.79234828329086,3.17162139987946,3.60052879428864,4.04002769565582,4.48818977451324,5.00338812446594,5.4146104631424,2.33546419715881,2.60391058301926,2.8756357011795,3.11329837417603,3.35888536548615,3.62844415283203,3.98444552993774,4.49505193805695,5.33054788684845,4.53239973163605,3.2559725818634,2.38532127714157,2.54430724954605,4.05226679420471,4.58983440971375,2.3639306602478,1.42960487580299,2.39025868749619,4.73926635360718,3.90854616737366,2.59103419160843,2.33072437620163,2.87141444063187,4.11894436454773,5.37703772163391,4.0842151222229,3.27485282993317,2.85645737028122,2.9025180516243,3.39329810714722,4.08208008384705,4.71444662189484,5.1708473739624,5.50460823154449,5.30592842674255,5.18210907554626,5.14649184322357,5.18473334884644,5.28290362930298,5.42871995544434,5.42317565059662,5.21023936843872,4.97395535087585,4.71945949172974,4.45152648067474,4.17589302635193,3.89051600074768,3.60566933727264,3.32498403167725,3.05427868938446,2.80187584733963,2.57880260324478,2.39880259609222,2.27806456661224,2.23444469547272,2.28596438741684,2.43379111862183,2.6998778758049,3.07152851200104,3.51203485107422,3.97946842288971,4.45857103443146,4.99451144313812,5.39062328910828,2.21427502012253,2.5887305316925,2.98698903894424,3.37790365791321,3.77621205425262,4.20031114196777,4.68915303325653,5.29066022014618,4.89776738262177,3.87468596076965,2.95906813716888,2.61299433088303,3.27533598518372,5.02147372341156,3.69093783473969,1.73377283191681,1.19174622273445,2.56552531099319,5.22178824520111,3.28673358535767,1.92207391834259,1.71609349822998,2.47051288461685,4.03317304229736,5.21548040485382,3.81050785160065,3.00500168180466,2.65709091997147,2.82772071933746,3.44725270843506,4.23212071037292,4.91518529033661,5.38513012504578,5.32094665145874,5.11231012916565,5.01072378730774,4.99883945560455,5.05886729335785,5.17468579387665,5.3328985748291,5.51214881515503,5.29758282279968,5.06409473991394,4.81563063240051,4.55541916465759,4.28907366371155,4.01121504878998,3.73216982460022,3.45433302497864,3.18208165740967,2.92221172428131,2.68428065156937,2.48086567497253,2.32758726453781,2.24275167560577,2.24628271436691,2.34864904260635,2.56713463640213,2.90225233411789,3.32450731372833,3.79339893436432,4.28570910072327,4.8337587890625,5.50836904621124,2.38341708755493,2.85090698575974,3.35407240962982,3.86253162002564,4.37324889278412,4.89708574390411,5.45278044319153,4.96797903156281,4.20893605327606,3.43686576461792,2.94598020887375,3.10203989124298,4.13383026695251,5.09147651767731,2.94775297021866,1.30521314120293,1.11546580767632,2.7777416882515,5.44298644638062,2.88234372711182,1.51993675804138,1.32483117556572,2.23997719860077,4.03071828460693,5.07736023044586,3.64629121398926,2.86521835899353,2.59112288331986,2.87039681053162,3.59074552631378,4.44311471557617,5.15607412433624,5.40914018726349,5.09666462516785,4.91452117538452,4.84301705932617,4.8598259267807,4.94375975704193,5.07676764106751,5.24470253562927,5.43727012252808,5.38771327114105,5.16403027153015,4.92938454723358,4.68518336391449,4.4368158159256,4.17334278202057,3.90614004707336,3.63611991977692,3.36598785495758,3.10073669528961,2.84812338924408,2.61909134960175,2.42807193374634,2.29303379631042,2.23499580001831,2.2766036567688,2.4305565533638,2.70300175523758,3.07837851619721,3.52138503170013,4.00590105628967,4.55372973060608,5.24048789119721,2.88498927927017,3.4192786989212,3.9891211566925,4.5675656375885,5.13581951236725,5.34002216434479,4.78873665904999,4.23786457157135,3.64992757415772,3.19301326847076,3.13202269649506,3.67837186431885,4.9192479429245,4.3668226776123,2.45861013507843,1.11135433888435,1.18250690674782,2.97793676233292,5.24264832115173,2.73645229911804,1.36993842101097,1.15272607183456,2.15900309658051,4.04408104991913,5.00662108039856,3.59179123020172,2.84478618478775,2.64092578268051,3.00846298313141,3.80168088054657,4.6950127658844,5.41870387172699,5.15758653259277,4.87129970169067,4.72311695194244,4.68652554130554,4.73415299034119,4.84169812774658,4.9896323261261,5.16353138065338,5.35362990474701,5.48122866725922,5.27346869087219,5.0591941652298,4.8379673538208,4.60880334949493,4.37342842197418,4.12409384822846,3.86745830154419,3.60447664833069,3.33823021030426,3.07447608089447,2.82214297628403,2.59382708644867,2.40616847848892,2.27997036552429,2.23964996910095,2.3108586845398,2.51309044933319,2.813961165905,3.20277436351776,3.65552445030212,4.1869469461441,4.87112875556946,3.71920652961731,4.28879078006744,4.88785501098633,5.48362048244476,4.97949429130554,4.44430811977386,3.95987721061707,3.53409298038483,3.17109926319122,2.99599696969986,3.27032490348816,4.08910925960541,5.40992374992371,4.00051839923859,2.31864692544937,1.17602508044243,1.3586693880558,3.1215960559845,5.24630184745789,2.85771890258789,1.46072511649132,1.17757334089279,2.17810721969605,4.07826169109345,5.00995202636719,3.64187272167206,2.92990912771225,2.78806300735474,3.22172399139404,4.06168063259125,4.97271438217163,5.34472354030609,4.90619702911377,4.65322752571106,4.54394574737549,4.54465849971771,4.6231452999115,4.75247104740143,4.91219659423828,5.08813019371033,5.27141876792908,5.45742102241516,5.39062793827057,5.20152755355835,5.00843282318115,4.80850883102417,4.59882124042511,4.37938507175446,4.14193804836273,3.89197905635834,3.63069220161438,3.3617699918747,3.09194369888306,2.83150352811813,2.59485830640793,2.40109302377701,2.27437062835693,2.24335266923904,2.33070935583115,2.53884054994583,2.85318042612076,3.2731469449997,3.76751490211487,4.43212659931183,4.81627615070343,5.3985769329071,5.04170652008057,4.46103509044647,3.92316134548187,3.44091446971893,3.04532225704193,2.74714626646042,2.56544341421127,2.65438922023773,3.16357727622986,4.14073176956177,5.47138460254669,4.09234650707245,2.57208080863953,1.49705885624886,1.60707386112213,3.16863234615326,5.46177120780945,3.22338231182098,1.75991668081284,1.36524097895622,2.28378249979019,4.08820589160919,5.0891286907196,3.78860064125061,3.10662968730927,3.01595600223541,3.4935476360321,4.35662348842621,5.26550610637665,5.0716703710556,4.66144044971466,4.44696672534943,4.37950344657898,4.41809578514099,4.52608867263794,4.67453964328766,4.84270806884766,5.01713533973694,5.19020147895813,5.35866852378845,5.51281471824646,5.35168154811859,5.18972476100922,5.02264853096008,4.84584518051147,4.65490480041504,4.44977195835114,4.21875651454926,3.96887548542023,3.70181294059753,3.4221239862442,3.13767321681976,2.86012341356278,2.60563703155518,2.39596481895447,2.25965799665451,2.22676857089996,2.31443067169189,2.52501197433472,2.85327448225021,3.30962713336945,3.9566664276123,4.99928112602234,4.42759938812256,3.85337992286682,3.2989619550705,2.79234256124496,2.36295165395737,2.03990353918076,1.8462094244957,1.81459798192978,2.08191193914413,2.75135429477692,3.8071862039566,5.08889909362793,4.60506649589539,3.18319781398773,2.02934278821945,1.88611658191681,3.08961375331879,5.1579341468811,3.78703888034821,2.22236188030243,1.66806479072571,2.42283107614517,4.06645532226562,5.24230392551422,4.02315481281281,3.38881416893005,3.31121857738495,3.81145163154602,4.67658706283569,5.46881468868256,4.80196638679504,4.42659910297394,4.25430114841461,4.23004825687408,4.30583174800873,4.44114668941498,4.60573704814911,4.77919121360779,4.94923110580444,5.10974164581299,5.25898583507538,5.39821858978271,5.50458069419861,5.37439127540588,5.24116058921814,5.09915156936646,4.94254954433441,4.76586421108246,4.56459553813934,4.33879716968536,4.08043356513977,3.79868217086792,3.49918277835846,3.19092829799652,2.88669605827332,2.60422064638138,2.36867781257629,2.21268393373489,2.16568215465546,2.24878181791306,2.47498823976517,2.86196394538879,3.4598801908493,3.8143713054657,3.2743779001236,2.73618282651901,2.21836610412598,1.746906894207,1.35513763403893,1.07995130395889,0.953833836078644,1.0215756175518,1.39992837882042,2.1483168182373,3.20120509243012,4.37969155883789,5.4498453912735,4.0371473608017,2.68692834949493,2.14975966787338,2.87734283781052,4.5695347366333,4.49364431476593,2.80241300439835,2.05367256975174,2.58264406299591,4.01021512126923,5.46507068252564,4.33693643188477,3.73004372692108,3.66401060199738,4.16693122959137,5.01528962230682,5.16369231319428,4.53774304962158,4.20276089286804,4.07524617290497,4.09448583698273,4.20593555545807,4.3659454164505,4.54367859935761,4.71964009380341,4.88314719772339,5.02980752563477,5.15947409248352,5.27471645450592,5.3797918138504,5.47999091720581,5.45403142547607,5.34546704864502,5.22305496311188,5.08024306869507,4.91077859973908,4.70932860946655,4.47264726734161,4.20262642478943,3.89638181304932,3.56750722503662,3.22586281871796,2.88477720594406,2.56367565965652,2.29252811050415,2.10809852457047,2.04864414310455,2.14959837770462,2.44458271837235,2.98299970006943,2.80317457294464,2.32131625986099,1.84253748035431,1.38153799152374,0.960588443040848,0.610749798774719,0.371402407944202,0.282839196681976,0.402148011088371,0.824278580904007,1.56901993131638,2.53676595067978,3.55819852924347,4.62799187278748,4.96520276641846,3.36030657863617,2.3560303030014,2.54865707731247,3.85936410999298,5.285452085495,3.46039302921295,2.49585904455185,2.75519754266739,3.92089577293396,5.28415532684326,4.72197290039063,4.13667412376404,4.06778891658783,4.55489917373657,5.36938305473328,4.85609515285492,4.27947993850708,3.98966546630859,3.90878291702271,3.9710069475174,4.11607118225098,4.29796786880493,4.48599393939972,4.66211493587494,4.81759508228302,4.94999106502533,5.06083138561249,5.15401454544067,5.23474760627747,5.30890639400482,5.3826850233078,5.46243746852875,5.48059638118744,5.36921604251862,5.23179896450043,5.06144829368591,4.85188766098022,4.59889491176605,4.30771859264374,3.96708591556549,3.59936185455322,3.21457751369476,2.82591165876389,2.45661939954758,2.14420695877075,1.93879802799225,1.89866717433929,2.08084155893326,2.54313619709015,2.07548626041412,1.68778224563599,1.30337761616707,0.9319133040905,0.589986192941666,0.302974875032902,0.105557250738144,0.0396098447442055,0.174074995279312,0.581248852372169,1.24722798442841,2.05531980371475,2.87125386571884,3.79220767593384,5.2498577413559,3.94245358085632,2.47934915399551,2.14524694061279,3.10079784965515,4.93444176292419,4.15924687957764,2.97544016218185,2.937008040905,3.80375190353394,4.9429854927063,5.17070861434937,4.60309417819977,4.5186017332077,4.97283239936829,5.29766400432587,4.54629786586761,4.02672465419769,3.78640194511414,3.75346119976044,3.85760601139069,4.03389115905762,4.23480864143372,4.43046291446686,4.60476000881195,4.75123043632507,4.86957057094574,4.96312387561798,5.03718753433228,5.09792061424255,5.15168567276001,5.20471366024017,5.26298697566986,5.33233602619171,5.41869028186798,5.50685413455963,5.36672373390198,5.18840010738373,4.96408553695679,4.68787022209167,4.35966261005402,3.98485036468506,3.56926711177826,3.13116367435455,2.68572618341446,2.26490511274338,1.92262573814392,1.73588730669022,1.78932817554474,2.15931423282623,1.69371886825562,1.43790309405327,1.18622793531418,0.942196357011795,0.714407431840897,0.51886692917347,0.380721094965935,0.337298433244228,0.465680154919624,0.815766232967377,1.34788109636307,1.94464113092422,2.52540286159515,3.27827926254273,4.68769856071472,4.35613175010681,2.5218811211586,1.73208643770218,2.38163234567642,4.15227850055695,4.86227174377441,3.47647340869904,3.12873895740509,3.6676644859314,4.55685003376007,5.35986836528778,5.12474520778656,5.01416631317139,5.41988511657715,4.91536410427094,4.23383839702606,3.77869577980042,3.59196503734589,3.6078762588501,3.7524587688446,3.95731301879883,4.17436130619049,4.37512894248962,4.54586585140228,4.68262954330444,4.78745670890808,4.86566956615448,4.92409523105621,4.96990807628632,5.00992377376556,5.05022128200531,5.0960444984436,5.1519903717041,5.22244520759583,5.31220658397675,5.42722006416321,5.46006818389893,5.26955481147766,5.02591438865662,4.72048874473572,4.35264809703827,3.92940409755707,3.45670767402649,2.95691164112091,2.45274253463745,1.99318196153641,1.66582300043106,1.58242096281052,1.84652592515945,1.68065418577194,1.58356608724594,1.49087529158592,1.39989386773109,1.31058426475525,1.22800253605843,1.16495158052444,1.14996107196808,1.26308672404289,1.53428711271286,1.90812106704712,2.28004940128326,2.62963815307617,3.19958861446381,4.46472366428375,4.57440741634369,2.51867731189728,1.40171696519852,1.78403492546082,3.4537618932724,5.49838550662994,3.98612745380402,3.33460100269318,3.52508218860626,4.13860102272034,4.80828567123413,5.33837242698669,5.48259373283386,5.13948305225372,4.51866574859619,3.91826434707642,3.53490157699585,3.40576966381073,3.47109861946106,3.65426238155365,3.88480110740662,4.11500366306305,4.31841810321808,4.48393579101562,4.61034687137604,4.70221360301971,4.76702793216705,4.81331892585754,4.8493917760849,4.88250740146637,4.91843183612823,4.9613382396698,5.0140897808075,5.0788747844696,5.15813692188263,5.25570102310181,5.37791891670227,5.50071080303192,5.29641481018066,5.02928145503998,4.68704696273804,4.27035112953186,3.78590591526031,3.24903710460663,2.68632574653626,2.13521351194382,1.68360676145554,1.46495344018936,1.61488069868088,2.02247865772247,2.09123261547089,2.16146464920044,2.22521914815903,2.27493621683121,2.30574371194839,2.31875171041489,2.33271296596527,2.42564471340179,2.61358638381958,2.83568580722809,3.01152570819855,3.17496951198578,3.55539115047455,4.57498105144501,4.62672157859802,2.57115669822693,1.23969660973549,1.38893722271919,2.88399632549286,4.87949760532379,4.49429591274262,3.5616013584137,3.39199097728729,3.70457847690582,4.22142227268219,4.72216923809052,4.90394075489044,4.63567479228973,4.10788436508179,3.59987826919556,3.29570968723297,3.22812374210358,3.34306569671631,3.56252618408203,3.81559939956665,4.05581625080109,4.25929577922821,4.41782398796082,4.53304060077667,4.61218007183075,4.66509934043884,4.70224149799347,4.73319061374664,4.76566644287109,4.80497046089172,4.85388823127747,4.91310318088532,4.98208816623688,5.06035788631439,5.14897413825989,5.25210471725464,5.37846572971344,5.49298997497559,5.2723779258728,4.97351296520233,4.58134468173981,4.10403128242493,3.54610462760925,2.94465251541138,2.32842393493652,1.77607931470871,1.43360655283928,1.46868403530121,2.66571475839615,2.88367106294632,3.09509976482391,3.28862722492218,3.45166977024078,3.57258697128296,3.64439221000671,3.678398686409,3.74748595333099,3.8634024438858,3.97076662158966,4.00852532958984,4.04281933879852,4.24227233505249,4.9163307723999,4.66345174884796,2.77410139417648,1.37155230617523,1.26288171386719,2.49033530330658,4.33809264278412,4.99315138435364,3.81859846687317,3.2877907333374,3.27554591274262,3.61509712314606,4.071842628479,4.29060574150085,4.10696096992493,3.68512101745606,3.28061099624634,3.06300945854187,3.06072421646118,3.2249759016037,3.47791178798676,3.74998684501648,3.99683483219147,4.19753702259064,4.34697898006439,4.44970651245117,4.51570065593719,4.55737073993683,4.58729560947418,4.61652238941193,4.65329261398315,4.70232053375244,4.764713722229,4.83858962631226,4.92029471969605,5.00605102157593,5.09382005310059,5.18518932437897,5.28716047382355,5.4136509475708,5.44903750991821,5.20258076763153,4.85437710857391,4.3920365152359,3.83751519298553,3.21006639575958,2.55120732164383,1.92435308074951,1.47761310911179,1.4059702334404,3.52121909236908,3.85030682659149,4.16001005744934,4.43787046051025,4.66942556476593,4.84038849449158,4.9408840713501,4.97954006767273,5.02419276809692,5.09333546733856,5.14946301555634,5.13305039978027,5.09491689777374,5.09675939655304,5.34012766456604,4.76568647003174,3.22372527694702,1.82886643981934,1.44907976961136,2.31386025524139,3.89522739028931,5.47710486030579,4.11516066169739,3.23482461547852,2.87739272689819,3.01596029376984,3.40287931537628,3.6527649936676,3.56016226387024,3.25555916404724,2.96496202325821,2.84087838506699,2.90713735198975,3.11964161968231,3.40252490615845,3.68954308605194,3.93930824375153,4.13407095050812,4.2718234834671,4.36006529903412,4.4115483341217,4.4413358745575,4.46438606357574,4.49345262622833,4.53743692016602,4.60044057941437,4.68169649219513,4.77644820785522,4.87760754203796,4.97786779975891,5.07196219539642,5.15879603004456,5.24339862442017,5.33869929885864,5.46694286441803,5.37545915222168,5.08072443580627,4.65426536178589,4.10763724422455,3.46925898170471,2.78377236700058,2.10712220048904,1.58068271255493,1.4189014313221,4.47954340553284,4.86920185661316,5.22440178966522,5.50157411670685,5.25193842029572,5.07527525997162,4.97932084178925,4.952453332901,4.92828806018829,4.87155325984955,4.79622359848022,4.77960320091248,4.85762723064423,5.07096906280518,5.30096598243713,4.98738499259949,3.90284200286865,2.59409065818787,1.95196874713898,2.37587543106079,3.57089717960358,5.09197326278687,4.460230427742,3.25734301185608,2.54139794683456,2.43391664600372,2.73842104053497,3.00754602527618,3.00791152095795,2.8290305314064,2.66109849786758,2.63629003143311,2.77322019910812,3.03177567100525,3.34017427539825,3.63739450550079,3.88597376918793,4.07131691551209,4.19431050395966,4.26521487808228,4.29957039928436,4.31519551849365,4.32962043857574,4.35761125659943,4.40902670001984,4.48751171207428,4.59041305160522,4.70994837856293,4.83538814163208,4.95573278045654,5.06240959739685,5.1516470489502,5.22646458721161,5.29848905181885,5.3897331533432,5.50144823169708,5.26093741035461,4.88053866004944,4.34953601932526,3.71265228366852,3.00988920307159,2.3036678609848,1.72357864952087,1.49494017934799,5.43419094657898,5.20067711448669,4.8480821428299,4.55287607288361,4.32700975513458,4.18100281333923,4.11708005046844,4.11561842536926,4.08718808269501,4.02413006401062,3.88136323070526,3.78479476547241,3.894223528862,4.32092078304291,4.99768539047241,5.3122230348587,4.74840517616272,3.60059602832794,2.7330399928093,2.6710612950325,3.37710757827759,4.64579780673981,4.86082335090637,3.37961633777618,2.30348314619064,1.92284031486511,2.11095454072952,2.3811540184021,2.47064538574219,2.42156435823441,2.38188357925415,2.4596783695221,2.66735036945343,2.96804513311386,3.29638345813751,3.59832544898987,3.84125776863098,4.01352639770508,4.11841328716278,4.16847189044952,4.18177528953552,4.17898650741577,4.1804681596756,4.20336528396606,4.25895960903168,4.35089643573761,4.47493858909607,4.62039156532288,4.77283223247528,4.91743584251404,5.04219718551636,5.14058132743835,5.21354563808441,5.27127535915375,5.33507259464264,5.43931253528595,5.40363128757477,5.06978602981567,4.56536443805695,3.93331618881226,3.21716888523102,2.49567736959457,1.88635941123962,1.61832680082321,4.73075945949554,4.35614963150024,4.03784509277344,3.78460057353973,3.57186921215057,3.46978970146179,3.44233496761322,3.46852155303955,3.47208853340149,3.37814469909668,3.17557104206085,3.01932199573517,3.16164179420471,3.77508838748932,4.81790192699432,5.33772082901001,5.3698561964035,4.74362977123261,3.71523721790314,3.16624768352509,3.31341584300995,4.22338958358765,5.32135649299622,3.62308331108093,2.20191146707535,1.52705301618576,1.56294097280502,1.81031735515594,1.97820361232758,2.05665178871155,2.14557220315933,2.32510425424576,2.60021521425247,2.93670816993713,3.27801747894287,3.57853789901733,3.81119878864288,3.96692212200165,4.0505591211319,4.07614203071594,4.06366367912292,4.0363727388382,4.01770384883881,4.02777035808563,4.07998688793182,4.17878945446014,4.31910653686523,4.48785610771179,4.66715498542786,4.83831317996979,4.98567410087585,5.09965546703339,5.17890544509888,5.23198385810852,5.27927227592468,5.35537262535095,5.51058347797394,5.22963781929016,4.75167103385925,4.11862893676758,3.39605613327026,2.66736360168457,2.0495049533844,1.77131338691711,3.98607559776306,3.6541568813324,3.34497686004639,3.11416740989685,2.94971044635773,2.86675705289841,2.8672248301506,2.92422570562363,2.95362146472931,2.87073995447159,2.66028847074509,2.49940456724167,2.7034316239357,3.46650810813904,4.76887579536438,4.94534369087219,4.48843653774262,5.13756473636627,4.77198930358887,3.8035652217865,3.36522145843506,3.82795866107941,5.19049008464813,4.0027668056488,2.27286269044876,1.29462118721008,1.14512817835808,1.34186713671684,1.56997211551666,1.76531936502457,1.9755188999176,2.24952300167084,2.583800989151,2.94656081771851,3.2923039970398,3.58487041568756,3.80284996604919,3.9393393573761,3.99963505840302,3.99802930927277,3.95534034347534,3.89666362380981,3.84832985973358,3.83392210578918,3.87009258842468,3.96339662647247,4.10920472717285,4.2931481180191,4.49459989643097,4.69123514270782,4.8635531244278,4.9984807548523,5.09186096763611,5.15028269863129,5.19308074092865,5.25503547763825,5.38866742229462,5.37505288696289,4.91236539459229,4.27143760299683,3.53752441978455,2.80370886898041,2.19353081560135,1.93488647317886,3.33476014709473,3.01118202781677,2.72565622901917,2.49914385652542,2.3521280465126,2.29891212558746,2.33877976512909,2.44045301055908,2.51571901416779,2.47369452095032,2.29777397489548,2.18705113506317,2.48772390460968,3.37935562705994,4.83693094825745,4.59528680419922,3.74120600795746,4.09883173084259,5.21856709098816,4.50708790397644,3.50458260154724,3.46075780963898,4.60316355800629,4.52426190948486,2.5437824306488,1.27064760303497,0.911215859413147,1.02892031049728,1.29212610697746,1.58385308361053,1.89795227622986,2.25056584453583,2.62376804924011,3.00348480319977,3.34467037296295,3.62292845821381,3.82252021408081,3.93903394317627,3.97603948688507,3.94702442264557,3.87196870422363,3.77635617828369,3.68852313137054,3.63551624393463,3.6381759223938,3.7069345293045,3.83975072479248,4.0229187784195,4.23451717472076,4.44939752197266,4.64436586475372,4.80249567604065,4.91625137901306,4.98978467559814,5.04127879714966,5.10596473789215,5.23879881477356,5.51063426113129,5.05396814918518,4.38907571411133,3.62911041355133,2.88711519813538,2.29768295860291,2.08985217189789,2.74704058742523,2.41420133686066,2.13234873390198,1.9232814488411,1.80618675327301,1.79268200969696,1.8786698756218,2.02986868000031,2.1584920463562,2.17179294204712,2.05643345689774,2.03347339010239,2.45152409648895,3.4557731924057,4.98918600654602,4.32350643253326,3.20192928886414,3.28360469913483,4.31121082878113,5.19211514568329,3.6934190568924,3.12127454853058,3.95885868644714,5.18435748195648,3.02583618736267,1.48706896877289,0.907644945144653,0.921902674198151,1.19019715762138,1.54768975353241,1.91921915388107,2.33233370161057,2.73775227642059,3.1135998544693,3.43967600440979,3.69796736812592,3.87696333503723,3.97298427200317,3.98943729972839,3.93690105056763,3.83217831230164,3.6988778886795,3.56530888652802,3.46086152172089,3.41076036071777,3.4308458147049,3.52418418502808,3.68070467090607,3.87993879890442,4.09589989757538,4.30274005508423,4.47991855716705,4.6162956533432,4.71331222629547,4.78803964233398,4.87662442302704,5.03694577789307,5.34377153491974,5.17574937915802,4.45644100284576,3.64964075660706,2.89425613260269,2.34041573381424,2.22131599760056,2.17256559705734,1.84716911888123,1.58779825544357,1.41410215473175,1.34121088957787,1.3760305223465,1.51025827503204,1.70785393095016,1.88603665208817,1.95525266504288,1.91170896863937,1.9976118979454,2.53919656848907,3.63559349155426,5.18657692050934,4.14215942001343,2.9052310166359,2.76484795188904,3.63558204746246,5.26153679466248,3.88539083576202,2.80745931243897,3.27778287506104,5.06812878227234,3.70547898387909,1.94815321540833,1.15749745345116,1.03459407663345,1.25752516365051,1.62685318565369,2.04665608978272,2.47426457977295,2.88147290325165,3.24869485473633,3.56089361286163,3.80327697372437,3.96588035202026,4.04565711593628,4.04626007652283,3.97685702419281,3.85083647346497,3.6874112663269,3.51107318973541,3.35082192993164,3.23473020172119,3.18430646038055,3.20970447635651,3.30765195465088,3.46272726631165,3.65147216892242,3.84808559989929,4.03023369884491,4.18411167240143,4.30889232730865,4.42095358943939,4.55786748504639,4.78053625202179,5.16605516052246,5.26144703006744,4.44964893436432,3.57571621513367,2.80596693134308,2.31123455142975,2.32915742969513,1.59161271429062,1.30044882273674,1.09255562996864,0.98154874420166,0.974681484460831,1.07069374895096,1.2545040128231,1.48829116201401,1.69998075342178,1.81379868364334,1.87170650339127,2.08584119653702,2.77178968763351,3.94314165687561,5.45085676288605,4.01724143600464,2.84563859081268,2.58794535970688,3.27625866508484,4.89013202762604,3.99662490463257,2.49839158630371,2.60252155637741,4.23186393356323,4.51192768192291,2.59459133720398,1.6107551035881,1.34739955043793,1.47915752506256,1.80077941989899,2.19841547584534,2.6120231924057,3.00421794033051,3.3582766828537,3.66135950660706,3.89847643947601,4.05825455760956,4.13555617904663,4.13172491168976,4.05399950122833,3.91493054008484,3.73156185722351,3.52380545711517,3.31866760826111,3.14163430309296,3.01863642311096,2.96658458089829,2.99018015241623,3.08122737979889,3.22130592441559,3.38692160224915,3.55583496665955,3.71343763446808,3.85829086875916,4.00687630748749,4.19826944446564,4.49592419242859,4.97802622890472,5.33756526088715,4.41855354881287,3.46361668682098,2.67475165700913,2.24578239297867,2.36316283321381,1.07338221645355,0.857301401853561,0.739223050832748,0.722083511710167,0.801244038105011,0.96422212100029,1.18783976411819,1.4347326335907,1.65270932292938,1.79551066732407,1.94123651361465,2.33273120498657,3.1431545791626,4.32323749637604,5.34726698970795,4.03876169300079,3.08278091526031,2.8125140247345,3.30902774906158,4.81284792995453,3.96760447597504,2.18347539281845,1.97243579006195,3.40631433105469,5.37891204929352,3.36238296604157,2.20463820075989,1.77537121152878,1.77326084947586,1.9969873008728,2.32729865884781,2.69372006034851,3.05063875293732,3.38414176082611,3.68079908466339,3.92267640209198,4.0949675617218,4.18888064002991,4.20191116905212,4.13736470317841,4.00410576438904,3.81645520305634,3.59358723735809,3.35779316997528,3.13140435791016,2.94888951158524,2.822246509552,2.76689018583298,2.78305711126328,2.85958196496964,2.97772397375107,3.11718543148041,3.26328821754456,3.41450472450256,3.58918948745728,3.82929833507538,4.20080931758881,4.78160949325562,5.42022843933105,4.39014967060089,3.3580724773407,2.55006666755676,2.16091765737534,2.34713037586212,0.728426846623421,0.635497244954109,0.644971075415611,0.74494590139389,0.916374820232391,1.13504468178749,1.3719839630127,1.59672232246399,1.78975285863876,1.97938753938675,2.20689286565781,2.74060668325424,3.59046264266968,4.65595086193085,5.28630681610107,4.33660097694397,3.66456564044952,3.43305738544464,3.73473401641846,5.0383498249054,3.8005100069046,1.90297158336639,1.44635223126411,2.66625298833847,4.80396159267426,4.18541236495972,2.87920125102997,2.27171506261826,2.09965153312683,2.17902650213242,2.39758916473389,2.68236698484421,2.98164822435379,3.28349669551849,3.57145507907867,3.8226811466217,4.01777144050598,4.1437329826355,4.19390781497955,4.16716440296173,4.06754108047485,3.90441985702515,3.69259687042236,3.4516615447998,3.20421202754974,2.97296573495865,2.78558464622498,2.65666641569138,2.59578813886642,2.60047234869003,2.65920557355881,2.75621177530289,2.87841697311401,3.02387030696869,3.21078272438049,3.48451324081421,3.91493125534058,4.57922931289673,5.50856073474884,4.40828068828583,3.31030519580841,2.47917409515381,2.10808904743195,2.29062302684784,0.667749467253685,0.73761081969738,0.896102326869965,1.11510031199455,1.36249430751801,1.6065163192749,1.81961603736877,1.98842515325546,2.13946177339554,2.33122720098496,2.68264343118668,3.25555129623413,4.00125547027588,4.7977685508728,5.49932964420319,4.99224229431152,4.58263822174072,4.35547156906128,4.4564599571228,5.46848996257782,3.58285804367065,1.69445164775848,1.09513260698318,2.09197952127457,4.04529734230042,4.9951505241394,3.5804651556015,2.79500635242462,2.42838056659698,2.3260369477272,2.39402164793015,2.56507452106476,2.78453840589523,3.04075713729858,3.31216843700409,3.55995376682282,3.77214940166473,3.93597694015503,4.03896625614166,4.08012850856781,4.03755827522278,3.92818673229218,3.76094205951691,3.54978390312195,3.31311150169373,3.07216008281708,2.84837319231033,2.66026558256149,2.53411324596405,2.46779777383804,2.46205248212814,2.50806702947617,2.59678288078308,2.72695102071762,2.91491861915588,3.20423241233826,3.66777606582642,4.38346667861938,5.36980863189697,4.49846835708618,3.35822589969635,2.50320078706741,2.1167976436615,2.23660888051987,0.962370323896408,1.20792924141884,1.50720180845261,1.8200954375267,2.10880591249466,2.34349759197235,2.50819023227692,2.6148742017746,2.74011977291107,2.96083964681625,3.31761832809448,3.77485199546814,4.25128241157532,4.64526601409912,4.89694126224518,5.07087321853638,5.31019671535492,5.43266065692902,5.27284105396271,5.11296172714233,3.44510372257233,1.67914678430557,0.977321672201157,1.74382289028168,3.44545705890656,5.30215294933319,4.26659067249298,3.31785364723206,2.74626095867157,2.43754406547546,2.32558705186844,2.356570499897,2.47671146965027,2.67220820760727,2.90786834335327,3.14177127456665,3.36709828948975,3.56361158466339,3.71667202091217,3.81521101570129,3.85982723808289,3.82271476364136,3.72633727169037,3.57812626934052,3.39003975963593,3.17821677303314,2.96159656620026,2.75962747907639,2.58958544111252,2.46430124616623,2.40318639850616,2.39613451337814,2.44549180841446,2.55253680324554,2.73181154108048,3.02125461673737,3.48839529132843,4.21298475837708,5.20698531246185,4.65773292160034,3.51070590591431,2.64471502876282,2.23556085205078,2.27304078912735,1.6115771112442,2.01104261255264,2.41620280122757,2.78620459413528,3.08987303352356,3.30956633663178,3.4446237859726,3.52350147342682,3.63483102893829,3.80807169055939,4.01890547847748,4.20330734825134,4.28554494953156,4.24408693885803,4.06899877166748,3.97913761711121,4.14747877693176,4.58507009124756,5.06742282485962,4.82074614143372,3.49966056919098,1.88771964883804,1.1070582447052,1.62871964550018,3.0326375541687,4.67396600818634,4.91450150585175,3.83177776908875,3.05950005626678,2.53400041437149,2.22448404407501,2.09723039245606,2.10334547138214,2.22394456243515,2.39914073324204,2.60844065523148,2.82951958751678,3.04238291358948,3.23178620910645,3.38500614738464,3.49200840568543,3.55111857032776,3.53671510791779,3.47150810337067,3.36053152656555,3.21311803436279,3.04281135177612,2.86618681526184,2.70080359554291,2.56289638853073,2.46562822437286,2.41869797086716,2.42976655340195,2.50802053785324,2.66997732496262,2.94730718708038,3.39462991333008,4.08471723175049,5.03766496753693,4.87022789096832,3.76554902172089,2.92961962795258,2.52560331201553,2.50713469362259,2.54915596818924,3.06127496337891,3.5376070318222,3.94982536411285,4.28139002895355,4.5234275636673,4.66896243667603,4.72415586090088,4.77141388034821,4.81700785732269,4.81887503242493,4.68996878242493,4.35850496864319,3.84806485748291,3.32220669364929,3.03830774402618,3.23177691078186,3.90360911464691,4.70034821605682,4.79837902164459,3.77502973651886,2.30165137624741,1.45360251045227,1.72117753601074,2.78958221054077,4.16227813339233,5.51449843025208,4.34751113033295,3.39239438152313,2.65348191833496,2.14107771492004,1.84672798490524,1.73023231601715,1.75800337171555,1.86429001665115,2.02958937263489,2.22460134601593,2.43050845241547,2.63285000896454,2.81899459934235,2.97794015979767,3.10137255764008,3.17967804050446,3.20003421878815,3.17795427417755,3.11570342159271,3.0200655040741,2.90237929201126,2.77741231298447,2.66145523166657,2.57035042619705,2.51823993301392,2.51763697242737,2.58129848814011,2.72615190124512,2.9795244512558,3.38696415996552,4.01325281238556,4.88559730625153,5.1144920167923,4.11125929927826,3.3709206161499,3.03325768089294,3.02424223995209,3.69220812892914,4.28600664710999,4.82545431232452,5.29146631336212,5.37491877651215,5.11814554309845,4.97208459949493,4.92178459739685,4.90545101737976,4.94654317474365,5.13545652008057,5.45560713386536,4.7176162776947,3.79485018825531,2.9489070353508,2.53617246723175,2.86141588068008,3.78653390979767,4.78394444561005,5.06878717517853,4.22521706199646,2.8432575044632,1.93954779481888,1.94317056512833,2.66302557563782,3.73895152187347,4.93898614025116,4.89005013084412,3.78206248855591,2.84519531106949,2.13587047433853,1.67468841648102,1.43335916376114,1.35689036822319,1.38874258375168,1.49212529039383,1.63914825296402,1.81266267871857,1.99999352073669,2.19001747941971,2.37252231216431,2.53884877538681,2.6829711971283,2.78034486150742,2.84130342578888,2.8669955906868,2.85723413801193,2.81692286109924,2.75599630451202,2.68819631910324,2.62927963113785,2.59537937021256,2.60215856409073,2.66527702188492,2.80252708768845,3.03807886219025,3.40903230285645,3.96854503726959,4.73805971717834,5.39099557971954,4.53818901157379,3.95640571689606,3.76078398799896,3.84634109115601,4.98375077819824,5.38936479663849,4.81214912509918,4.33760734176636,3.95877678966522,3.66589315509796,3.46095164394379,3.35412462329865,3.31851347064972,3.4259413061142,3.80126424407959,4.54482586956024,5.39629276371002,4.14332707500458,3.08043487644196,2.69524534320831,3.22156949615479,4.31078990077972,5.3049639043808,5.48576338863373,4.73036320781708,3.38579221343994,2.41894205188751,2.19403989887238,2.57979645109177,3.35586698627472,4.37115855789185,5.48783512687683,4.26921852207184,3.16023631668091,2.26949776983261,1.64961619949341,1.28854526853561,1.10862930393219,1.05678363418579,1.08490275120735,1.16594748473167,1.28440170264244,1.42983608222008,1.59357305145264,1.76750876283646,1.94425060129166,2.11783190345764,2.27304740524292,2.39716090536118,2.49764021015167,2.56794055080414,2.6062596616745,2.61654468154907,2.60811056470871,2.59429271793366,2.5907954750061,2.61435564136505,2.68225004053116,2.81302954530716,3.02903409576416,3.36144526576996,3.85315819358826,4.50766046619415,5.26312144374847,5.09384937858582,4.69535286998749,4.67478497600555,4.91376371955872,4.68221219158173,4.02535601234436,3.46220656013489,2.97287436103821,2.54423161125183,2.18009116029739,1.90546299791336,1.75632216310501,1.73996229743958,1.95805575227737,2.53460176563263,3.53081353282929,4.86658509349823,4.7379370508194,3.69516356563568,3.52309127426147,4.2570781288147,5.35193439102173,4.92651923274994,4.96029360866547,5.12989862537384,3.78608508682251,2.78711582994461,2.37235440587997,2.46691997623444,2.96374483680725,3.78286965465546,4.8781125125885,4.88490207767487,3.64002879238129,2.59148587560654,1.82730825519562,1.34925250983238,1.07624279236794,0.937228280067444,0.8832913813591,0.887283849477768,0.93477522110939,1.01747577166557,1.12948571419716,1.26556848263741,1.42071827030182,1.59040232276917,1.77079697227478,1.92929460382462,2.08067597723007,2.21232970333099,2.31620307540894,2.38989354944229,2.43714191293716,2.46708251810074,2.49283208227158,2.53003753995895,2.59586806869507,2.70891173458099,2.89056577062607,3.16906436061859,3.5813173828125,4.10771234607697,4.69783230400085,5.19327993965149,5.41279550170898,5.27610905742645,4.90067883110046,3.39937491989136,2.76965393400192,2.20363058423996,1.69198061800003,1.24127553677559,0.873863237857819,0.62552568590641,0.535790595173836,0.637765276193619,1.03037326312065,1.79995937919617,2.95132424211502,4.35816593742371,5.33077104663849,4.57836564159393,4.76497979736328,5.36714037036896,4.42593248462677,4.08859427547455,4.57659216499329,5.28274305438995,3.93613393878937,2.94279535388947,2.40377112007141,2.27278115129471,2.53001125431061,3.15763564682007,4.13921757316589,5.40165467834473,4.30264778709412,3.12838347530365,2.24059553718567,1.65851612663269,1.29556764936447,1.07179157710075,0.936301308631897,0.860647636413574,0.830547082185745,0.839233684301376,0.883330452203751,0.960613387584686,1.06900288438797,1.20625089383125,1.36975916004181,1.5407592830658,1.71480138874054,1.88210274553299,2.0293701467514,2.14820613241196,2.23638643598557,2.29774607992172,2.34116049385071,2.37920995330811,2.4270809469223,2.50214131450653,2.62493159151077,2.82301201200485,3.13247938728333,3.51523204421997,3.93223579502106,4.24953504180908,4.31389160728455,4.06654544448853,3.61912294006348,2.27077843523026,1.67321642017365,1.14437215304375,0.696394207835197,0.34898537671566,0.125753658771515,0.0495789283365011,0.140629312902689,0.451963472127914,1.05183674669266,1.96707226610184,3.14709992980957,4.42882211780548,5.41512544727325,5.39053567028046,5.02464016056061,4.00835903263092,3.32456095790863,3.47801192378998,4.46387036418915,5.13408465957642,3.78946109390259,2.85694141960144,2.26598872518539,1.98549796915054,2.0532863316536,2.50401081418991,3.3520807800293,4.55070348358154,5.1280668554306,3.87173195457458,2.8844961104393,2.2138669667244,1.76842733001709,1.46767230606079,1.25810398435593,1.10885058617592,1.00464739179611,0.939273017406464,0.911147641897202,0.920644360542297,0.968543159723282,1.05516062951088,1.17966296052933,1.33923436975479,1.50371744012833,1.68001707172394,1.8452425775528,1.98597236251831,2.09438725090027,2.16872020339966,2.21264316415787,2.23421474075317,2.24491872167587,2.25935562229157,2.29648454761505,2.38412072038651,2.5620439825058,2.78777118301392,3.03371902084351,3.19151659584045,3.14015586948395,2.84421648359299,2.40680434083939,1.38197090005875,0.889289963006973,0.511360051989555,0.268210138142109,0.174219711631536,0.234974863886833,0.442691746115685,0.786854880809784,1.34116225218773,2.13392801856995,3.12810988998413,4.22373433685303,5.18775208568573,5.4301533279419,5.20087702846527,4.15398331260681,3.07920356369019,2.67642821645737,3.26849170303345,4.64383228397369,4.75476916408539,3.43834527111054,2.5847740945816,2.00331695652008,1.64372875070572,1.57150776958466,1.86260076141357,2.56378044462204,3.65595288848877,4.97910411930084,4.76920517063141,3.71776099777222,2.97519465065002,2.45974989509583,2.08541991090775,1.82482864236832,1.61577137088776,1.45043008303642,1.32205911254883,1.22985603189468,1.17595319724083,1.16342290019989,1.19484631991386,1.27112289047241,1.39021967625618,1.5360115942955,1.69907202100754,1.85887606716156,1.99844374036789,2.10542561388016,2.17296274280548,2.19941343641281,2.1875909743309,2.14405514574051,2.0791805562973,2.00904025411606,1.9612366733551,1.98203720426559,2.04506714916229,2.13374723768234,2.16422374820709,2.04807623004913,1.77097954130173,1.42321951961517,0.882012593507767,0.601004886388779,0.492315965652466,0.567603248119354,0.823194432020187,1.23708011484146,1.76491309976578,2.36572452163696,3.13067586994171,4.05412896251678,5.0469175157547,5.09084494686127,4.59251804924011,4.81999405002594,5.21473546600342,3.82871683216095,2.74746062135696,2.581952231884,3.46835632896423,5.04044981575012,4.29810090637207,3.02999611473084,2.25745769119263,1.72270550107956,1.33454408025742,1.16020004725456,1.30450253462791,1.84648014879227,2.79707576608658,4.0333289680481,5.29938669776917,4.65552564239502,3.84811921691895,3.25430567836761,2.82184060192108,2.5041581568718,2.26475204801559,2.07791723585129,1.92736466503143,1.81409730291367,1.71387334442139,1.65478481626511,1.64090509986877,1.67426176643372,1.7531923828125,1.86832870817184,2.00458617782593,2.14211322641373,2.26211186027527,2.34930278635025,2.39297111606598,2.38689573383331,2.32877083396912,2.21975674009323,2.06495501375198,1.87612410163879,1.67912425374985,1.52748842811584,1.4321993765831,1.38727335906029,1.33139364695549,1.20511855459213,1.00862117385864,0.812823313236237,0.879522073030472,0.883796173095703,1.10438354587555,1.53946860408783,2.16393138742447,2.92400487041473,3.73793836212158,4.54128535366058,5.43188138580322,4.67394097423553,3.84592910385132,3.32083554840088,3.3736278591156,4.18051465129852,5.43320568180084,3.8945110616684,2.89891191101074,2.91519971466064,3.92818601703644,5.51277001476288,3.90423853969574,2.75892634963989,2.10786284780502,1.64689214801788,1.24146597361565,0.957078236103058,0.93368320441246,1.28956531262398,2.06418021297455,3.16546662425995,4.36470158672333,5.45340557670593,4.70889659500122,4.03886504745483,3.5478609380722,3.19779940223694,2.94966753101349,2.7712827501297,2.63839753246307,2.53475107526779,2.45246751880646,2.39231129264832,2.36275621032715,2.37205042219162,2.4247805056572,2.51283188438416,2.6201209602356,2.72852887487412,2.81888641691208,2.87483515119553,2.88355841016769,2.8356691775322,2.72466810321808,2.54662342643738,2.30097224092484,1.99397285556793,1.64772917604446,1.32679142332077,1.08068023896217,0.929854440450668,0.828377622127533,0.738984781265259,0.66684498167038,0.604458498716354,1.35834707593918,1.6555885848999,2.20102687454224,2.97996111488342,3.93972774124146,4.96960230445862,5.07679267501831,4.20781739330292,3.38381918048859,2.70148559188843,2.30074943876266,2.32384719228745,2.92165239429474,4.11532230949402,5.37148161506653,3.95497019863129,3.20606775856018,3.41845436668396,4.46119423484802,5.12035747146606,3.73120244121552,2.8199825463295,2.34974016523361,1.97490467405319,1.53765793418884,1.11418004608154,0.881185489654541,1.00003104186058,1.54736717319489,2.46461327648163,3.57204659557343,4.65934331989288,5.43699868297577,4.69512613391876,4.15336211299896,3.78332133865356,3.54535039043427,3.40220125293732,3.32287831878662,3.28304894542694,3.26545723056793,3.26093860244751,3.2689759311676,3.29582627391815,3.34861500835419,3.42637689685822,3.51640041446686,3.60115929222107,3.66299279308319,3.68622108078003,3.65782721614838,3.56707378005981,3.40474076843262,3.16273756599426,2.83506818389893,2.42177607393265,1.9392030415535,1.45275502181053,1.07904140925407,0.846297192335129,0.72910383617878,0.70403412258625,0.707167926192284,0.704998063802719,2.1839168844223,2.7380841550827,3.57556028938294,4.64514549350739,5.21981056308746,4.10916932201386,3.20482357120514,2.54896267032623,2.09063144302368,1.90649958229065,2.0657687959671,2.60724689340591,3.55711420154572,4.83968003368378,4.83553548431396,3.79398580169678,3.43777735805511,3.88744648075104,4.89447255706787,4.96167834377289,3.93131526088715,3.3182456073761,3.05631001567841,2.77920724725723,2.30592413520813,1.72002901411057,1.2362463054657,1.06582249975204,1.33092998242378,2.02914484119415,3.01749415969849,4.09132726764679,5.08835120773315,5.14562852954865,4.56680675125122,4.18863530731201,3.97318096733093,3.88119013881683,3.87766106700897,3.93249221420288,4.02030237293243,4.12130041694641,4.22289248085022,4.32039864635468,4.41549440002441,4.51126070594788,4.60474069690704,4.68274040794373,4.72919805622101,4.73013575649262,4.67386336898804,4.54997141933441,4.34805722808838,4.05705578899384,3.66609771823883,3.16866882419586,2.57361860847473,1.94532795524597,1.45751522755623,1.15665461397171,1.03435375070572,1.01160942292213,1.0059834895134,0.955844062328339,3.18042905902863,3.95665319538116,5.00819249725342,4.84624250507355,3.73338718986511,2.90692438459396,2.39673050022125,2.17161698913574,2.21048166131973,2.55259384489059,3.17605527019501,4.02289016819,5.03430755710602,4.93176670646668,4.00721212005615,3.48928399658203,3.57195575809479,4.20674951648712,5.07084425067902,5.14850922203064,4.52947362041473,4.221207695961,4.15403338050842,3.97251148796082,3.47130425548553,2.72911180830002,1.9887868938446,1.50881524658203,1.45988343930244,1.92020674324036,2.76861895895004,3.80524464225769,4.83850844478607,5.35708208656311,4.75879033184052,4.38487465953827,4.1992829618454,4.16372938728333,4.24293287372589,4.40442331409454,4.61738999462128,4.85286326980591,5.08583779907227,5.29834886169434,5.4814364490509,5.40135284042358,5.27795119857788,5.18614562129974,5.13611741638184,5.1395985660553,5.20595784759522,5.34385343170166,5.47184951877594,5.15757043933868,4.73300142860413,4.18426080322266,3.51075919246674,2.77290137386322,2.18482561683655,1.81764622306824,1.62870337343216,1.52442069625854,1.39313765144348,1.21322088217735,4.20224590873718,5.09097476577759,4.88621099567413,3.87858911132813,3.19605417823792,2.88752182102203,2.89424647665024,3.09603746509552,3.5306490240097,4.21620698547363,5.06940622901917,5.0784835395813,4.25954790687561,3.6002759513855,3.21597476577759,3.22737880325317,3.68148322677612,4.35285337543488,4.9674132642746,5.39342959499359,5.41671259975433,5.38180418586731,5.46921129798889,5.37353976345062,4.86735971546173,4.00721748447418,3.04552789306641,2.27680535888672,1.91714401817322,2.1505432305336,2.84261216497421,3.81355269527435,4.84970005130768,5.3366497335434,4.73932965373993,4.38066645240784,4.22758241271973,4.24491413211823,4.40014715766907,4.66200228309631,4.99780269241333,5.37263138866425,5.28382595157623,4.93183107948303,4.62833519554138,4.38362367725372,4.1984661397934,4.06983562088013,3.99732513999939,3.98599227046967,4.04245133972168,4.17284460639954,4.38568647480011,4.69453676319122,5.11858900165558,5.35606642341614,4.64684708690643,3.83975430107117,3.16867204284668,2.69577928161621,2.36925430870056,2.07511540031433,1.73093094205856,1.37259979820251,5.05989761924744,5.17304535484314,4.36340447044373,3.82205923175812,3.69477446651459,3.91826255893707,4.32429464435577,4.78179724788666,5.38946099853516,4.87461848831177,4.04362793540955,3.32352240657806,2.83597226715088,2.63710953569412,2.7516511259079,3.17812772369385,3.80746551132202,4.3879305896759,4.69853396987915,4.74728401279449,4.62725766277313,4.43510492420197,4.2429464635849,4.26948888874054,4.75031455135345,5.36820109462738,4.25436587905884,3.2560501871109,2.67408664798737,2.665508228302,3.19735165214539,4.07780643081665,5.08065183734894,5.12698109722137,4.55036981678009,4.21529253101349,4.09249241924286,4.15165408229828,4.36549087142944,4.70699830627441,5.14527125930786,5.3919543800354,4.87579365348816,4.38271279907227,3.94669004058838,3.58903642272949,3.31702466583252,3.12752945995331,3.01317079639435,2.97094942903519,2.99928088760376,3.10201879119873,3.28573437309265,3.56341846561432,3.95657094097137,4.49303742027283,5.19642384624481,5.00323219871521,4.25788314914703,3.64042897796631,3.09743435955048,2.53923805332184,1.93574317073822,1.39168049669266,5.47992404079437,4.97208853340149,4.58893104171753,4.57115371799469,4.92928226566315,5.48119934177399,4.99005611515045,4.49759646034241,3.93930430984497,3.2973715839386,2.66798909282684,2.22272666072845,2.08369668102264,2.27507998323441,2.7498268661499,3.38651927089691,4.06517251110077,4.43660195446014,4.43181474781036,4.13813574886322,3.72672815895081,3.35146172618866,3.09544487571716,3.0782748041153,3.50943096256256,4.41571684455872,5.44072802639008,4.29830117797852,3.54276688671112,3.36019142246246,3.742372590065,4.5166372833252,5.4542045173645,4.80080516910553,4.25995202636719,3.95208592987061,3.85234029865265,3.93631275272369,4.18353481864929,4.57352586364746,5.08015866851807,5.36723263835907,4.74234374141693,4.12843151664734,3.56931038475037,3.09678526496887,2.72641386365891,2.45874603366852,2.27884008264542,2.19414879655838,2.18057646131516,2.23993303155899,2.3769100484848,2.60349126434326,2.94231380796433,3.42608757591248,4.09026010608673,4.92717512226105,5.28775520896912,4.50047858333588,3.70038314437866,2.84899278259277,1.98778142309189,1.29313202476501,5.46465154266357,5.33304269886017,5.40350325679779,5.23001797771454,4.62011476135254,4.00739594078064,3.52055819606781,3.16877718544006,2.80869813537598,2.41594638204575,2.06529172039032,1.90928907966614,2.05792136764526,2.51008565998077,3.17801793193817,3.9075154838562,4.46108944988251,4.60411663627625,4.3085461435318,3.72019823169708,3.06697912788391,2.54304553842545,2.24346943473816,2.21371765708923,2.58938284492493,3.4318189201355,4.59068914031982,5.25233145332336,4.40686591243744,4.10439999675751,4.36026485538483,5.02401681518555,5.16197248077393,4.44728215312958,3.9507648525238,3.66884358501434,3.58118362998962,3.66960819339752,3.92104633426666,4.32271071052551,4.85527797317505,5.48788555240631,4.85776920890808,4.16194160556793,3.50990338897705,2.94157691574097,2.48025109148026,2.13160594081879,1.88821907615662,1.73042346811295,1.66393472528458,1.66652252054214,1.74235250329971,1.90271337604523,2.17025353288651,2.58076651668549,3.18925567245483,4.01372273540497,4.90935381031036,5.16582735157013,4.11347766494751,2.99012561416626,1.91981084918976,1.14698444581032,5.15422733402252,4.89731283760071,4.50238867378235,3.8978309211731,3.28384824371338,2.8236394701004,2.562656062603,2.44035609340668,2.33607216453552,2.22079922533035,2.14379908418655,2.230784553051,2.58089383220673,3.1695160446167,3.88760240650177,4.58510978794098,4.99715574359894,4.93711538887024,4.4016845998764,3.57449813461304,2.72435911273956,2.0772822675705,1.73884614086151,1.71932216262817,2.05666001415253,2.81041474914551,3.88555784797668,5.01651306724548,5.13496549701691,4.76948519325256,4.93084045028687,5.49071403121948,4.79530842876434,4.15497751808167,3.70479448413849,3.44376619434357,3.35578473186493,3.42843719100952,3.65569968795776,4.0325554189682,4.54736538505554,5.17574902153015,5.15646322345734,4.42857678508759,3.72820730781555,3.10012908554077,2.57343389368057,2.15869213914871,1.85106690502167,1.63727553462982,1.49441160535812,1.43408398604393,1.4396371421814,1.52261932468414,1.70571227645874,2.03883852338791,2.57652040100098,3.3788678226471,4.34364088153839,5.46056600189209,4.31099732494354,2.98283465480804,1.7909907875061,1.03799949860573,4.45848985290527,3.92818458652496,3.34909709072113,2.74600346660614,2.29828001832962,2.09551056003571,2.10435505485535,2.21862145042419,2.35662915086746,2.48755760765076,2.63614858961105,2.89986159181595,3.37213297462463,4.01754506206512,4.72391768074036,5.33576746559143,5.40496774291992,5.42161460494995,4.7129274187088,3.70683796977997,2.70131464576721,1.95122470235825,1.57566626644135,1.56895037269592,1.89918233728409,2.57321144914627,3.53460689163208,4.57742078876495,5.40651162242889,5.25115664577484,5.35260637378693,5.21146746253967,4.56251342868805,3.99621899700165,3.58877463912964,3.34146710014343,3.24170144176483,3.28176112747192,3.46147807216644,3.78273518657684,4.24140508747101,4.82044323062897,5.48705049133301,4.83991892910004,4.1411569890976,3.49816890335083,2.94328852272034,2.4907474694252,2.13847776031494,1.87438960647583,1.66038580513,1.54214991903305,1.47852461314201,1.48195158219337,1.57535030221939,1.83309324359894,2.29622079706192,3.06546314334869,4.08227427577972,5.32198377227783,4.30022199726105,2.85962845659256,1.65630598640442,1.02941929078102,3.66058416938782,2.97074969387054,2.36336203193665,1.89081223583221,1.67557998275757,1.73393447971344,1.97849346971512,2.28572441911697,2.61638339138031,2.93975962972641,3.25853248214722,3.64215846633911,4.18137045478821,4.84798451042175,5.51030238246918,4.96301014995575,4.74020369625092,5.03012796020508,5.19516928768158,4.06980844116211,2.94688053703308,2.11005725240707,1.69840289926529,1.69823284721375,2.04267765855789,2.67103304243088,3.52519591426849,4.4531515417099,5.19650180912018,5.48450775718689,5.47951455688477,5.07798250293732,4.51980050182343,4.01932068443298,3.64676399803162,3.40548606491089,3.28542824363709,3.2819495973587,3.39882524585724,3.64305539703369,4.01682873344421,4.51020248508453,5.09748895740509,5.2963733253479,4.64793248748779,4.03695710277557,3.49624343490601,3.04188116168976,2.67399384355545,2.38214876031876,2.15265859937668,1.97509010410309,1.8213617978096,1.75192208862305,1.79757990217209,1.95736052370071,2.34672124958038,3.07470353221893,4.12079330062866,5.43791456794739,4.10892649269104,2.65594078874588,1.55256690359116,1.1494308886528">
+   </PIN>
+   <BOUNDS type="Node" left="3645" top="6360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="CenterY" visible="1" slicecount="1" pintype="Input" values="-0.02">
+   </PIN>
+   <PIN pinname="TranslateZ" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateY" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ScaleZ" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pitch" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Yaw" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Roll" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="CenterX" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="CenterZ" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="15" systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="5550" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" pintype="Input" visible="1" values="2.18">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Error Handling Style" pintype="Input" visible="0" slicecount="1" values="RedNode">
+   </PIN>
+   <PIN pinname="Success" pintype="Output" visible="0">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="14" systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="5520" top="5175" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5520" top="5175" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" pintype="Input" visible="1" values="0.03">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="SizeXYZ">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Value Type" pintype="Configuration" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Precision" pintype="Configuration" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Behavior" pintype="Configuration" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Vector Size" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" pintype="Configuration" slicecount="1" values="-99999999">
+   </PIN>
+   <PIN pinname="Maximum" pintype="Configuration" slicecount="1" values="99999999">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Value" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Slider" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" pintype="Configuration" slicecount="1" values="Endless">
+   </PIN>
+   <PIN pinname="Show Connections" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Background" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Sticky Slider" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Allow MouseOffset" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Constraints" pintype="Configuration" slicecount="1" values="scX">
+   </PIN>
+   <PIN pinname="Slider Alignment" pintype="Configuration" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="36" nodename="HSV (Color Join)" systemname="HSV (Color Join)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="6270" top="6450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Hue" visible="1" slicecount="4096" pintype="Input" values="0.412687391042709,0.368828058242798,0.333141326904297,0.305716395378113,0.285327434539795,0.26968988776207,0.256482839584351,0.244433298707008,0.234718203544617,0.230185315012932,0.231222853064537,0.232778295874596,0.225348696112633,0.194197028875351,0.0909655392169952,0.238367646932602,0.519108891487122,0.736164033412933,0.757899105548859,0.564527451992035,0.264092981815338,0.134062901139259,0.331178158521652,0.421215862035751,0.42432889342308,0.375385582447052,0.301861137151718,0.241446495056152,0.217793717980385,0.231835186481476,0.270384699106216,0.320334643125534,0.37262225151062,0.416771948337555,0.442273944616318,0.445747822523117,0.430758655071259,0.40481823682785,0.375729888677597,0.348885506391525,0.326410800218582,0.307854890823364,0.291302978992462,0.274512678384781,0.255880415439606,0.235023111104965,0.21283632516861,0.191046386957169,0.171435639262199,0.155000597238541,0.141257807612419,0.127823159098625,0.110386282205582,0.0833152011036873,0.0743870437145233,0.134050369262695,0.208190962672234,0.28735762834549,0.368867635726929,0.452962905168533,0.540615320205688,0.62791633605957,0.700807511806488,0.734479248523712,0.231770008802414,0.180398389697075,0.140066877007484,0.110706359148026,0.0907371118664742,0.0771609991788864,0.0665792524814606,0.0590572468936443,0.0679831281304359,0.0725372657179832,0.0709254965186119,0.0650254637002945,0.0604415200650692,0.0724331513047218,0.0713170617818832,0.20113679766655,0.427594482898712,0.645488142967224,0.715367555618286,0.587492644786835,0.33597657084465,0.0631288960576057,0.277993857860565,0.423101037740707,0.482711434364319,0.472691267728806,0.417700678110123,0.361582607030869,0.334726214408874,0.340794891119003,0.368770480155945,0.406748026609421,0.445971608161926,0.476702004671097,0.490024745464325,0.483769685029984,0.461988598108292,0.432023823261261,0.401121824979782,0.374056756496429,0.352310210466385,0.334678292274475,0.318486452102661,0.300878167152405,0.279933661222458,0.255365908145905,0.228579610586166,0.202088758349419,0.178543642163277,0.159710884094238,0.145674780011177,0.134368017315865,0.12148343026638,0.100949041545391,0.0663320422172546,0.102178759872913,0.172185137867928,0.251197814941406,0.332679182291031,0.418562471866608,0.507923483848572,0.598070561885834,0.675892770290375,0.715825796127319,0.0636940747499466,0.102891020476818,0.141113892197609,0.16725118458271,0.183698132634163,0.194519624114037,0.204244643449783,0.216069459915161,0.230212330818176,0.241644978523254,0.246351718902588,0.238729178905487,0.210614487528801,0.155498489737511,0.106257922947407,0.142731457948685,0.300079017877579,0.505832374095917,0.620505154132843,0.569938480854034,0.387621223926544,0.142453446984291,0.21554134786129,0.411380767822266,0.530590057373047,0.565921247005463,0.535303592681885,0.487279772758484,0.458367168903351,0.455789089202881,0.471519291400909,0.495442301034927,0.519472062587738,0.535013437271118,0.53511905670166,0.518894135951996,0.490717083215713,0.457540154457092,0.425889045000076,0.399786293506622,0.380051076412201,0.36477118730545,0.350494742393494,0.333645164966583,0.311828941106796,0.284687429666519,0.253991723060608,0.222962886095047,0.195101156830788,0.172967404127121,0.157249048352242,0.146230593323708,0.135663747787476,0.119170665740967,0.0895513966679573,0.0742362439632416,0.14121800661087,0.219934940338135,0.301982492208481,0.389673411846161,0.479830414056778,0.570360243320465,0.648913979530334,0.689737617969513,0.195409178733826,0.240224465727806,0.271722674369812,0.291326403617859,0.307433098554611,0.31365105509758,0.322935283184052,0.338460981845856,0.359337210655212,0.380507677793503,0.392464369535446,0.383035182952881,0.337156534194946,0.243570551276207,0.124812811613083,0.0696056485176086,0.150085180997849,0.331092089414597,0.481821924448013,0.513486206531525,0.4166399538517,0.218600407242775,0.142556086182594,0.380774945020676,0.559417247772217,0.645231306552887,0.644955277442932,0.609561026096344,0.580609500408173,0.569529414176941,0.57206666469574,0.580512046813965,0.58787077665329,0.587116658687592,0.573578059673309,0.547630369663239,0.5137859582901,0.478392243385315,0.447137147188187,0.423282593488693,0.407020688056946,0.395836412906647,0.38556569814682,0.371845185756683,0.351603478193283,0.324125707149506,0.291281551122665,0.256811738014221,0.224988028407097,0.199177697300911,0.180731683969498,0.168341979384422,0.157858833670616,0.142660304903984,0.114950209856033,0.0684195533394814,0.113683871924877,0.193607568740845,0.278562188148499,0.367642134428024,0.458524942398071,0.547983884811401,0.623898565769196,0.660493731498718,0.310504019260406,0.346244812011719,0.375533819198608,0.389378041028976,0.396932482719421,0.403402805328369,0.414470016956329,0.433273911476135,0.45852592587471,0.484776884317398,0.499853581190109,0.486432373523712,0.424835026264191,0.300052613019943,0.126613289117813,0.124581530690193,0.121166661381722,0.140027701854706,0.316612750291824,0.424733698368073,0.423082917928696,0.290249615907669,0.0585958771407604,0.327069759368897,0.560422658920288,0.698080778121948,0.734054207801819,0.715963900089264,0.689743757247925,0.671350836753845,0.660895466804504,0.653621137142181,0.64405620098114,0.627109527587891,0.600544929504394,0.565897464752197,0.527581870555878,0.491151809692383,0.461396545171738,0.440900206565857,0.429407387971878,0.424005806446075,0.419986933469772,0.412231355905533,0.396818667650223,0.372339814901352,0.340353220701218,0.304763466119766,0.270400702953339,0.241378620266914,0.219745308160782,0.20465874671936,0.192106872797012,0.175265252590179,0.145875617861748,0.0970871448516846,0.0882014706730843,0.172140836715698,0.261723101139069,0.353974878787994,0.446168571710587,0.533921122550964,0.604620158672333,0.632330000400543,0.407500505447388,0.439469188451767,0.460742145776749,0.471946686506271,0.476516604423523,0.480361968278885,0.489720791578293,0.507771253585815,0.532828450202942,0.559002757072449,0.571045696735382,0.54919022321701,0.472412675619125,0.324451148509979,0.113937139511108,0.1991848051548,0.26560851931572,0.162472262978554,0.139594942331314,0.314608722925186,0.409915149211884,0.356247514486313,0.151719897985458,0.248496994376183,0.526889383792877,0.71605509519577,0.789448142051697,0.792576968669891,0.772227942943573,0.748782277107239,0.726974010467529,0.705356001853943,0.680334508419037,0.648971796035767,0.61139303445816,0.57004588842392,0.528994262218475,0.492855399847031,0.465527713298798,0.449065625667572,0.443033874034882,0.444463104009628,0.448427587747574,0.449240297079086,0.442084670066833,0.424552857875824,0.397421061992645,0.364265471696854,0.330075919628143,0.299459517002106,0.275064051151276,0.256518572568893,0.239983186125755,0.218494713306427,0.183502987027168,0.127998769283295,0.0648474097251892,0.156394585967064,0.252000033855438,0.350581139326096,0.445050656795502,0.530900776386261,0.594257175922394,0.608722567558289,0.492663711309433,0.523012757301331,0.541199445724487,0.548189580440521,0.547985792160034,0.547109186649322,0.55221825838089,0.566482901573181,0.587745189666748,0.609506607055664,0.613053381443024,0.578839123249054,0.486329525709152,0.321464866399765,0.0905009731650353,0.261971294879913,0.384442180395126,0.325857549905777,0.144096776843071,0.196972578763962,0.382842659950256,0.416005373001099,0.255691587924957,0.14651945233345,0.456745773553848,0.690266489982605,0.80130398273468,0.827877640724182,0.816312968730926,0.79088032245636,0.76077789068222,0.72792387008667,0.690784335136414,0.651524126529694,0.604993641376495,0.55904883146286,0.516986489295959,0.482336133718491,0.458107948303223,0.445981979370117,0.444837182760239,0.453026652336121,0.465470135211945,0.476309835910797,0.480003386735916,0.472993195056915,0.454837054014206,0.428211957216263,0.397751063108444,0.368196755647659,0.3425273001194,0.320629447698593,0.298781901597977,0.269984036684036,0.225656285881996,0.159111052751541,0.0700735300779343,0.148169636726379,0.253897786140442,0.358907997608185,0.45654422044754,0.540181457996368,0.59398341178894,0.590832233428955,0.575575828552246,0.602807521820068,0.616344392299652,0.617664277553558,0.611347377300262,0.604382455348968,0.603632926940918,0.612112641334534,0.627083718776703,0.639220595359802,0.632651209831238,0.583915233612061,0.476095676422119,0.299187362194061,0.0610686093568802,0.307383835315704,0.46714174747467,0.449835032224655,0.285315662622452,0.0866328701376915,0.349415421485901,0.469509929418564,0.365281313657761,0.09034114331007,0.354044109582901,0.621818840503693,0.76724112033844,0.817276120185852,0.816579163074493,0.79248571395874,0.763130128383636,0.724065661430359,0.68020111322403,0.632227540016174,0.583236455917358,0.536322951316833,0.494693875312805,0.461607158184052,0.43981072306633,0.430802762508392,0.434326708316803,0.44829335808754,0.46785318851471,0.488330155611038,0.503607273101807,0.509112179279327,0.502951443195343,0.486384928226471,0.463076382875442,0.437405496835709,0.41244450211525,0.388219743967056,0.360879510641098,0.323334604501724,0.267242699861526,0.186766117811203,0.0832053646445274,0.148200646042824,0.265215158462524,0.377561420202255,0.478643447160721,0.55916041135788,0.600846529006958,0.580411434173584,0.654813051223755,0.676989734172821,0.684220135211945,0.678642213344574,0.665366351604462,0.651638627052307,0.644247591495514,0.645839333534241,0.652984023094177,0.654840111732483,0.635009288787842,0.571538746356964,0.450543433427811,0.266818672418594,0.083793893456459,0.332016050815582,0.507595300674438,0.523485243320465,0.38544037938118,0.118559837341309,0.317535310983658,0.516956150531769,0.474861621856689,0.223701953887939,0.227534145116806,0.519709527492523,0.694145619869232,0.767139256000519,0.781167984008789,0.765526473522186,0.735662996768951,0.698434948921204,0.655418395996094,0.607977211475372,0.559502899646759,0.513121783733368,0.471968203783035,0.439276993274689,0.417919099330902,0.409693270921707,0.414768278598785,0.431452870368958,0.456337541341782,0.484850764274597,0.509612023830414,0.527229785919189,0.53387725353241,0.529153883457184,0.515259742736816,0.495667606592178,0.47316563129425,0.447897762060165,0.416079699993134,0.370408147573471,0.302836120128632,0.208589315414429,0.0908155962824822,0.153201639652252,0.280534744262695,0.400089979171753,0.504055857658386,0.580100536346436,0.611731946468353,0.576500415802002,0.726944208145142,0.74168461561203,0.740911066532135,0.727548658847809,0.707137107849121,0.686878621578217,0.673065841197967,0.667597651481628,0.666154623031616,0.656581878662109,0.622519850730896,0.545261919498444,0.414559304714203,0.230262249708176,0.107770055532455,0.335170656442642,0.504432559013367,0.541310489177704,0.434941053390503,0.176488667726517,0.29471230506897,0.559104740619659,0.578571736812592,0.360187083482742,0.0870371460914612,0.394934237003326,0.594309270381928,0.689401924610138,0.72032880783081,0.716968953609466,0.69611120223999,0.66586297750473,0.628762006759644,0.586429417133331,0.541932046413422,0.498081803321838,0.45788249373436,0.424677819013596,0.401684939861298,0.391263157129288,0.394325196743011,0.410027623176575,0.435740143060684,0.467332392930985,0.499851703643799,0.527065455913544,0.545302450656891,0.552339792251587,0.548681259155273,0.536469042301178,0.517803549766541,0.492780983448029,0.457954078912735,0.406234830617905,0.329723298549652,0.224758163094521,0.0961252003908157,0.157368451356888,0.292568027973175,0.418100953102112,0.523758411407471,0.597326338291168,0.620270431041718,0.576650440692902,0.785086989402771,0.789563536643982,0.779162466526031,0.757694482803345,0.730940341949463,0.705584645271301,0.686749279499054,0.674944639205933,0.66100400686264,0.642755031585693,0.594220638275146,0.505372643470764,0.370273619890213,0.193793192505836,0.120947122573853,0.31410139799118,0.458269387483597,0.502016961574554,0.428525149822235,0.194658607244492,0.287336826324463,0.596740007400513,0.670808374881744,0.490424573421478,0.172857046127319,0.257065176963806,0.476815789937973,0.594218909740448,0.644669651985169,0.657630026340485,0.650461733341217,0.632081747055054,0.605823814868927,0.573202848434448,0.536393642425537,0.497563272714615,0.45948538184166,0.42566192150116,0.399751096963882,0.384767651557922,0.382467746734619,0.393023431301117,0.414908409118652,0.444988250732422,0.478904753923416,0.511802017688751,0.539279282093048,0.555950224399567,0.562172591686249,0.557843387126923,0.544032394886017,0.520553171634674,0.484376668930054,0.429170548915863,0.347439020872116,0.236196115612984,0.101526483893394,0.15706630051136,0.296754777431488,0.42622634768486,0.53381609916687,0.605047225952148,0.624397039413452,0.581470191478729,0.818912327289581,0.810373485088348,0.789364337921143,0.760534942150116,0.729508638381958,0.701709091663361,0.680148482322693,0.663164675235748,0.642437934875488,0.609241306781769,0.548155307769775,0.452807903289795,0.322075575590134,0.16519957780838,0.113536030054092,0.260749161243439,0.369038641452789,0.409532874822617,0.367298156023026,0.170856267213821,0.297490179538727,0.628076136112213,0.744362235069275,0.603999555110931,0.309610784053802,0.116484254598618,0.350300967693329,0.488737612962723,0.560257494449615,0.59264874458313,0.603065848350525,0.60079163312912,0.589786648750305,0.571164488792419,0.545743405818939,0.514762341976166,0.480664163827896,0.447104036808014,0.418191581964493,0.397566139698029,0.387766033411026,0.389936119318008,0.403713524341583,0.427207946777344,0.4571453332901,0.489285528659821,0.519132375717163,0.542751491069794,0.557362079620361,0.559700906276703,0.551273167133331,0.53056001663208,0.494910955429077,0.439044117927551,0.356431573629379,0.24421800673008,0.108864061534405,0.150386065244675,0.291177153587341,0.422061622142792,0.530442178249359,0.601310968399048,0.62155818939209,0.587038218975067,0.816736459732056,0.793480575084686,0.76234495639801,0.728446900844574,0.696505784988403,0.669638693332672,0.647685348987579,0.624097347259522,0.597367525100708,0.552085220813751,0.484308779239655,0.391980439424515,0.278647571802139,0.156232312321663,0.0732981041073799,0.166606828570366,0.236711606383324,0.273595035076141,0.261320203542709,0.112009771168232,0.317826837301254,0.646533906459808,0.791682243347168,0.690240263938904,0.427475690841675,0.132051706314087,0.222850978374481,0.379167318344116,0.471804529428482,0.525428175926209,0.556175827980041,0.573243677616119,0.581033647060394,0.580035328865051,0.569373488426209,0.549156546592712,0.521415531635284,0.489932775497437,0.459220618009567,0.43343397974968,0.415718853473663,0.407997936010361,0.410929918289185,0.423870086669922,0.444847375154495,0.470693349838257,0.497455090284348,0.521047532558441,0.53791081905365,0.545360147953033,0.541417241096497,0.524148523807526,0.490767180919647,0.437005132436752,0.357660353183746,0.249800473451614,0.118750505149364,0.136815950274467,0.274741649627686,0.403665512800217,0.511013567447662,0.581760764122009,0.605498015880585,0.584235310554504,0.769378006458282,0.731859266757965,0.693049788475037,0.657662630081177,0.628397762775421,0.604952275753021,0.58133852481842,0.55713552236557,0.520650863647461,0.470889925956726,0.407315969467163,0.332115083932877,0.25222659111023,0.179280668497086,0.124154612421989,0.0853205695748329,0.0687728002667427,0.109052762389183,0.131410330533981,0.0735781416296959,0.335559189319611,0.643067061901092,0.805279135704041,0.741530478000641,0.517209649085999,0.248182639479637,0.101452268660069,0.270176976919174,0.382189154624939,0.457280039787292,0.509694457054138,0.548071324825287,0.577045023441315,0.596324384212494,0.6031494140625,0.596387505531311,0.577615737915039,0.550712883472443,0.520520508289337,0.491554826498032,0.467334091663361,0.450270682573318,0.441763520240784,0.442228466272354,0.450990855693817,0.466180741786957,0.484831184148788,0.503283441066742,0.517776429653168,0.524955272674561,0.522032737731934,0.506517767906189,0.475623726844788,0.425698608160019,0.352363616228104,0.252613544464111,0.130340471863747,0.116716608405113,0.246969744563103,0.369282573461533,0.471771508455276,0.540291726589203,0.567055583000183,0.559714436531067,0.674221992492676,0.625261902809143,0.58223569393158,0.548146605491638,0.522639751434326,0.500917553901672,0.478932589292526,0.449368089437485,0.412931054830551,0.371072769165039,0.326503545045853,0.284467756748199,0.252725213766098,0.23880136013031,0.241450905799866,0.249167501926422,0.229859218001366,0.177727401256561,0.111179783940315,0.134226515889168,0.333710014820099,0.610673487186432,0.782763421535492,0.754427850246429,0.574565589427948,0.341375559568405,0.124114714562893,0.164509505033493,0.292182356119156,0.387287020683289,0.461168736219406,0.521401941776276,0.572610855102539,0.613632202148438,0.639767587184906,0.648626208305359,0.641332447528839,0.621838688850403,0.59523355960846,0.566231071949005,0.538474678993225,0.514542818069458,0.496223300695419,0.48468291759491,0.480368465185165,0.482736945152283,0.490064561367035,0.499556183815002,0.507767915725708,0.511149048805237,0.506425023078918,0.490662574768066,0.46100327372551,0.414259076118469,0.346836626529694,0.256012201309204,0.145055621862411,0.0900163128972054,0.207985550165176,0.318116158246994,0.409831285476685,0.471059232950211,0.496710181236267,0.499135076999664,0.535823166370392,0.478493571281433,0.432368159294128,0.397861212491989,0.372093915939331,0.350347131490707,0.328614592552185,0.305338084697723,0.281958431005478,0.262138903141022,0.243861928582191,0.244112476706505,0.266422361135483,0.312214910984039,0.369193315505981,0.408441036939621,0.396900206804276,0.319092124700546,0.202981859445572,0.163202956318855,0.303555458784103,0.548822104930878,0.726767420768738,0.733531892299652,0.601101279258728,0.410785347223282,0.219757497310638,0.0630409047007561,0.200537174940109,0.312494397163391,0.406109124422073,0.487307667732239,0.560419201850891,0.623365640640259,0.669576466083527,0.695461750030518,0.701726377010345,0.692014276981354,0.674224853515625,0.649592220783234,0.621506094932556,0.593173682689667,0.568492531776428,0.54759293794632,0.531759083271027,0.521653652191162,0.51688414812088,0.515811204910278,0.515734612941742,0.513359129428864,0.505285501480103,0.488311380147934,0.459449946880341,0.415716379880905,0.353978544473648,0.271676748991013,0.172886058688164,0.0660649985074997,0.153932064771652,0.248956471681595,0.324665248394012,0.371525645256042,0.388589143753052,0.392380356788635,0.360570847988129,0.294534385204315,0.2415442019701,0.201594278216362,0.173976272344589,0.154928281903267,0.140571668744087,0.127618536353111,0.11758542060852,0.116585992276669,0.132892519235611,0.175699815154076,0.250574141740799,0.351812690496445,0.455908000469208,0.524043798446655,0.504326701164246,0.388707250356674,0.229954853653908,0.146296665072441,0.243848383426666,0.464132755994797,0.64635956287384,0.686314702033997,0.603771328926086,0.460597217082977,0.302316009998322,0.150159746408463,0.104675233364105,0.228594452142715,0.33874499797821,0.438670426607132,0.532052457332611,0.61587792634964,0.681848645210266,0.725280702114105,0.745549023151398,0.750804126262665,0.742872953414917,0.725809037685394,0.702549517154694,0.67533552646637,0.647460699081421,0.621360898017883,0.597472429275513,0.577438890933991,0.562151908874512,0.551275968551636,0.54316782951355,0.535182476043701,0.524158537387848,0.506842494010925,0.480097383260727,0.440848410129547,0.385933548212051,0.313868939876556,0.226836159825325,0.132545575499535,0.0744237378239632,0.154704481363297,0.213721826672554,0.24299393594265,0.244300827383995,0.238990992307663,0.152513399720192,0.076654776930809,0.0973860621452332,0.139352515339851,0.168555870652199,0.188967525959015,0.20308355987072,0.212009578943253,0.212227195501328,0.19450980424881,0.14800962805748,0.0632713958621025,0.177051872014999,0.327908575534821,0.47177392244339,0.550103843212128,0.507866740226746,0.356119155883789,0.177356511354446,0.0832240730524063,0.164481803774834,0.371507883071899,0.556902945041657,0.627790510654449,0.593577444553375,0.498415768146515,0.376398026943207,0.245615437626839,0.113402210175991,0.131276026368141,0.253329455852509,0.36851978302002,0.47940856218338,0.582001924514771,0.666436553001404,0.727039277553558,0.763937473297119,0.78255432844162,0.786795020103455,0.780351459980011,0.765717029571533,0.744666337966919,0.718618810176849,0.691832005977631,0.664384067058563,0.638402581214905,0.615908682346344,0.597885847091675,0.583932340145111,0.572358131408691,0.560572862625122,0.54551887512207,0.523953914642334,0.492478162050247,0.447391390800476,0.387497067451477,0.314283788204193,0.233146220445633,0.15443828701973,0.0876692980527878,0.0721010863780975,0.0855332836508751,0.0707670748233795,0.0654087588191032,0.189649820327759,0.267518609762192,0.329937964677811,0.380185008049011,0.420082241296768,0.449596136808395,0.467316031455994,0.472275882959366,0.460052937269211,0.420293807983398,0.342206597328186,0.218915596604347,0.0614098384976387,0.24679633975029,0.405954718589783,0.467160135507584,0.390620559453964,0.219248652458191,0.061044629663229,0.125020116567612,0.0857788324356079,0.291803926229477,0.47926589846611,0.574722230434418,0.583193123340607,0.533098936080933,0.447775542736053,0.341942548751831,0.223315730690956,0.0972203090786934,0.146091401576996,0.271887987852097,0.396530836820602,0.514898955821991,0.615675806999207,0.692035675048828,0.744556903839111,0.777101099491119,0.794577658176422,0.800476610660553,0.796948671340942,0.785317778587341,0.766558706760407,0.741667747497559,0.716273903846741,0.688779413700104,0.663207173347473,0.641753017902374,0.625302672386169,0.613305747509003,0.6040078997612,0.594800412654877,0.582463085651398,0.563168466091156,0.532303750514984,0.488386332988739,0.431606233119965,0.365431874990463,0.300083875656128,0.246124178171158,0.214491441845894,0.212995961308479,0.239163011312485,0.272325307130814,0.409973531961441,0.493233293294907,0.566081345081329,0.628266274929047,0.677237570285797,0.709331154823303,0.721186757087708,0.711693823337555,0.677456319332123,0.609846770763397,0.501175224781036,0.349338918924332,0.163425281643867,0.143492251634598,0.277761876583099,0.292515069246292,0.180078268051147,0.103190071880817,0.220081806182861,0.218431174755096,0.0836233869194984,0.245577231049538,0.431762874126434,0.542109847068787,0.583819568157196,0.572246074676514,0.521111607551575,0.44132387638092,0.340329110622406,0.223881170153618,0.0978552848100662,0.148169696331024,0.281780242919922,0.41210663318634,0.526363074779511,0.616925179958344,0.683073699474335,0.728910386562347,0.759271502494812,0.77761447429657,0.785908579826355,0.785136282444,0.775866627693176,0.758770287036896,0.736962080001831,0.711874842643738,0.687215864658356,0.666183054447174,0.650850415229797,0.641846179962158,0.638410687446594,0.638603150844574,0.639418542385101,0.636666417121887,0.624678730964661,0.60082995891571,0.563555359840393,0.514905691146851,0.464548408985138,0.423474907875061,0.402391135692596,0.408485442399979,0.439491838216782,0.477731257677078,0.615737795829773,0.704364418983459,0.780886948108673,0.841301500797272,0.880993783473969,0.896150052547455,0.88463681936264,0.846839845180511,0.781626582145691,0.684321880340576,0.552218496799469,0.388417661190033,0.207102909684181,0.0639407262206078,0.134830668568611,0.0839748159050941,0.174860566854477,0.31886950135231,0.367164194583893,0.28313273191452,0.0950687527656555,0.244537591934204,0.423459082841873,0.538700580596924,0.601897120475769,0.619737029075623,0.597946345806122,0.543220639228821,0.461824506521225,0.359360694885254,0.24124439060688,0.112463109195232,0.14009003341198,0.277610510587692,0.401604950428009,0.503342866897583,0.581149458885193,0.638439238071442,0.679928660392761,0.709155380725861,0.728078126907349,0.737505793571472,0.737735867500305,0.72919636964798,0.713021636009216,0.693523168563843,0.672809779644012,0.655369937419891,0.644237458705902,0.641102254390717,0.646217525005341,0.658449828624725,0.675221621990204,0.692186713218689,0.70274156332016,0.702212810516357,0.687116682529449,0.658438563346863,0.624855697154999,0.597011685371399,0.584777414798737,0.594340741634369,0.623582899570465,0.65827465057373,0.78561145067215,0.864383637905121,0.922800183296204,0.956496059894562,0.962714850902557,0.940773546695709,0.891584277153015,0.817220747470856,0.718804776668549,0.596352338790894,0.452382922172546,0.294948518276215,0.150280565023422,0.0646476075053215,0.0819601789116859,0.20377790927887,0.369889408349991,0.480838716030121,0.459280878305435,0.300982147455215,0.0632329806685448,0.284648150205612,0.452063679695129,0.563551545143127,0.63658481836319,0.673912167549133,0.675332903861999,0.643227636814117,0.581790506839752,0.495750606060028,0.389780133962631,0.267896562814713,0.132855653762817,0.122469075024128,0.251777619123459,0.361028969287872,0.447559475898743,0.513471841812134,0.562327980995178,0.599361717700958,0.625943422317505,0.642883837223053,0.650400936603546,0.648860454559326,0.639456808567047,0.625215947628021,0.609907925128937,0.597928106784821,0.592944920063019,0.597453653812408,0.612591743469238,0.638058006763458,0.671874165534973,0.709824442863464,0.74470067024231,0.769238531589508,0.777974784374237,0.770857274532318,0.755185604095459,0.74051707983017,0.735369920730591,0.744692802429199,0.766537487506866,0.790272355079651,0.884352087974548,0.930549204349518,0.947006464004517,0.932602882385254,0.889179646968842,0.820450663566589,0.729859292507172,0.62000185251236,0.493572890758514,0.354958564043045,0.211702674627304,0.0808202773332596,0.11857882142067,0.115431316196918,0.108413614332676,0.292656868696213,0.473053485155106,0.552804827690124,0.477521806955338,0.270732283592224,0.110956460237503,0.346389055252075,0.50250256061554,0.605198562145233,0.679005563259125,0.727031648159027,0.745531022548676,0.73293149471283,0.690748691558838,0.6221764087677,0.53083610534668,0.419695764780045,0.291025847196579,0.153725951910019,0.0927461013197899,0.206977605819702,0.299909621477127,0.371506452560425,0.424733221530914,0.463531225919724,0.491244971752167,0.509375989437103,0.520094931125641,0.521962881088257,0.516478955745697,0.506451725959778,0.496136486530304,0.489752262830734,0.491311937570572,0.503773748874664,0.528911888599396,0.567165017127991,0.617249667644501,0.675364434719086,0.733499109745026,0.783895075321198,0.816945016384125,0.831857025623321,0.834226548671722,0.831977844238281,0.831993103027344,0.83800220489502,0.848451852798462,0.860475182533264,0.888341188430786,0.885191202163696,0.84611302614212,0.774985492229462,0.679024934768677,0.565940380096436,0.440619647502899,0.305047184228897,0.162824213504791,0.0929320827126503,0.217214614152908,0.301355838775635,0.312787592411041,0.226045548915863,0.0707706958055496,0.297437995672226,0.48237606883049,0.538870871067047,0.433970987796783,0.209292650222778,0.174967750906944,0.404871046543121,0.551890730857849,0.644674122333527,0.71413516998291,0.766626119613647,0.797174334526062,0.79893970489502,0.776147603988647,0.725833773612976,0.650618553161621,0.552903056144714,0.434345424175262,0.302486926317215,0.171521842479706,0.0621671974658966,0.159714639186859,0.234215766191483,0.287261813879013,0.322680175304413,0.344798475503922,0.357268929481506,0.362477660179138,0.361620604991913,0.35562738776207,0.346684187650681,0.338725566864014,0.336118310689926,0.34278017282486,0.361780881881714,0.395231813192368,0.444145858287811,0.507954478263855,0.583507597446442,0.663570106029511,0.737419068813324,0.794285893440247,0.830800652503967,0.850531697273254,0.859483242034912,0.862908601760864,0.863612353801727,0.871493220329285,0.876018464565277,0.802085340023041,0.745297431945801,0.649996519088745,0.525539398193359,0.384519100189209,0.237810060381889,0.09129698574543,0.168305665254593,0.303439825773239,0.416468352079391,0.491177052259445,0.506254255771637,0.440979719161987,0.287987649440765,0.0679234862327576,0.279280364513397,0.44427677989006,0.476223707199097,0.360163539648056,0.140732526779175,0.227726221084595,0.437821298837662,0.566006779670715,0.643705666065216,0.706177234649658,0.76236766576767,0.805785715579987,0.827887952327728,0.823791444301605,0.792541325092316,0.735384583473206,0.653829514980316,0.547749757766724,0.42222648859024,0.291517227888107,0.170491680502892,0.0700390711426735,0.120471805334091,0.170049875974655,0.197817236185074,0.208779558539391,0.208152309060097,0.200491413474083,0.189164325594902,0.176385372877121,0.164025500416756,0.154823303222656,0.152678221464157,0.161310464143753,0.183658793568611,0.221942991018295,0.277623742818832,0.350883483886719,0.439433962106705,0.536877691745758,0.631771445274353,0.711107730865479,0.768272697925568,0.804366827011108,0.823390662670136,0.837549090385437,0.84491902589798,0.851795077323914,0.857556879520416,0.653208494186401,0.548119902610779,0.404156178236008,0.237447813153267,0.0669872835278511,0.209410965442657,0.352504402399063,0.473285913467407,0.564472436904907,0.61561393737793,0.617126107215881,0.558762729167938,0.433984965085983,0.248567938804626,0.0859138965606689,0.287410527467728,0.409771680831909,0.408514350652695,0.284556567668915,0.0845995247364044,0.249727681279182,0.426419258117676,0.528555929660797,0.587528705596924,0.641563296318054,0.700892686843872,0.757228910923004,0.798573195934296,0.816631257534027,0.807915985584259,0.772141635417938,0.710132718086243,0.617538332939148,0.499242275953293,0.369974136352539,0.247605308890343,0.146166026592255,0.0729390308260918,0.086571991443634,0.104175202548504,0.100788004696369,0.0827980488538742,0.0588546581566334,0.0871548727154732,0.113385535776615,0.13475014269352,0.149179399013519,0.15430636703968,0.147243872284889,0.125379949808121,0.0866065472364426,0.0864390656352043,0.163504153490067,0.259055733680725,0.367890328168869,0.479275107383728,0.578482210636139,0.657048642635345,0.7131187915802,0.751099348068237,0.776960730552673,0.796696960926056,0.81368750333786,0.825380146503448,0.47573184967041,0.330949783325195,0.152425304055214,0.151268661022186,0.323926150798798,0.465518891811371,0.569355428218842,0.634009003639221,0.656230986118317,0.632910788059235,0.564045786857605,0.450696289539337,0.296983987092972,0.115227453410625,0.184269577264786,0.330514371395111,0.396263182163239,0.3570476770401,0.228847175836563,0.0590990036725998,0.227928027510643,0.362856566905975,0.435746937990189,0.473461747169495,0.516345798969269,0.576819717884064,0.645501911640167,0.706966876983643,0.749087274074554,0.765366792678833,0.75370466709137,0.714240372180939,0.634737491607666,0.525482058525085,0.400236308574677,0.279399633407593,0.179543659090996,0.109879717230797,0.0728047639131546,0.0660388097167015,0.0844261199235916,0.120979718863964,0.167673408985138,0.216509461402893,0.260832399129868,0.296220898628235,0.320338547229767,0.331961959600449,0.329538613557816,0.311654835939407,0.276407212018967,0.221890926361084,0.146463498473167,0.0655437111854553,0.179289251565933,0.301636815071106,0.419566571712494,0.520538330078125,0.600016236305237,0.660379409790039,0.70705372095108,0.745413661003113,0.777102530002594,0.796284198760986,0.297298848628998,0.130476459860802,0.173997089266777,0.353819757699966,0.492996245622635,0.586377263069153,0.631594955921173,0.630441308021545,0.584231495857239,0.497892946004868,0.379718035459518,0.239207327365875,0.0866227075457573,0.180077061057091,0.309631645679474,0.391157060861588,0.399504333734512,0.325904309749603,0.204329952597618,0.0712690651416779,0.164962917566299,0.255066871643066,0.298985779285431,0.315243721008301,0.344464898109436,0.402523159980774,0.480485588312149,0.560303628444672,0.626086831092834,0.668026745319366,0.681867599487305,0.660105884075165,0.599465191364288,0.501496970653534,0.383437812328339,0.267450869083405,0.171887636184692,0.107384897768497,0.0774584412574768,0.080725260078907,0.112621389329433,0.166192144155502,0.232626110315323,0.302293449640274,0.366429418325424,0.41874897480011,0.456028282642364,0.477334558963776,0.482813477516174,0.471519321203232,0.442942917346954,0.395103812217712,0.325796633958817,0.233549252152443,0.11984371393919,0.125158801674843,0.259372860193253,0.38406628370285,0.48979526758194,0.576434791088104,0.647954285144806,0.707983911037445,0.755288183689117,0.780093669891357,0.146417185664177,0.132032796740532,0.301116466522217,0.43933293223381,0.529147446155548,0.567689538002014,0.558818817138672,0.504698097705841,0.409163117408752,0.28312349319458,0.141069173812866,0.117752388119698,0.249058663845062,0.356507778167725,0.42743119597435,0.448008686304092,0.407806694507599,0.316446363925934,0.206667974591255,0.112458772957325,0.0748154744505882,0.121070265769958,0.137346431612968,0.13372215628624,0.147438392043114,0.198691636323929,0.280964970588684,0.375017046928406,0.461758315563202,0.528016269207001,0.567069172859192,0.564597427845001,0.520823121070862,0.436287254095078,0.328412652015686,0.220256105065346,0.131163194775581,0.0726738423109055,0.0663994699716568,0.0603470839560032,0.102449908852577,0.169159084558487,0.25160938501358,0.33928906917572,0.421884715557098,0.491422921419144,0.543518543243408,0.577029883861542,0.592541635036468,0.591383635997772,0.571735978126526,0.533254265785217,0.472499251365662,0.38750633597374,0.276722997426987,0.142932564020157,0.120603621006012,0.267471253871918,0.39987188577652,0.51409387588501,0.611470580101013,0.69277685880661,0.75310206413269,0.778668642044067,0.0671276152133942,0.198984727263451,0.325137317180634,0.413045018911362,0.452144622802734,0.446814775466919,0.401704519987106,0.317200630903244,0.197864890098572,0.0582769438624382,0.202775031328201,0.332888960838318,0.434192061424255,0.496991217136383,0.51535964012146,0.486089468002319,0.410201787948608,0.310254871845245,0.221554666757584,0.165673553943634,0.139531373977661,0.134336322546005,0.144805416464806,0.16545033454895,0.167414978146553,0.126722231507301,0.0699613466858864,0.172792002558708,0.276092231273651,0.363590210676193,0.425914496183395,0.441020458936691,0.414349913597107,0.34482941031456,0.249425798654556,0.151265695691109,0.0699684470891953,0.0981117263436317,0.116683840751648,0.1008330732584,0.0625161081552505,0.136814117431641,0.229391679167747,0.329625338315964,0.42637774348259,0.510459005832672,0.576403617858887,0.622569262981415,0.649713039398193,0.659083902835846,0.650947332382202,0.623830497264862,0.574467539787292,0.498538345098495,0.392455548048019,0.256351500749588,0.0976257249712944,0.183185398578644,0.339477032423019,0.479577720165253,0.600758194923401,0.699838399887085,0.767720818519592,0.786993741989136,0.0983484238386154,0.185211822390556,0.260957956314087,0.300831198692322,0.301973551511765,0.270700842142105,0.209835916757584,0.117142073810101,0.118830747902393,0.253050595521927,0.384383112192154,0.493342816829681,0.564088821411133,0.588280320167542,0.564879655838013,0.498755902051926,0.399601191282272,0.300185650587082,0.23375928401947,0.213884338736534,0.229590892791748,0.26260256767273,0.299398750066757,0.334054261445999,0.349418520927429,0.320844769477844,0.245379716157913,0.139215782284737,0.0911131054162979,0.19561579823494,0.270626723766327,0.308621168136597,0.298644751310348,0.244848027825356,0.163172259926796,0.0761319771409035,0.112573049962521,0.159757882356644,0.175547361373901,0.158596932888031,0.110280580818653,0.0809405595064163,0.176643148064613,0.282371938228607,0.386900842189789,0.480428516864777,0.556715965270996,0.613576114177704,0.651636600494385,0.672325730323791,0.676105558872223,0.661402642726898,0.624261498451233,0.558858454227447,0.459344148635864,0.32352477312088,0.157699659466743,0.136445641517639,0.310871630907059,0.471954077482223,0.612042307853699,0.722879409790039,0.790868878364563,0.795625269412994,0.0669376999139786,0.105760313570499,0.133545473217964,0.137117341160774,0.116196326911449,0.0759904757142067,0.0992756336927414,0.183107942342758,0.287905216217041,0.401331186294556,0.50911682844162,0.593122005462647,0.636149764060974,0.630000412464142,0.576106369495392,0.484809994697571,0.375875771045685,0.27767089009285,0.232069060206413,0.244668319821358,0.298480689525604,0.367088913917542,0.429557502269745,0.476598531007767,0.500770509243011,0.48264092206955,0.414721041917801,0.309363067150116,0.188087970018387,0.0712740942835808,0.134192004799843,0.186625868082046,0.192205965518951,0.153827115893364,0.0859960615634918,0.105480171740055,0.170811757445335,0.213945358991623,0.22923731803894,0.214701950550079,0.170650571584702,0.0998170748353004,0.107547275722027,0.211233898997307,0.316180408000946,0.412595719099045,0.493896335363388,0.557493925094604,0.603771388530731,0.634082317352295,0.648828685283661,0.646158039569855,0.621375799179077,0.567269802093506,0.476038545370102,0.343574643135071,0.175329953432083,0.126078501343727,0.311438053846359,0.485694259405136,0.637229681015015,0.751962542533875,0.811586499214172,0.793562889099121,0.1292504966259,0.14065346121788,0.145353019237518,0.164923161268234,0.194262564182282,0.230832770466805,0.277823656797409,0.341726243495941,0.420421004295349,0.503960311412811,0.58152312040329,0.638100862503052,0.656003892421722,0.626381754875183,0.551431179046631,0.444320112466812,0.327854961156845,0.23746345937252,0.210069850087166,0.251070827245712,0.339114993810654,0.440633833408356,0.527593970298767,0.586572110652924,0.614296197891235,0.601672172546387,0.539997696876526,0.437358766794205,0.31330418586731,0.188685014843941,0.0880336835980415,0.0917535275220871,0.111038871109486,0.0867687165737152,0.0838023722171783,0.149411171674728,0.208067059516907,0.248640641570091,0.265550792217255,0.256404042243958,0.220656052231789,0.159810215234756,0.0782943144440651,0.131879851222038,0.229880645871162,0.322098404169083,0.402083843946457,0.467122882604599,0.517410576343536,0.554130077362061,0.577480256557465,0.585232794284821,0.571966946125031,0.529262125492096,0.447710633277893,0.321688741445541,0.155973985791206,0.146209910511971,0.334807544946671,0.51326721906662,0.666694521903992,0.776171445846558,0.818822026252747,0.770813643932343,0.243216097354889,0.290776044130325,0.322052836418152,0.353332430124283,0.38121622800827,0.406241953372955,0.433983564376831,0.471743553876877,0.518350303173065,0.566637635231018,0.609519302845001,0.636006414890289,0.629845082759857,0.580447673797607,0.491037398576736,0.375490367412567,0.258048176765442,0.17604124546051,0.164645224809647,0.230241268873215,0.348559379577637,0.4798623919487,0.589349091053009,0.659314811229706,0.687188684940338,0.673224866390228,0.613439440727234,0.512881577014923,0.388252466917038,0.26233321428299,0.152090892195702,0.0790064036846161,0.0671299546957016,0.0608262307941914,0.104830168187618,0.161852523684502,0.21535336971283,0.254857152700424,0.275039285421371,0.273367673158646,0.24874310195446,0.201696366071701,0.135338440537453,0.0597891770303249,0.144219741225243,0.225377455353737,0.297421991825104,0.35788556933403,0.406982898712158,0.445795446634293,0.474316149950027,0.489947915077209,0.486631482839584,0.454949200153351,0.384212285280228,0.267585128545761,0.109211765229702,0.187511801719666,0.371959060430527,0.545998752117157,0.691644072532654,0.786165177822113,0.803709149360657,0.720467984676361,0.374499529600143,0.446722000837326,0.492929816246033,0.525891840457916,0.544979691505432,0.553578794002533,0.55872768163681,0.567576169967651,0.579702138900757,0.590806126594543,0.597412824630737,0.592760145664215,0.563640356063843,0.497770994901657,0.398547619581223,0.281139612197876,0.167493939399719,0.0942092761397362,0.0961459055542946,0.18166309595108,0.325161039829254,0.48201596736908,0.611218333244324,0.690675675868988,0.717659413814545,0.697330832481384,0.633929908275604,0.533015012741089,0.408526748418808,0.2801833152771,0.167475059628487,0.0880490466952324,0.0667391121387482,0.0637439638376236,0.0872915163636208,0.13779105246067,0.187775239348412,0.227408811450005,0.251754373311996,0.258427083492279,0.246175721287727,0.214979141950607,0.166957050561905,0.106904961168766,0.0740333795547485,0.137846246361732,0.195364862680435,0.244801267981529,0.286720305681229,0.322312861680985,0.351497530937195,0.371418952941895,0.375527262687683,0.35364305973053,0.294112533330917,0.189172878861427,0.0732458010315895,0.243177160620689,0.416425138711929,0.57754522562027,0.705808162689209,0.775631725788116,0.760001659393311,0.637746453285217,0.504211485385895,0.58901059627533,0.639287531375885,0.666198670864105,0.672178328037262,0.662705302238464,0.645235657691956,0.626000761985779,0.60516893863678,0.581149280071258,0.553667902946472,0.519948065280914,0.470590859651566,0.392770528793335,0.287731111049652,0.171066090464592,0.0646301433444023,0.116710230708122,0.105904638767242,0.108554147183895,0.270557850599289,0.447863787412643,0.593942403793335,0.682056605815887,0.708518445491791,0.681690275669098,0.611144661903381,0.507048428058624,0.382205814123154,0.25348573923111,0.139523863792419,0.0600717663764954,0.105808235704899,0.109921336174011,0.0808969065546989,0.0805171951651573,0.128202527761459,0.168396353721619,0.196562707424164,0.210705995559692,0.209861546754837,0.194007053971291,0.164794638752937,0.126024514436722,0.0830454602837563,0.0744972229003906,0.112020000815392,0.14443239569664,0.173038139939308,0.199467077851295,0.223835289478302,0.243265986442566,0.250963568687439,0.236295968294144,0.187045440077782,0.0949253886938095,0.15257328748703,0.306058555841446,0.461018294095993,0.600174129009247,0.70070618391037,0.735770463943481,0.679698705673218,0.517141759395599,0.611961364746094,0.698891043663025,0.745841860771179,0.763455927371979,0.756569623947144,0.731556177139282,0.69524085521698,0.652448832988739,0.603823781013489,0.550066232681274,0.493456602096558,0.434668749570847,0.368352591991425,0.282725989818573,0.174953266978264,0.0601173490285873,0.156154036521912,0.216689541935921,0.202383130788803,0.0976300314068794,0.191273882985115,0.38398876786232,0.544848620891571,0.642053842544556,0.669787466526031,0.638801455497742,0.561946034431458,0.453059077262878,0.327400535345078,0.197940990328789,0.0828455612063408,0.120469532907009,0.17150391638279,0.181274741888046,0.15722844004631,0.114999510347843,0.0691550299525261,0.0867124199867249,0.11711747199297,0.136147141456604,0.143437191843987,0.139460772275925,0.125980794429779,0.106337927281857,0.0848595127463341,0.0654173046350479,0.0656707063317299,0.0777756199240685,0.0888343825936317,0.101254612207413,0.115704745054245,0.129642099142075,0.136400446295738,0.125340268015862,0.0842291861772537,0.110779501497746,0.225494354963303,0.358138352632523,0.488323181867599,0.597011148929596,0.660482466220856,0.653012037277222,0.553527772426605,0.355676352977753,0.678805410861969,0.761220574378967,0.802597045898438,0.812947452068329,0.798095524311066,0.763953328132629,0.715860605239868,0.657030344009399,0.588478147983551,0.517434239387512,0.436111062765121,0.355300486087799,0.27394500374794,0.182713598012924,0.0739952698349953,0.155786171555519,0.254009634256363,0.312736511230469,0.300348281860352,0.197075963020325,0.096038892865181,0.299572557210922,0.47403684258461,0.582064092159271,0.614263474941254,0.582256615161896,0.502355456352234,0.389833837747574,0.261407166719437,0.131648644804955,0.100794658064842,0.192253336310387,0.248317256569862,0.263359993696213,0.243890628218651,0.205009862780571,0.16125750541687,0.122010365128517,0.0915585905313492,0.0710873231291771,0.060314767062664,0.0580382831394672,0.0619835592806339,0.0687646344304085,0.0745454281568527,0.0763562396168709,0.0733510628342628,0.0671794638037682,0.0611436516046524,0.0585274882614613,0.0607758238911629,0.0659955367445946,0.0680559948086739,0.0587594285607338,0.0947877839207649,0.16308268904686,0.260272264480591,0.369778782129288,0.471088886260986,0.544010579586029,0.56578403711319,0.514763295650482,0.377758622169495,0.159394666552544,0.690240979194641,0.766288816928863,0.804975211620331,0.814523220062256,0.800035178661346,0.765790700912476,0.721615374088287,0.657658815383911,0.579532742500305,0.489818930625916,0.393049210309982,0.295165568590164,0.199867814779282,0.102881647646427,0.121709376573563,0.236943691968918,0.336640268564224,0.397090822458267,0.391027182340622,0.297319531440735,0.122352451086044,0.203327089548111,0.390785306692123,0.512260913848877,0.553193211555481,0.524084508419037,0.444362938404083,0.33088219165802,0.20070606470108,0.0694991499185562,0.16552346944809,0.261363953351974,0.323064684867859,0.344029933214188,0.327674716711044,0.29226279258728,0.251174122095108,0.214201182126999,0.185868054628372,0.167202711105347,0.157361835241318,0.157294347882271,0.159253761172295,0.161985442042351,0.161729902029037,0.155847266316414,0.143917307257652,0.12800806760788,0.111845083534718,0.0991963893175125,0.0920709818601608,0.089203417301178,0.0851874426007271,0.0708982050418854,0.0794065445661545,0.140270471572876,0.222760960459709,0.310734003782272,0.383926421403885,0.422412097454071,0.40671381354332,0.322235673666,0.164708405733109,0.166190668940544,0.638843834400177,0.710600852966309,0.752885937690735,0.770395576953888,0.765975534915924,0.750750303268433,0.7134690284729,0.65689480304718,0.581292867660522,0.488391846418381,0.381983160972595,0.269033461809158,0.15749903023243,0.0656116232275963,0.176628232002258,0.294068336486816,0.398829013109207,0.465514302253723,0.469871699810028,0.388341903686523,0.223024070262909,0.101848900318146,0.301585823297501,0.439368814229965,0.493895322084427,0.472356289625168,0.39594841003418,0.283894568681717,0.153421938419342,0.0950502529740334,0.217641711235046,0.318679511547089,0.385912477970123,0.412822812795639,0.403741121292114,0.372915118932724,0.335316717624664,0.301413357257843,0.276409804821014,0.261742532253265,0.256678074598312,0.259154081344604,0.266053080558777,0.273500204086304,0.279722720384598,0.277846187353134,0.269567906856537,0.256548911333084,0.242018967866898,0.229329288005829,0.220273688435554,0.21365088224411,0.204541370272636,0.184989586472511,0.146915525197983,0.0872153788805008,0.102987244725227,0.178133264183998,0.228936716914177,0.241618558764458,0.201874628663063,0.102240398526192,0.168050229549408,0.355873912572861,0.525867223739624,0.596810877323151,0.649393498897553,0.685730636119843,0.707857668399811,0.713650107383728,0.698977053165436,0.660847306251526,0.598699927330017,0.51272577047348,0.40481024980545,0.281336396932602,0.153028130531311,0.0860284492373466,0.204651415348053,0.325617283582687,0.437917292118073,0.51531994342804,0.533538043498993,0.469899833202362,0.31926828622818,0.112081333994865,0.209923282265663,0.366317629814148,0.439308762550354,0.430541753768921,0.360881596803665,0.252451688051224,0.12291793525219,0.127056494355202,0.25315049290657,0.359195709228516,0.434051424264908,0.469094038009644,0.467572420835495,0.442716687917709,0.409454703330994,0.378927022218704,0.357186675071716,0.346317529678345,0.34596836566925,0.354324698448181,0.368542522192001,0.385076433420181,0.400281012058258,0.4112908244133,0.416811466217041,0.417367070913315,0.414761453866959,0.410892158746719,0.40632227063179,0.399089843034744,0.384333729743958,0.355431497097015,0.307183027267456,0.240470558404922,0.165632247924805,0.100467346608639,0.0622952245175838,0.064358577132225,0.114827550947666,0.213287740945816,0.346837550401688,0.475673347711563,0.360793709754944,0.432779341936111,0.499863982200623,0.56072598695755,0.613551437854767,0.652205407619476,0.669426023960114,0.660101771354675,0.622490644454956,0.554782867431641,0.455922186374664,0.329892128705978,0.187885820865631,0.0704082772135735,0.204017847776413,0.332192331552505,0.453468471765518,0.545203804969788,0.580594420433044,0.538385808467865,0.407288908958435,0.208874687552452,0.121249280869961,0.295141994953156,0.388818472623825,0.398178398609161,0.339343309402466,0.236797466874123,0.109571181237698,0.141500532627106,0.271180391311646,0.383281081914902,0.466390252113342,0.511162102222443,0.519068121910095,0.501793086528778,0.473819941282272,0.446800887584686,0.427659660577774,0.419246762990952,0.421731501817703,0.433685392141342,0.452677518129349,0.47565484046936,0.499391883611679,0.521070301532745,0.538793742656708,0.551739633083343,0.559794425964355,0.562746524810791,0.559346914291382,0.546683013439178,0.52041882276535,0.476429492235184,0.413926661014557,0.338947087526321,0.265464007854462,0.211198687553406,0.189146548509598,0.206087574362755,0.262750297784805,0.351102590560913,0.441796272993088,0.497891783714294,0.158368647098541,0.230517074465752,0.311024814844131,0.397162199020386,0.482884913682938,0.558524966239929,0.613965749740601,0.641747832298279,0.638637900352478,0.600659489631653,0.523108065128326,0.405875116586685,0.257866501808166,0.0970460399985313,0.173093810677528,0.314492225646973,0.446911811828613,0.554701149463654,0.610587894916534,0.592385709285736,0.485319077968597,0.30087998509407,0.0843381583690643,0.221655890345573,0.340996503829956,0.372092634439468,0.328743606805801,0.234709307551384,0.111478976905346,0.139806166291237,0.273219972848892,0.391673475503922,0.483752846717834,0.539599299430847,0.558726131916046,0.550741732120514,0.529143631458282,0.505740523338318,0.488171637058258,0.480002909898758,0.481889009475708,0.492706805467606,0.510310590267181,0.531997859477997,0.554880559444428,0.576237797737122,0.593778967857361,0.605692028999329,0.61042720079422,0.606306910514831,0.591199040412903,0.562593460083008,0.518426895141602,0.458816975355148,0.388319998979569,0.317363262176514,0.260771572589874,0.232154101133347,0.237235516309738,0.274948060512543,0.338262319564819,0.402883231639862,0.4437175989151,0.430540233850479,0.177645266056061,0.107854567468166,0.0965558737516403,0.201936885714531,0.316528409719467,0.428087413311005,0.523771107196808,0.593473613262177,0.63218367099762,0.633878648281097,0.589992165565491,0.495112836360931,0.353174954652786,0.180950224399567,0.111717090010643,0.273819714784622,0.420175522565842,0.544835865497589,0.623558282852173,0.631178498268127,0.551695585250854,0.386814653873444,0.173364892601967,0.146490156650543,0.290317595005035,0.348504275083542,0.325023174285889,0.242461696267128,0.125118523836136,0.124991074204445,0.261524230241776,0.386463135480881,0.487801164388657,0.555526673793793,0.587299764156342,0.590214431285858,0.576149940490723,0.556522190570831,0.53931999206543,0.528599202632904,0.525307834148407,0.528399050235748,0.535727560520172,0.544655501842499,0.552460789680481,0.556616425514221,0.554948508739471,0.545672059059143,0.527334332466126,0.498788326978683,0.459348231554031,0.409286141395569,0.350725680589676,0.288712799549103,0.231816381216049,0.191213250160217,0.177319541573524,0.194554522633553,0.239056825637817,0.301903158426285,0.361842155456543,0.399541407823563,0.392705172300339,0.333381533622742,0.392489284276962,0.328609555959702,0.239058136940002,0.124869108200073,0.123667992651463,0.263704031705856,0.396159380674362,0.507842540740967,0.59157520532608,0.639553189277649,0.639656484127045,0.580718219280243,0.459670633077621,0.28810328245163,0.0930169075727463,0.210000663995743,0.375274181365967,0.517979204654694,0.619972944259644,0.654947340488434,0.605091571807861,0.464915752410889,0.260712206363678,0.0685323178768158,0.235448777675629,0.321426331996918,0.321986347436905,0.255067527294159,0.14594940841198,0.101181849837303,0.239577561616898,0.370474308729172,0.480923295021057,0.560632407665253,0.605837464332581,0.620892941951752,0.615412771701813,0.599711179733276,0.58156168460846,0.565116405487061,0.551349520683289,0.539090573787689,0.526061952114105,0.509690761566162,0.487674593925476,0.458332598209381,0.420785009860992,0.375004351139069,0.321828216314316,0.263044238090515,0.201605066657066,0.141981050372124,0.0904451236128807,0.0607146359980106,0.0719519034028053,0.0629363730549812,0.113256953656673,0.186741009354591,0.266904145479202,0.345447361469269,0.39435800909996,0.402811497449875,0.365542501211166,0.284495234489441,0.57781332731247,0.52369225025177,0.44136843085289,0.330170333385468,0.192607268691063,0.0782951414585113,0.237647786736488,0.385661453008652,0.51240473985672,0.608421623706818,0.658701241016388,0.646698892116547,0.56140011548996,0.405967652797699,0.203484058380127,0.12393993139267,0.313666790723801,0.476606518030167,0.601684153079987,0.664834082126617,0.645139873027801,0.533403933048248,0.344753682613373,0.127662301063538,0.17454482614994,0.288080960512161,0.315041422843933,0.267315655946732,0.168985888361931,0.0732127651572227,0.211732238531113,0.347325205802918,0.466172128915787,0.557304859161377,0.615906894207001,0.643685936927795,0.647446870803833,0.635609984397888,0.615008771419525,0.589391350746155,0.559530675411224,0.524202287197113,0.481401711702347,0.429408878087997,0.367542862892151,0.29656058549881,0.218727990984917,0.137662023305893,0.0580660179257393,0.130118250846863,0.189430445432663,0.228680074214935,0.240950390696526,0.220355987548828,0.164165630936623,0.0755231529474258,0.150245353579521,0.264142572879791,0.364690661430359,0.436709880828857,0.470165759325027,0.460017293691635,0.407419830560684,0.319459676742554,0.712769865989685,0.671305000782013,0.603171288967133,0.50573742389679,0.377462983131409,0.222286283969879,0.0649143531918526,0.237614288926125,0.399566411972046,0.539652645587921,0.640659749507904,0.68166321516037,0.643972098827362,0.520492672920227,0.325520604848862,0.0966310501098633,0.237039372324944,0.423015207052231,0.571673333644867,0.662555992603302,0.672889769077301,0.591265439987183,0.423517286777496,0.209524512290955,0.107290014624596,0.246154427528381,0.300136864185333,0.274122416973114,0.18929560482502,0.0694777220487595,0.1828543394804,0.321359604597092,0.447174549102783,0.548632323741913,0.619750678539276,0.659931600093842,0.672853887081146,0.664288818836212,0.63933914899826,0.600840032100678,0.549325823783874,0.484090000391006,0.404636085033417,0.31193608045578,0.209139809012413,0.101617202162743,0.119188651442528,0.214231178164482,0.291516572237015,0.344499617815018,0.368028700351715,0.358394533395767,0.313567727804184,0.234080776572227,0.124599441885948,0.120216466486454,0.2540003657341,0.375840067863464,0.472535997629166,0.531741678714752,0.54933488368988,0.524591207504272,0.463081389665604,0.374474972486496,0.781855225563049,0.755565583705902,0.708073556423187,0.629779756069183,0.522093534469604,0.381740570068359,0.214232936501503,0.0832224488258362,0.267228811979294,0.441601574420929,0.587725102901459,0.681502819061279,0.697795748710632,0.619094967842102,0.447665870189667,0.214248657226562,0.145307168364525,0.357906341552734,0.532534301280975,0.650588810443878,0.690655529499054,0.638845205307007,0.495456129312515,0.290638446807861,0.0808171108365059,0.195022538304329,0.274762600660324,0.271469861268997,0.202285796403885,0.0909612700343132,0.157844051718712,0.297258049249649,0.428069472312927,0.538132786750793,0.620178282260895,0.671407222747803,0.692359507083893,0.685576617717743,0.653731822967529,0.598373413085938,0.520114600658417,0.419986188411713,0.30110764503479,0.16979843378067,0.0800402164459229,0.205639332532883,0.310982376337051,0.386751919984818,0.42756450176239,0.432288318872452,0.403119683265686,0.343929827213287,0.2590591609478,0.152765184640884,0.0849867463111878,0.213918551802635,0.335720360279083,0.434760093688965,0.499703913927078,0.52583521604538,0.514274716377258,0.471200108528137,0.405838489532471,0.328297972679138,0.780342876911163,0.769625782966614,0.742081820964813,0.689019083976746,0.6079882979393,0.492738604545593,0.343401938676834,0.168626740574837,0.136505722999573,0.330297321081161,0.510244429111481,0.650160372257233,0.720092236995697,0.693394482135773,0.559199869632721,0.336216300725937,0.074573814868927,0.284260749816895,0.485854983329773,0.631864726543427,0.701157033443451,0.677861928939819,0.560003399848938,0.368966609239578,0.156460151076317,0.135681807994843,0.238212123513222,0.256951600313187,0.204356208443642,0.102931194007397,0.141019493341446,0.279481291770935,0.413065165281296,0.529408276081085,0.620114803314209,0.680024206638336,0.706609845161438,0.698922514915466,0.656779110431671,0.580399692058563,0.471284478902817,0.334066361188889,0.178162723779678,0.097642295062542,0.244610875844955,0.361413687467575,0.43614473938942,0.464941889047623,0.452239036560059,0.408454030752182,0.342096835374832,0.261213392019272,0.167743384838104,0.0655757188796997,0.154433563351631,0.251886248588562,0.330914586782455,0.379935890436172,0.393406599760056,0.374352216720581,0.330673784017563,0.272844433784485,0.211523205041885,0.155645877122879,0.716456592082977,0.718957901000977,0.71014541387558,0.686008810997009,0.628019213676453,0.541819453239441,0.419049143791199,0.263733863830566,0.0842962637543678,0.226819887757301,0.424196273088455,0.598232865333557,0.714998722076416,0.740719079971314,0.65236759185791,0.453870117664337,0.186682060360909,0.200130268931389,0.432036936283112,0.608147978782654,0.706614911556244,0.710758984088898,0.617615878582001,0.442881345748901,0.232614398002625,0.0704839751124382,0.19161656498909,0.230092257261276,0.193594679236412,0.102672792971134,0.135636329650879,0.271633386611938,0.405760824680328,0.525649607181549,0.621958494186401,0.687207996845245,0.715711712837219,0.703101694583893,0.646381974220276,0.544926941394806,0.402499288320541,0.229643255472183,0.0708795338869095,0.243641659617424,0.379745185375214,0.461799591779709,0.485556155443192,0.460888117551804,0.405797809362412,0.335050493478775,0.254669070243835,0.170425429940224,0.0882565602660179,0.10198437422514,0.1648770570755,0.211677521467209,0.236672684550285,0.233354046940804,0.200755745172501,0.146424800157547,0.0810792669653892,0.0998096317052841,0.155012488365173,0.1921316832304,0.608489871025085,0.619805812835693,0.625120401382446,0.619123637676239,0.586957454681396,0.527676165103912,0.433296173810959,0.30372279882431,0.145110428333282,0.152419343590736,0.348645657300949,0.539884626865387,0.69174188375473,0.763873279094696,0.723532855510712,0.559845805168152,0.300482571125031,0.106619618833065,0.370437234640121,0.579241216182709,0.708455622196198,0.739600956439972,0.66924113035202,0.511160552501678,0.30637201666832,0.112719170749187,0.137887254357338,0.192572683095932,0.170290604233742,0.0894140303134918,0.143006354570389,0.275976091623306,0.408389717340469,0.52884167432785,0.626956462860107,0.693123400211334,0.718603014945984,0.695859014987946,0.619716227054596,0.489847332239151,0.314164906740189,0.111477740108967,0.20481675863266,0.370232075452805,0.473361730575562,0.504529356956482,0.477034121751785,0.412935107946396,0.333218693733215,0.2441795617342,0.15723243355751,0.081710010766983,0.0909051075577736,0.127154693007469,0.143462762236595,0.141312003135681,0.120927937328815,0.0810776129364967,0.0919699668884277,0.16037929058075,0.232080712914467,0.299150884151459,0.353781253099442,0.388015419244766,0.479214727878571,0.494073987007141,0.5068439245224,0.51201468706131,0.498345553874969,0.45941561460495,0.389718979597092,0.286177635192871,0.153102353215218,0.121055170893669,0.300827950239182,0.490326106548309,0.661423563957214,0.769298732280731,0.772883355617523,0.648959577083588,0.409354746341705,0.108836807310581,0.300034195184708,0.543216347694397,0.706339776515961,0.764934718608856,0.715419948101044,0.572561144828796,0.374493956565857,0.178232491016388,0.0816998481750488,0.148414567112923,0.137404695153236,0.0651049092411995,0.161750122904778,0.291202247142792,0.420703738927841,0.53884768486023,0.6344193816185,0.696072399616241,0.712498903274536,0.67367559671402,0.573420226573944,0.413471102714539,0.207976043224335,0.12999852001667,0.329742133617401,0.468002200126648,0.522956967353821,0.50179386138916,0.434812158346176,0.344587802886963,0.24064727127552,0.139180675148964,0.0608830079436302,0.118442043662071,0.146733537316322,0.148963138461113,0.130717322230339,0.0973396897315979,0.0630427300930023,0.116891220211983,0.177103966474533,0.240879282355309,0.306538015604019,0.371947199106216,0.432648807764053,0.481027483940124,0.350095570087433,0.363432943820953,0.376508295536041,0.384479999542236,0.379854381084442,0.352479606866837,0.300303757190704,0.218687787652016,0.110696777701378,0.136170938611031,0.289965718984604,0.462090849876404,0.634109020233154,0.764225542545319,0.802898049354553,0.718025863170624,0.506770610809326,0.210042282938957,0.216893717646599,0.497289150953293,0.697477698326111,0.785227179527283,0.755394876003265,0.625226140022278,0.433166235685348,0.23612979054451,0.0861022844910622,0.104140818119049,0.100964583456516,0.0804987624287605,0.186986148357391,0.312932074069977,0.438425481319428,0.55182021856308,0.640556633472443,0.691842138767242,0.692679226398468,0.631869196891785,0.503973126411438,0.314853996038437,0.0867267176508904,0.256908088922501,0.437268316745758,0.532216250896454,0.534377753734589,0.471673637628555,0.374647855758667,0.25534051656723,0.132607653737068,0.0871912613511086,0.159038379788399,0.19453039765358,0.198286697268486,0.178773283958435,0.144349873065948,0.101383127272129,0.0613762475550175,0.109155260026455,0.155856430530548,0.203709796071053,0.256910353899002,0.318754553794861,0.388156354427338,0.45855039358139,0.237120434641838,0.24477519094944,0.251808136701584,0.254578948020935,0.248999953269958,0.224258542060852,0.181290417909622,0.115298084914684,0.086934857070446,0.191506385803223,0.315424710512161,0.460130453109741,0.617018103599548,0.753656208515167,0.816199660301208,0.764877736568451,0.586294591426849,0.305767625570297,0.129815191030502,0.439323484897614,0.677580058574676,0.797140657901764,0.78667426109314,0.666326701641083,0.477926433086395,0.279976725578308,0.126295939087868,0.0686428472399712,0.0701330974698067,0.107100136578083,0.209775164723396,0.332210034132004,0.452508598566055,0.558976352214813,0.636952817440033,0.672431826591492,0.651774644851685,0.564360857009888,0.407720059156418,0.194063141942024,0.160681203007698,0.377078890800476,0.520458877086639,0.56299889087677,0.5185906291008,0.422803938388824,0.293535381555557,0.148714557290077,0.0964348390698433,0.191342860460281,0.243120834231377,0.256409406661987,0.2426947504282,0.213926091790199,0.178927004337311,0.14283312857151,0.108540266752243,0.0788983926177025,0.0619611963629723,0.0894217118620872,0.127586394548416,0.18347142636776,0.259146600961685,0.349588811397553,0.148991048336029,0.148022443056107,0.144251853227615,0.135477840900421,0.120321795344353,0.0907698422670364,0.0661062374711037,0.122888207435608,0.193028226494789,0.273998349905014,0.36818739771843,0.480743229389191,0.611312389373779,0.739038646221161,0.813581049442291,0.787245035171509,0.641326069831848,0.387412309646606,0.0695820823311806,0.369685530662537,0.642785251140594,0.795974910259247,0.805428206920624,0.692391991615295,0.504216969013214,0.303247839212418,0.145871758460999,0.0633681416511536,0.0592380911111832,0.118188016116619,0.217640057206154,0.336309462785721,0.449661880731583,0.547146499156952,0.611070096492767,0.626525521278381,0.580465435981751,0.464881509542465,0.282649487257004,0.0614580027759075,0.295571655035019,0.481765538454056,0.57475471496582,0.567169964313507,0.482349932193756,0.353115141391754,0.193638682365417,0.0799395442008972,0.203683614730835,0.278763055801392,0.306183069944382,0.299246668815613,0.274471998214722,0.245076209306717,0.218605235219002,0.197792664170265,0.183095127344131,0.175477594137192,0.172613367438316,0.165309935808182,0.142934277653694,0.0965199694037437,0.0941729247570038,0.195776373147964,0.0875120237469673,0.0762587636709213,0.0588519386947155,0.0810185968875885,0.111382268369198,0.150745421648026,0.195720434188843,0.248293027281761,0.306289881467819,0.367334365844727,0.434036821126938,0.51354193687439,0.611560046672821,0.718300819396973,0.792924106121063,0.782259404659271,0.665253400802612,0.445083796977997,0.149961665272713,0.292810678482056,0.592004001140594,0.777552545070648,0.807872414588928,0.700562953948975,0.5088791847229,0.301168739795685,0.137733727693558,0.0643848702311516,0.0710896328091621,0.100940808653831,0.19687283039093,0.307314932346344,0.414850473403931,0.50146359205246,0.549195051193237,0.542721450328827,0.470928102731705,0.330411970615387,0.131336554884911,0.212737560272217,0.423080027103424,0.562519013881683,0.598990440368652,0.543370008468628,0.425656944513321,0.262431621551514,0.0818929895758629,0.190248519182205,0.295519471168518,0.343346238136292,0.344932407140732,0.320483684539795,0.289112329483032,0.263410300016403,0.248703345656395,0.245074793696403,0.250431418418884,0.261863172054291,0.279125720262527,0.290091425180435,0.283754020929337,0.250556349754334,0.184163644909859,0.0832957327365875,0.0661142617464066,0.0880961492657661,0.119988113641739,0.161048576235771,0.208519026637077,0.259937435388565,0.311378717422485,0.362602442502975,0.411334604024887,0.455479353666306,0.49747234582901,0.545196652412415,0.608313858509064,0.686304569244385,0.75025075674057,0.747083604335785,0.652662992477417,0.469071984291077,0.210617691278458,0.217600703239441,0.528792917728424,0.740981101989746,0.792359352111816,0.690522134304047,0.492355793714523,0.273408800363541,0.0995085388422012,0.110049642622471,0.121741138398647,0.0696375519037247,0.136808440089226,0.238503128290176,0.336040169000626,0.410347819328308,0.441536962985992,0.414540320634842,0.321402966976166,0.164798840880394,0.152598321437836,0.362766891717911,0.531254410743713,0.613176345825195,0.59709632396698,0.499846518039703,0.345843583345413,0.1546940356493,0.148623049259186,0.289402693510056,0.366097897291183,0.382518380880356,0.358873039484024,0.319761961698532,0.284601837396622,0.264052957296371,0.256627142429352,0.266237258911133,0.287667989730835,0.317464351654053,0.350699543952942,0.378383696079254,0.389783322811127,0.374316394329071,0.323723495006561,0.234268754720688,0.0863111764192581,0.118329860270023,0.163715317845345,0.219398766756058,0.283603847026825,0.346853107213974,0.405093520879745,0.455801606178284,0.496626734733582,0.525900602340698,0.545739114284515,0.563955724239349,0.592443883419037,0.637803196907043,0.682977378368378,0.680489540100098,0.601696252822876,0.452670395374298,0.23983958363533,0.155822217464447,0.461543768644333,0.690473020076752,0.761298298835754,0.666212558746338,0.460595458745956,0.226518973708153,0.0789294317364693,0.185902893543243,0.207412034273148,0.163475006818771,0.0806833282113075,0.124671831727028,0.209989473223686,0.271436929702759,0.287936329841614,0.245428115129471,0.139919728040695,0.134955048561096,0.322282373905182,0.496172577142715,0.609577178955078,0.631845951080322,0.566287398338318,0.431903660297394,0.24382396042347,0.0792134702205658,0.258393794298172,0.370982497930527,0.412013739347458,0.395547360181808,0.348685801029205,0.297867089509964,0.26096710562706,0.236594468355179,0.235324785113335,0.253277897834778,0.28649115562439,0.329331427812576,0.376359224319458,0.420419603586197,0.451824218034744,0.459359347820282,0.432108283042908,0.36275914311409,0.0945005789399147,0.134829431772232,0.191215068101883,0.260408908128738,0.336152762174606,0.409328550100327,0.473122119903564,0.522926509380341,0.556361794471741,0.572242498397827,0.572315752506256,0.56384015083313,0.55966454744339,0.571481466293335,0.592834949493408,0.585276424884796,0.516395270824432,0.395615845918655,0.230465531349182,0.118483491241932,0.401232957839966,0.6347696185112,0.72179639339447,0.636003971099854,0.4250328540802,0.174219280481338,0.152107983827591,0.278633862733841,0.316449075937271,0.286143630743027,0.215487539768219,0.140959337353706,0.069460429251194,0.0953467562794685,0.101005688309669,0.0649121478199959,0.171084374189377,0.31799641251564,0.474666684865952,0.5989910364151,0.65234649181366,0.620791792869568,0.511009097099304,0.337907999753952,0.123962879180908,0.200212478637695,0.354847282171249,0.429654091596603,0.430566370487213,0.381753921508789,0.314789086580276,0.255625516176224,0.206028312444687,0.18090595304966,0.180064454674721,0.202755287289619,0.244292080402374,0.297115653753281,0.355577886104584,0.414862096309662,0.467022359371185,0.501070261001587,0.504014313220978,0.463738471269608,0.0995071604847908,0.145907759666443,0.209837421774864,0.287991583347321,0.371876865625381,0.451775431632996,0.518629312515259,0.566149413585663,0.591961443424225,0.595305144786835,0.577566742897034,0.545210957527161,0.511108160018921,0.490153908729553,0.484506607055664,0.466197818517685,0.402181446552277,0.301664471626282,0.180028840899467,0.114121809601784,0.358819931745529,0.584147036075592,0.682738244533539,0.609207808971405,0.398126512765884,0.132672488689423,0.217122212052345,0.36911341547966,0.430311143398285,0.420125663280487,0.372752249240875,0.310002148151398,0.253147184848785,0.214695855975151,0.214989364147186,0.264459818601608,0.359432011842728,0.48057633638382,0.594764769077301,0.663700520992279,0.664527535438538,0.5798379778862,0.42967101931572,0.222961887717247,0.118896722793579,0.312136232852936,0.429673284292221,0.460111647844315,0.42049252986908,0.342938125133514,0.260771423578262,0.184569850564003,0.129064694046974,0.0984353497624397,0.0957532748579979,0.120146214962006,0.166427701711655,0.225688949227333,0.292392820119858,0.364174664020538,0.435276001691818,0.495851427316666,0.532094120979309,0.527309596538544,0.112840339541435,0.163184359669685,0.231778278946877,0.314146786928177,0.401852279901505,0.48388209939003,0.549655854701996,0.588606178760529,0.601588904857635,0.588311731815338,0.551961600780487,0.499801129102707,0.443397969007492,0.395707488059998,0.362405449151993,0.327335685491562,0.262663811445236,0.176508545875549,0.0902120769023895,0.14753483235836,0.343021959066391,0.547676980495453,0.651837408542633,0.59299910068512,0.389035046100616,0.115044608712196,0.257116794586182,0.438317805528641,0.52928215265274,0.54591029882431,0.520852327346802,0.478365421295166,0.436650156974793,0.407369911670685,0.408990740776062,0.449869990348816,0.52383017539978,0.609708786010742,0.675815761089325,0.691515982151032,0.638410031795502,0.514885365962982,0.327295333147049,0.0985143110156059,0.239553406834602,0.405185401439667,0.476762861013412,0.462400048971176,0.387021869421005,0.287553548812866,0.188099265098572,0.102615803480148,0.0764914974570274,0.112133771181107,0.117460183799267,0.0937030166387558,0.0694218426942825,0.131273686885834,0.202337712049484,0.282370001077652,0.367821633815765,0.450615853071213,0.515248119831085,0.548095345497131,0.140310019254684,0.192943677306175,0.263250589370728,0.346428543329239,0.432489573955536,0.509208679199219,0.564153432846069,0.589407742023468,0.584159135818481,0.551195740699768,0.495476245880127,0.425134271383286,0.351148158311844,0.284438818693161,0.229207694530487,0.175029039382935,0.10424879938364,0.0878665447235107,0.1466955691576,0.216951981186867,0.357726991176605,0.531522154808044,0.634800016880035,0.592138588428497,0.403119027614594,0.129698053002357,0.259464114904404,0.470005571842194,0.594842553138733,0.643918454647064,0.645777523517609,0.625655949115753,0.599734485149384,0.578755557537079,0.578552842140198,0.605598092079163,0.652642667293549,0.699319124221802,0.718641936779022,0.687808692455292,0.58999115228653,0.428944945335388,0.212897345423698,0.139004200696945,0.34327358007431,0.470132738351822,0.497505605220795,0.443324148654938,0.340201675891876,0.223751559853554,0.113409586250782,0.0955861732363701,0.16399222612381,0.202708497643471,0.210357129573822,0.188566833734512,0.142425745725632,0.081103041768074,0.106490276753902,0.190446004271507,0.284693747758865,0.383088380098343,0.470048844814301,0.534148097038269,0.182471975684166,0.235531166195869,0.304251700639725,0.382505267858505,0.459560513496399,0.521947383880615,0.557511329650879,0.559746861457825,0.530247509479523,0.474442362785339,0.3995541036129,0.314895063638687,0.230816811323166,0.155317306518555,0.088215596973896,0.0978379249572754,0.179002046585083,0.249961763620377,0.287078350782394,0.31402599811554,0.401005744934082,0.53771847486496,0.634279429912567,0.608206212520599,0.441404044628143,0.179085254669189,0.217951446771622,0.453477263450623,0.612611472606659,0.697405815124512,0.729741752147675,0.733897745609283,0.724937379360199,0.712642788887024,0.709739089012146,0.721206486225128,0.740225791931152,0.749590873718262,0.730216860771179,0.653319656848908,0.520547807216644,0.328602939844131,0.0965095683932304,0.248965010046959,0.425128400325775,0.51110166311264,0.498369663953781,0.412635266780853,0.290608704090118,0.162957608699799,0.0698284581303597,0.166804865002632,0.236756876111031,0.27651110291481,0.285785049200058,0.266464948654175,0.223153725266457,0.164276152849197,0.0936891287565231,0.106482148170471,0.204700887203217,0.312136232852936,0.413861930370331,0.500813841819763,0.234979867935181,0.285046935081482,0.346670866012573,0.412424683570862,0.470838040113449,0.508782267570496,0.515749573707581,0.488079428672791,0.43055471777916,0.351506739854813,0.260430365800858,0.167627304792404,0.0824223011732102,0.106452375650406,0.173854544758797,0.25192067027092,0.342743098735809,0.410837858915329,0.429728031158447,0.425378203392029,0.465151071548462,0.563583195209503,0.649302423000336,0.639325976371765,0.500628888607025,0.260205268859863,0.133504211902618,0.385349303483963,0.574701964855194,0.69741553068161,0.759844779968262,0.789965450763702,0.799738168716431,0.79789936542511,0.793909013271332,0.791734397411346,0.78625226020813,0.765030205249786,0.704753816127777,0.597237527370453,0.434561610221863,0.221999391913414,0.128812864422798,0.34143677353859,0.484923183917999,0.532941222190857,0.487612962722778,0.379630863666534,0.246592476963997,0.112706281244755,0.12231782823801,0.219240978360176,0.288349360227585,0.327834039926529,0.338194042444229,0.321363031864166,0.281357526779175,0.225699916481972,0.157630652189255,0.074404239654541,0.140105128288269,0.251496285200119,0.361839473247528,0.463222295045853">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="1" pintype="Input" visible="1" values="0.86">
+   </PIN>
+   <PIN pinname="Value" slicecount="1" pintype="Input" visible="1" values="0.850000023841858">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="16" systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="5550" top="5970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" pintype="Input" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="10" dstpinname="CenterY">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="8" dstpinname="Diffuse Color">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="36" dstpinname="Hue">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="7" dstpinname="SizeXYZ" linkstyle="Bezier">
+   <LINKPOINT x="5455" y="5895">
+   </LINKPOINT>
+   <LINKPOINT x="3020" y="5895">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="10" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Transform Out" dstnodeid="8" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="X" dstnodeid="10" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y" dstnodeid="10" dstpinname="TranslateZ">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="4" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Geometry Out" dstnodeid="8" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="NoiseSpread" dstnodeid="37" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="7095" y="4785">
+   </LINKPOINT>
+   <LINKPOINT x="6330" y="4785">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="View Projection" dstnodeid="4" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="PointGeneratorXY" dstnodeid="11" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="NoiseSpread" dstnodeid="43" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="6990" y="4255">
+   </LINKPOINT>
+   <LINKPOINT x="4455" y="4370">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="XY" dstnodeid="31" dstpinname="Y Input Value" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="12710" y="2118">
+   </LINKPOINT>
+   <LINKPOINT x="8125" y="1918">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="8310" top="7890" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" slicecount="1" values="60">
+   </PIN>
+   <PIN pinname="Maximum Background FPS" slicecount="1" values="30">
+   </PIN>
+   </NODE>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="12495" top="945" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Scale" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="12150" top="555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Change" dstnodeid="50" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="12495" top="1320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="52" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Position Out" dstnodeid="27" dstpinname="Y Input Value" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="12285" y="2030">
+   </LINKPOINT>
+   <LINKPOINT x="5190" y="1930">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>
