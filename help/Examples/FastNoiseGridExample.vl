@@ -186,10 +186,10 @@
             <Pin Id="ToaQSZzQoXMLdAwpZYpm2m" Name="Input" Kind="StateInputPin" />
             <Pin Id="RGNRY9JERXlNkNux5uPhHN" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Overlay Id="TdiL8ReIxrVN3sxDhZL00Z" Name="FastNoise" Bounds="183,58,638,319">
+          <Overlay Id="TdiL8ReIxrVN3sxDhZL00Z" Name="FastNoiseGrid" Bounds="183,58,638,319">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
-          <Overlay Id="UaDVjiWeyhYPfxGVmeEE4R" Name="vect" Bounds="213,443,727,331">
+          <Overlay Id="UaDVjiWeyhYPfxGVmeEE4R" Name="SKIA" Bounds="213,443,727,331">
             <p:ColorIndex p:Type="Int32">1</p:ColorIndex>
           </Overlay>
           <Pad Id="TghrMvcGhGnNqvcFsX11Kn" Bounds="601,480,82,19" ShowValueBox="true" isIOBox="true" Value="CPU Intense">
@@ -464,5 +464,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="LSmT8ogFbrZPqCbT97AudT" Location="VL.Skia" Version="2020.1.0-0040-ge815cb7f36" />
-  <DocumentDependency Id="EaiSwOnMfvYLcYmvb60qYu" Location="../VL.FastNoise.vl" />
+  <DocumentDependency Id="PfNGWC623VePKXbTmMZYbP" Location="../../VL.FastNoise.vl" />
 </Document>
