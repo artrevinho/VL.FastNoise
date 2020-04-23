@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VPCRLuX9xnOPLLOIsNGuq8" LanguageVersion="2019.1.0-0959-g3a31ab0c51" Version="0.128">
+<Document xmlns:p="property" Id="FvJju2XAXZrP8jz8szvfQj" LanguageVersion="2020.1.0-0040-e815cb7f36" Version="0.128">
   <NugetDependency Id="KhGSxti7OhrNV9sG8D4GwC" Location="VL.CoreLib" Version="2020.1.0-0040-ge815cb7f36" />
   <Patch Id="QA7OTPDHi1MN9iGFcICcsN">
     <Canvas Id="Cxni3gDD5vnMCb1iSj6kQ6" DefaultCategory="VL.FastNoise" CanvasType="FullCategory">
@@ -1127,6 +1127,9 @@
                 <Pin Id="KfWc5zttpmkMVPpebabwGM" Name="Force" Kind="InputPin" />
                 <Pin Id="FJg2QbfeSaSMAN7u4Yln59" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="PWabcY9wU2ZOyhj6W15Iin" Name="Has Changed" Kind="OutputPin" />
+                <ControlPoint Id="A87T4AQOpnfPLeLd0VJfeQ" Bounds="345,298" Alignment="Top" />
+                <ControlPoint Id="QtqIfKoUZjFPHffLOJRgn3" Bounds="371,434" Alignment="Bottom" />
+                <ControlPoint Id="R8l8fF7c9ebMVea9L1e00l" Bounds="451,298" Alignment="Top" />
                 <Patch Id="BU0v52N1a81MpS3cZlqe0u" ManuallySortedPins="true">
                   <Patch Id="J56nfFwvozqMQMW4uXfY2X" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="NkzrjrJLhsGOgJpNY9SEFZ" Name="Then" ManuallySortedPins="true" />
@@ -1144,12 +1147,12 @@
                         <Choice Kind="TypeFlag" Name="PixelFormat" />
                       </p:TypeAnnotation>
                     </Pin>
+                    <Pin Id="F3DZrqWnEAWLMgYXSyvmZq" Name="Original Format" Kind="InputPin" />
                     <Pin Id="H0V5KJrhiuTLKdjPcZ5o94" Name="Is Volatile" Kind="InputPin" DefaultValue="True">
                       <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="TypeFlag" Name="Boolean" />
                       </p:TypeAnnotation>
                     </Pin>
-                    <Pin Id="F3DZrqWnEAWLMgYXSyvmZq" Name="Original Format" Kind="InputPin" />
                     <Pin Id="Ecz2UD0lSypQZpGeVhO86I" Name="Result" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="328,349,83,26" Id="LhWiKdOTffdOsuuMqQwnhK">
@@ -1170,9 +1173,6 @@
                     <Pin Id="TimyeQO0AOgL7H0clC9bab" Name="Value" Kind="OutputPin" />
                   </Node>
                 </Patch>
-                <ControlPoint Id="A87T4AQOpnfPLeLd0VJfeQ" Bounds="345,298" Alignment="Top" />
-                <ControlPoint Id="QtqIfKoUZjFPHffLOJRgn3" Bounds="371,434" Alignment="Bottom" />
-                <ControlPoint Id="R8l8fF7c9ebMVea9L1e00l" Bounds="451,298" Alignment="Top" />
               </Node>
               <ControlPoint Id="UGS6Fs3FvvlLPevu1dyH1q" Bounds="344,239" />
               <ControlPoint Id="Nb1CmrZNeKbOuXxM0VbYKV" Bounds="362,491" />
@@ -1387,7 +1387,11 @@
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="I2pumpQQCJsLMbuwASO9a0" Name="Offset" Kind="InputPin" Bounds="787,250" />
+            <Pin Id="I2pumpQQCJsLMbuwASO9a0" Name="Offset" Kind="InputPin" Bounds="787,250" DefaultValue="0, 0">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="SvfSDSduqTeOoMN8IvdHn5" Name="Resolution" Kind="InputPin" Bounds="1014,249" DefaultValue="32">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
@@ -1866,6 +1870,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="BanIEZyLxHrLz9Azdsp8tY" Location="VL.Skia" Version="2020.1.0-0040-ge815cb7f36" />
-  <NugetDependency Id="EckLmOo0lfWLFB7cghOGUP" Location="DotnetNoise" Version="1.0.0" />
-  <NugetDependency Id="BZZjpOnK5d5O1Krjha25PC" Location="VL.FastNoise" Version="1.0.0" />
+  <PlatformDependency Id="NydrteUViAuQcR3hTM5c8Z" Location="./lib/netstandard2.0/DotnetNoise.dll" />
 </Document>

@@ -465,7 +465,9 @@
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
-   <PIN pinname="Y" visible="1">
+   <PIN pinname="Y" visible="1" slicecount="1" values="-486.485245069997">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="-0.9">
    </PIN>
    </NODE>
    <NODE systemname="Integrate (Differential)" nodename="Integrate (Differential)" componentmode="Hidden" id="46">
@@ -476,16 +478,14 @@
    <PIN pinname="Position In" slicecount="1" values="-0.55">
    </PIN>
    </NODE>
-   <LINK srcnodeid="46" srcpinname="Position Out" dstnodeid="45" dstpinname="Y">
-   </LINK>
    <NODE id="9" systemname="Camera (Transform Orbit)" filename="%VVVV%\lib\nugets\VL.EditingFramework.2019.1.0-0959-g3a31ab0c51\vvvv\nodes\modules\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Initial Longitude" slicecount="1" pintype="Input" visible="1" values="-0.35">
    </PIN>
-   <PIN pinname="Initial Distance" slicecount="1" pintype="Input" visible="1" values="2.41">
+   <PIN pinname="Initial Distance" slicecount="1" pintype="Input" visible="1" values="4.79">
    </PIN>
    <PIN pinname="Initial Latitude" slicecount="1" pintype="Input" visible="1" values="0.09">
    </PIN>
-   <PIN pinname="Initial InterestXYZ" slicecount="3" pintype="Input" visible="1" values="0,0,0">
+   <PIN pinname="Initial InterestXYZ" slicecount="3" pintype="Input" visible="1" values="0,-0.21,0">
    </PIN>
    <BOUNDS type="Node" left="7815" top="6885" width="100" height="100">
    </BOUNDS>
@@ -499,7 +499,7 @@
    </PIN>
    <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Initial FOV" pintype="Input" visible="1" slicecount="1" values="0.2">
+   <PIN pinname="Initial FOV" pintype="Input" visible="1" slicecount="1" values="0.1">
    </PIN>
    <PIN pinname="Near Plane" pintype="Input" visible="1" slicecount="1" values="0.1">
    </PIN>
@@ -1075,5 +1075,7 @@
    </LINKPOINT>
    <LINKPOINT x="5190" y="1930">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Position Out" dstnodeid="45" dstpinname="Y">
    </LINK>
    </PATCH>
